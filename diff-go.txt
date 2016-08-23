@@ -1,0 +1,2306 @@
+1,2c1,2
+< ## STRATEGY: all
+< ## SKIPPED: ['never_in_taxon', 'part_of', 'regulates', 'negatively_regulates', 'positively_regulates']
+---
+> ## STRATEGY: exact
+> ## SKIPPED: ['never_in_taxon', 'negatively_regulates', 'regulates', 'positively_regulates', 'part_of']
+4,5c4,5
+< true_positive	11532192	1340	1350	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	11532192	1673	1683	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	11532192	1340	1350	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	11532192	1673	1683	regulation	go_bpmf	GO:0065007	biological regulation ()
+45,47c45,47
+< false_positive	11897010	1425	1436	development	go_bpmf	GO:0000003	reproduction (reproductive physiological process)
+< false_positive	11897010	3338	3349	development	go_bpmf	GO:0000003	reproduction (reproductive physiological process)
+< true_positive	11897010	1781	1792	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	11897010	1425	1436	development	go_bpmf	GO:0000003	reproduction (reproductive physiological process)
+> false_negative	11897010	3338	3349	development	go_bpmf	GO:0000003	reproduction (reproductive physiological process)
+> false_negative	11897010	1781	1792	development	go_bpmf	GO:0032502	developmental process ()
+52c52
+< false_positive	11897010	13783	13791	splicing	go_bpmf	GO:0008380	RNA splicing ()
+---
+> false_negative	11897010	13783	13791	splicing	go_bpmf	GO:0008380	RNA splicing ()
+54c54
+< true_positive	12079497	2571	2582	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	12079497	2571	2582	development	go_bpmf	GO:0032502	developmental process ()
+64c64
+< true_positive	12546709	4656	4667	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	12546709	4656	4667	development	go_bpmf	GO:0032502	developmental process ()
+67c67
+< true_positive	12546709	29948	29959	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	12546709	29948	29959	development	go_bpmf	GO:0032502	developmental process ()
+101c101
+< false_positive	12585968	23677	23687	regulation	go_bpmf	GO:0050789	regulation of biological process (regulation of physiological process)
+---
+> false_negative	12585968	23677	23687	regulation	go_bpmf	GO:0050789	regulation of biological process (regulation of physiological process)
+121,124c121,124
+< false_positive	12925238	8868	8877	ionophore	go_bpmf	independent_continuant	independent_continuant
+< false_positive	12925238	8868	8877	ionophore	go_bpmf	GO:0022886	channel-forming ionophore activity ()
+< false_positive	12925238	9823	9832	ionophore	go_bpmf	independent_continuant	independent_continuant
+< false_positive	12925238	9823	9832	ionophore	go_bpmf	GO:0022886	channel-forming ionophore activity ()
+---
+> false_negative	12925238	8868	8877	ionophore	go_bpmf	independent_continuant	independent_continuant
+> false_negative	12925238	8868	8877	ionophore	go_bpmf	GO:0022886	channel-forming ionophore activity ()
+> false_negative	12925238	9823	9832	ionophore	go_bpmf	independent_continuant	independent_continuant
+> false_negative	12925238	9823	9832	ionophore	go_bpmf	GO:0022886	channel-forming ionophore activity ()
+126c126
+< true_positive	12925238	14301	14306	lysis	go_bpmf	GO:0019835	cytolysis ()
+---
+> false_negative	12925238	14301	14306	lysis	go_bpmf	GO:0019835	cytolysis ()
+142,146c142,146
+< true_positive	12925238	28979	28984	lysis	go_bpmf	GO:0019835	cytolysis ()
+< false_positive	12925238	29048	29058	proteinase	go_bpmf	GO:0008233	peptidase activity ({hydrolase, acting on peptide bonds, protease activity, peptide hydrolase activity})
+< false_positive	12925238	29048	29058	proteinase	go_bpmf	independent_continuant	independent_continuant
+< false_positive	12925238	30494	30503	ionophore	go_bpmf	GO:0022886	channel-forming ionophore activity ()
+< false_positive	12925238	30494	30503	ionophore	go_bpmf	independent_continuant	independent_continuant
+---
+> false_negative	12925238	28979	28984	lysis	go_bpmf	GO:0019835	cytolysis ()
+> false_negative	12925238	29048	29058	proteinase	go_bpmf	GO:0008233	peptidase activity ({hydrolase, acting on peptide bonds, protease activity, peptide hydrolase activity})
+> false_negative	12925238	29048	29058	proteinase	go_bpmf	independent_continuant	independent_continuant
+> false_negative	12925238	30494	30503	ionophore	go_bpmf	GO:0022886	channel-forming ionophore activity ()
+> false_negative	12925238	30494	30503	ionophore	go_bpmf	independent_continuant	independent_continuant
+160,161c160,161
+< false_positive	14611657	5764	5777	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	14611657	6014	6027	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	14611657	5764	5777	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	14611657	6014	6027	transcription	go_bpmf	GO:0006350	transcription ()
+163,168c163,168
+< false_positive	14611657	6657	6670	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	14611657	22248	22256	splicing	go_bpmf	GO:0008380	RNA splicing ()
+< false_positive	14611657	22850	22858	splicing	go_bpmf	GO:0008380	RNA splicing ()
+< false_positive	14611657	23533	23541	splicing	go_bpmf	GO:0008380	RNA splicing ()
+< false_positive	14611657	23884	23892	splicing	go_bpmf	GO:0008380	RNA splicing ()
+< false_positive	14611657	24035	24043	splicing	go_bpmf	GO:0008380	RNA splicing ()
+---
+> false_negative	14611657	6657	6670	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	14611657	22248	22256	splicing	go_bpmf	GO:0008380	RNA splicing ()
+> false_negative	14611657	22850	22858	splicing	go_bpmf	GO:0008380	RNA splicing ()
+> false_negative	14611657	23533	23541	splicing	go_bpmf	GO:0008380	RNA splicing ()
+> false_negative	14611657	23884	23892	splicing	go_bpmf	GO:0008380	RNA splicing ()
+> false_negative	14611657	24035	24043	splicing	go_bpmf	GO:0008380	RNA splicing ()
+172,173c172,173
+< false_positive	14611657	31543	31556	Transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	14611657	34599	34607	splicing	go_bpmf	GO:0008380	RNA splicing ()
+---
+> false_negative	14611657	31543	31556	Transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	14611657	34599	34607	splicing	go_bpmf	GO:0008380	RNA splicing ()
+175,180c175,180
+< false_positive	14611657	35777	35785	splicing	go_bpmf	GO:0008380	RNA splicing ()
+< false_positive	14611657	35879	35887	splicing	go_bpmf	GO:0008380	RNA splicing ()
+< false_positive	14611657	36252	36260	splicing	go_bpmf	GO:0008380	RNA splicing ()
+< false_positive	14611657	42758	42766	splicing	go_bpmf	GO:0008380	RNA splicing ()
+< false_positive	14611657	53391	53399	splicing	go_bpmf	GO:0008380	RNA splicing ()
+< true_positive	14723793	1429	1440	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	14611657	35777	35785	splicing	go_bpmf	GO:0008380	RNA splicing ()
+> false_negative	14611657	35879	35887	splicing	go_bpmf	GO:0008380	RNA splicing ()
+> false_negative	14611657	36252	36260	splicing	go_bpmf	GO:0008380	RNA splicing ()
+> false_negative	14611657	42758	42766	splicing	go_bpmf	GO:0008380	RNA splicing ()
+> false_negative	14611657	53391	53399	splicing	go_bpmf	GO:0008380	RNA splicing ()
+> false_negative	14723793	1429	1440	development	go_bpmf	GO:0032502	developmental process ()
+184c184
+< true_positive	14723793	14615	14626	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	14723793	14615	14626	development	go_bpmf	GO:0032502	developmental process ()
+195c195
+< true_positive	14737183	46236	46246	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	14737183	46236	46246	regulation	go_bpmf	GO:0065007	biological regulation ()
+199c199
+< true_positive	14737183	7489	7500	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	14737183	7489	7500	development	go_bpmf	GO:0032502	developmental process ()
+201c201
+< false_positive	14737183	8667	8680	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	14737183	8667	8680	transcription	go_bpmf	GO:0006350	transcription ()
+210c210
+< true_positive	14737183	21642	21653	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	14737183	21642	21653	development	go_bpmf	GO:0032502	developmental process ()
+228,229c228,229
+< true_positive	14737183	33930	33941	development	go_bpmf	GO:0032502	developmental process ()
+< false_positive	14737183	38159	38172	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	14737183	33930	33941	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	14737183	38159	38172	transcription	go_bpmf	GO:0006350	transcription ()
+233c233
+< false_positive	14737183	40327	40340	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	14737183	40327	40340	transcription	go_bpmf	GO:0006350	transcription ()
+238c238
+< true_positive	14737183	43813	43824	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	14737183	43813	43824	development	go_bpmf	GO:0032502	developmental process ()
+241c241
+< true_positive	14737183	44217	44228	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	14737183	44217	44228	development	go_bpmf	GO:0032502	developmental process ()
+273c273
+< true_positive	15005800	1011	1022	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15005800	1011	1022	development	go_bpmf	GO:0032502	developmental process ()
+277,278c277,278
+< true_positive	15005800	4841	4852	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15005800	5012	5023	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15005800	4841	4852	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15005800	5012	5023	development	go_bpmf	GO:0032502	developmental process ()
+280c280
+< true_positive	15005800	5165	5176	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15005800	5165	5176	development	go_bpmf	GO:0032502	developmental process ()
+295,297c295,297
+< true_positive	15005800	9980	9991	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15005800	10533	10544	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15005800	14389	14400	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15005800	9980	9991	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15005800	10533	10544	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15005800	14389	14400	development	go_bpmf	GO:0032502	developmental process ()
+313c313
+< true_positive	15005800	24022	24033	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15005800	24022	24033	development	go_bpmf	GO:0032502	developmental process ()
+316c316
+< true_positive	15005800	26128	26139	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15005800	26128	26139	development	go_bpmf	GO:0032502	developmental process ()
+318c318
+< true_positive	15005800	27905	27916	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15005800	27905	27916	development	go_bpmf	GO:0032502	developmental process ()
+334c334
+< false_positive	15005800	40331	40344	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15005800	40331	40344	transcription	go_bpmf	GO:0006350	transcription ()
+345c345
+< true_positive	15005800	47543	47548	lysis	go_bpmf	GO:0019835	cytolysis ()
+---
+> false_negative	15005800	47543	47548	lysis	go_bpmf	GO:0019835	cytolysis ()
+362,364c362,364
+< true_positive	15040800	10266	10271	lysis	go_bpmf	GO:0019835	cytolysis ()
+< false_positive	15040800	10344	10354	Proteinase	go_bpmf	GO:0008233	peptidase activity ({hydrolase, acting on peptide bonds, protease activity, peptide hydrolase activity})
+< false_positive	15040800	10344	10354	Proteinase	go_bpmf	independent_continuant	independent_continuant
+---
+> false_negative	15040800	10266	10271	lysis	go_bpmf	GO:0019835	cytolysis ()
+> false_negative	15040800	10344	10354	Proteinase	go_bpmf	GO:0008233	peptidase activity ({hydrolase, acting on peptide bonds, protease activity, peptide hydrolase activity})
+> false_negative	15040800	10344	10354	Proteinase	go_bpmf	independent_continuant	independent_continuant
+368,369c368,369
+< true_positive	15040800	17646	17651	lysis	go_bpmf	GO:0019835	cytolysis ()
+< true_positive	15040800	18258	18263	lysis	go_bpmf	GO:0019835	cytolysis ()
+---
+> false_negative	15040800	17646	17651	lysis	go_bpmf	GO:0019835	cytolysis ()
+> false_negative	15040800	18258	18263	lysis	go_bpmf	GO:0019835	cytolysis ()
+372c372
+< false_positive	15040800	26296	26304	splicing	go_bpmf	GO:0008380	RNA splicing ()
+---
+> false_negative	15040800	26296	26304	splicing	go_bpmf	GO:0008380	RNA splicing ()
+516c516
+< true_positive	15207008	25796	25807	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15207008	25796	25807	development	go_bpmf	GO:0032502	developmental process ()
+518,519c518,519
+< false_positive	15207008	1488	1501	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15207008	1747	1760	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15207008	1488	1501	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15207008	1747	1760	transcription	go_bpmf	GO:0006350	transcription ()
+521c521
+< true_positive	15207008	16944	16954	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	15207008	16944	16954	regulation	go_bpmf	GO:0065007	biological regulation ()
+525c525
+< false_positive	15207008	25929	25937	splicing	go_bpmf	GO:0008380	RNA splicing ()
+---
+> false_negative	15207008	25929	25937	splicing	go_bpmf	GO:0008380	RNA splicing ()
+530c530
+< false_positive	15207008	27815	27823	splicing	go_bpmf	GO:0008380	RNA splicing ()
+---
+> false_negative	15207008	27815	27823	splicing	go_bpmf	GO:0008380	RNA splicing ()
+536c536
+< false_positive	15207008	31047	31060	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15207008	31047	31060	transcription	go_bpmf	GO:0006350	transcription ()
+542,544c542,544
+< false_positive	15207008	33531	33544	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15207008	33726	33734	splicing	go_bpmf	GO:0008380	RNA splicing ()
+< false_positive	15207008	33897	33910	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15207008	33531	33544	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15207008	33726	33734	splicing	go_bpmf	GO:0008380	RNA splicing ()
+> false_negative	15207008	33897	33910	transcription	go_bpmf	GO:0006350	transcription ()
+546,547c546,547
+< true_positive	15207008	34468	34478	regulation	go_bpmf	GO:0065007	biological regulation ()
+< false_positive	15207008	34503	34516	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15207008	34468	34478	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	15207008	34503	34516	transcription	go_bpmf	GO:0006350	transcription ()
+555c555
+< false_positive	15207008	37308	37321	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15207008	37308	37321	transcription	go_bpmf	GO:0006350	transcription ()
+558,559c558,559
+< false_positive	15207008	39539	39552	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15207008	39897	39910	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15207008	39539	39552	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15207008	39897	39910	transcription	go_bpmf	GO:0006350	transcription ()
+561c561
+< false_positive	15207008	40247	40260	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15207008	40247	40260	transcription	go_bpmf	GO:0006350	transcription ()
+564,565c564,565
+< false_positive	15207008	41467	41480	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15207008	41556	41564	splicing	go_bpmf	GO:0008380	RNA splicing ()
+---
+> false_negative	15207008	41467	41480	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15207008	41556	41564	splicing	go_bpmf	GO:0008380	RNA splicing ()
+568c568
+< false_positive	15207008	49091	49104	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15207008	49091	49104	transcription	go_bpmf	GO:0006350	transcription ()
+574c574
+< true_positive	15314655	25995	26006	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15314655	25995	26006	development	go_bpmf	GO:0032502	developmental process ()
+587c587
+< false_positive	15314655	223	236	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15314655	223	236	transcription	go_bpmf	GO:0006350	transcription ()
+589,590c589,590
+< true_positive	15314655	629	640	development	go_bpmf	GO:0032502	developmental process ()
+< false_positive	15314655	735	748	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15314655	629	640	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15314655	735	748	transcription	go_bpmf	GO:0006350	transcription ()
+599,600c599,600
+< false_positive	15314655	3044	3057	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15314655	3581	3594	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15314655	3044	3057	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15314655	3581	3594	transcription	go_bpmf	GO:0006350	transcription ()
+603c603
+< false_positive	15314655	4625	4638	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15314655	4625	4638	transcription	go_bpmf	GO:0006350	transcription ()
+605c605
+< true_positive	15314655	5435	5446	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15314655	5435	5446	development	go_bpmf	GO:0032502	developmental process ()
+607c607
+< true_positive	15314655	6229	6240	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15314655	6229	6240	development	go_bpmf	GO:0032502	developmental process ()
+613c613
+< true_positive	15314655	7308	7319	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15314655	7308	7319	development	go_bpmf	GO:0032502	developmental process ()
+615c615
+< true_positive	15314655	7912	7923	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15314655	7912	7923	development	go_bpmf	GO:0032502	developmental process ()
+620c620
+< false_positive	15314655	12660	12673	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15314655	12660	12673	transcription	go_bpmf	GO:0006350	transcription ()
+624c624
+< true_positive	15314655	15592	15603	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15314655	15592	15603	development	go_bpmf	GO:0032502	developmental process ()
+633c633
+< false_positive	15314655	22856	22869	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15314655	22856	22869	transcription	go_bpmf	GO:0006350	transcription ()
+639c639
+< true_positive	15314655	23821	23832	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15314655	23821	23832	development	go_bpmf	GO:0032502	developmental process ()
+646c646
+< false_positive	15314655	26199	26212	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15314655	26199	26212	transcription	go_bpmf	GO:0006350	transcription ()
+648c648
+< false_positive	15314655	26766	26779	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15314655	26766	26779	transcription	go_bpmf	GO:0006350	transcription ()
+650c650
+< false_positive	15314655	27474	27487	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15314655	27474	27487	transcription	go_bpmf	GO:0006350	transcription ()
+655,656c655,656
+< true_positive	15314655	31381	31392	Development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15314655	31759	31770	Development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15314655	31381	31392	Development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15314655	31759	31770	Development	go_bpmf	GO:0032502	developmental process ()
+660,662c660,662
+< true_positive	15314655	34066	34077	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15314655	36816	36827	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15314655	37999	38010	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15314655	34066	34077	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15314655	36816	36827	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15314655	37999	38010	development	go_bpmf	GO:0032502	developmental process ()
+670c670
+< false_positive	15320950	4029	4040	development	go_bpmf	GO:0000003	reproduction (reproductive physiological process)
+---
+> false_negative	15320950	4029	4040	development	go_bpmf	GO:0000003	reproduction (reproductive physiological process)
+694c694
+< true_positive	15328533	0	10	Regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	15328533	0	10	Regulation	go_bpmf	GO:0065007	biological regulation ()
+696c696
+< false_positive	15328533	261	274	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15328533	261	274	transcription	go_bpmf	GO:0006350	transcription ()
+699c699
+< false_positive	15328533	3782	3795	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15328533	3782	3795	transcription	go_bpmf	GO:0006350	transcription ()
+701c701
+< false_positive	15328533	13677	13690	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15328533	13677	13690	transcription	go_bpmf	GO:0006350	transcription ()
+708c708
+< true_positive	15328533	25730	25740	Regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	15328533	25730	25740	Regulation	go_bpmf	GO:0065007	biological regulation ()
+716c716
+< true_positive	15345036	41911	41922	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15345036	41911	41922	development	go_bpmf	GO:0032502	developmental process ()
+740,753c740,753
+< true_positive	15345036	191	202	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15345036	2146	2157	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15345036	10951	10962	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15345036	11040	11051	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15345036	14243	14254	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15345036	15463	15474	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15345036	21748	21759	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15345036	24002	24013	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15345036	24543	24554	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15345036	24798	24809	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15345036	29790	29801	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15345036	40411	40422	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15345036	49038	49049	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15345036	50199	50210	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15345036	191	202	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15345036	2146	2157	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15345036	10951	10962	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15345036	11040	11051	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15345036	14243	14254	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15345036	15463	15474	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15345036	21748	21759	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15345036	24002	24013	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15345036	24543	24554	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15345036	24798	24809	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15345036	29790	29801	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15345036	40411	40422	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15345036	49038	49049	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15345036	50199	50210	development	go_bpmf	GO:0032502	developmental process ()
+773,775c773,775
+< true_positive	15345036	23973	23985	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+< true_positive	15345036	41574	41586	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+< true_positive	15345036	60615	60627	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+---
+> false_negative	15345036	23973	23985	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+> false_negative	15345036	41574	41586	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+> false_negative	15345036	60615	60627	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+784c784
+< true_positive	15345036	41481	41492	homeostasis	go_bpmf	GO:0042592	homeostatic process ()
+---
+> false_negative	15345036	41481	41492	homeostasis	go_bpmf	GO:0042592	homeostatic process ()
+786c786
+< true_positive	15345036	53892	53897	lysis	go_bpmf	GO:0019835	cytolysis ()
+---
+> false_negative	15345036	53892	53897	lysis	go_bpmf	GO:0019835	cytolysis ()
+875c875
+< false_positive	15345036	43450	43463	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15345036	43450	43463	transcription	go_bpmf	GO:0006350	transcription ()
+889,891c889,891
+< true_positive	15492776	1764	1775	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15492776	5016	5027	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15492776	1305	1316	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15492776	1764	1775	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15492776	5016	5027	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15492776	1305	1316	development	go_bpmf	GO:0032502	developmental process ()
+899,911c899,911
+< true_positive	15492776	1059	1070	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15492776	5813	5824	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15492776	8340	8351	Development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15492776	9771	9782	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15492776	10133	10144	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15492776	10324	10335	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15492776	10521	10532	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15492776	13368	13379	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15492776	13923	13934	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15492776	26316	26327	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15492776	33817	33828	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15492776	40228	40239	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15492776	40761	40772	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15492776	1059	1070	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15492776	5813	5824	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15492776	8340	8351	Development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15492776	9771	9782	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15492776	10133	10144	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15492776	10324	10335	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15492776	10521	10532	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15492776	13368	13379	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15492776	13923	13934	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15492776	26316	26327	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15492776	33817	33828	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15492776	40228	40239	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15492776	40761	40772	development	go_bpmf	GO:0032502	developmental process ()
+916,917c916,917
+< true_positive	15492776	11513	11524	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15492776	26195	26207	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+---
+> false_negative	15492776	11513	11524	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15492776	26195	26207	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+919c919
+< false_positive	15492776	49189	49199	proteinase	go_bpmf	independent_continuant	independent_continuant
+---
+> false_negative	15492776	49189	49199	proteinase	go_bpmf	independent_continuant	independent_continuant
+924c924
+< false_positive	15492776	49189	49199	proteinase	go_bpmf	GO:0008233	peptidase activity ({hydrolase, acting on peptide bonds, protease activity, peptide hydrolase activity})
+---
+> false_negative	15492776	49189	49199	proteinase	go_bpmf	GO:0008233	peptidase activity ({hydrolase, acting on peptide bonds, protease activity, peptide hydrolase activity})
+926c926
+< true_positive	15492776	8452	8463	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15492776	8452	8463	development	go_bpmf	GO:0032502	developmental process ()
+956c956
+< false_positive	15492776	5392	5405	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15492776	5392	5405	transcription	go_bpmf	GO:0006350	transcription ()
+971c971
+< false_positive	15492776	21432	21445	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15492776	21432	21445	transcription	go_bpmf	GO:0006350	transcription ()
+983,985c983,985
+< false_positive	15492776	34751	34764	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15492776	35182	35195	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15492776	35297	35310	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15492776	34751	34764	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15492776	35182	35195	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15492776	35297	35310	transcription	go_bpmf	GO:0006350	transcription ()
+999c999
+< true_positive	15550985	7205	7216	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15550985	7205	7216	development	go_bpmf	GO:0032502	developmental process ()
+1001,1005c1001,1005
+< true_positive	15550985	17536	17547	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15550985	21854	21865	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15550985	995	1006	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15550985	2179	2190	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15550985	1641	1652	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15550985	17536	17547	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15550985	21854	21865	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15550985	995	1006	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15550985	2179	2190	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15550985	1641	1652	development	go_bpmf	GO:0032502	developmental process ()
+1017c1017
+< false_positive	15550985	1186	1199	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15550985	1186	1199	transcription	go_bpmf	GO:0006350	transcription ()
+1028,1029c1028,1029
+< false_positive	15550985	19604	19617	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15550985	18794	18807	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15550985	19604	19617	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15550985	18794	18807	transcription	go_bpmf	GO:0006350	transcription ()
+1072c1072
+< true_positive	15588329	25503	25520	Neurotransmission	go_bpmf	GO:0007268	synaptic transmission ()
+---
+> false_negative	15588329	25503	25520	Neurotransmission	go_bpmf	GO:0007268	synaptic transmission ()
+1084,1092c1084,1092
+< true_positive	15630473	1430	1441	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15630473	2860	2871	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15630473	3608	3619	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15630473	9737	9748	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15630473	11380	11391	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15630473	23951	23962	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15630473	33700	33711	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15630473	35175	35186	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15630473	42255	42266	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15630473	1430	1441	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15630473	2860	2871	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15630473	3608	3619	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15630473	9737	9748	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15630473	11380	11391	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15630473	23951	23962	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15630473	33700	33711	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15630473	35175	35186	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15630473	42255	42266	development	go_bpmf	GO:0032502	developmental process ()
+1101,1105c1101,1105
+< true_positive	15630473	52909	52920	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15630473	53761	53772	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15630473	53854	53865	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15630473	66387	66398	development	go_bpmf	GO:0032502	developmental process ()
+< false_positive	15630473	59007	59020	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15630473	52909	52920	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15630473	53761	53772	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15630473	53854	53865	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15630473	66387	66398	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15630473	59007	59020	transcription	go_bpmf	GO:0006350	transcription ()
+1111c1111
+< false_positive	15630473	26814	26827	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15630473	26814	26827	transcription	go_bpmf	GO:0006350	transcription ()
+1119,1120c1119,1120
+< true_positive	15630473	44972	44977	lysis	go_bpmf	GO:0019835	cytolysis ()
+< true_positive	15630473	45996	46001	lysis	go_bpmf	GO:0019835	cytolysis ()
+---
+> false_negative	15630473	44972	44977	lysis	go_bpmf	GO:0019835	cytolysis ()
+> false_negative	15630473	45996	46001	lysis	go_bpmf	GO:0019835	cytolysis ()
+1129c1129
+< true_positive	15630473	40214	40224	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	15630473	40214	40224	regulation	go_bpmf	GO:0065007	biological regulation ()
+1131c1131
+< true_positive	15630473	37190	37201	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15630473	37190	37201	development	go_bpmf	GO:0032502	developmental process ()
+1133,1134c1133,1134
+< true_positive	15630473	9894	9905	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15630473	25184	25195	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15630473	9894	9905	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15630473	25184	25195	development	go_bpmf	GO:0032502	developmental process ()
+1153c1153
+< false_positive	15630473	598	611	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15630473	598	611	transcription	go_bpmf	GO:0006350	transcription ()
+1161c1161
+< false_positive	15630473	4470	4483	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15630473	4470	4483	transcription	go_bpmf	GO:0006350	transcription ()
+1180c1180
+< false_positive	15630473	20534	20547	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15630473	20534	20547	transcription	go_bpmf	GO:0006350	transcription ()
+1189c1189
+< false_positive	15630473	27735	27748	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15630473	27735	27748	transcription	go_bpmf	GO:0006350	transcription ()
+1192,1193c1192,1193
+< false_positive	15630473	31347	31360	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15630473	31391	31404	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15630473	31347	31360	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15630473	31391	31404	transcription	go_bpmf	GO:0006350	transcription ()
+1199,1200c1199,1200
+< false_positive	15630473	32981	32994	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15630473	33896	33909	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15630473	32981	32994	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15630473	33896	33909	transcription	go_bpmf	GO:0006350	transcription ()
+1212c1212
+< false_positive	15630473	38419	38432	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15630473	38419	38432	transcription	go_bpmf	GO:0006350	transcription ()
+1224c1224
+< false_positive	15676071	25872	25883	development	go_bpmf	GO:0022607	cellular component assembly (cell structure assembly)
+---
+> false_negative	15676071	25872	25883	development	go_bpmf	GO:0022607	cellular component assembly (cell structure assembly)
+1228c1228
+< false_positive	15676071	10918	10925	budding	go_bpmf	GO:0006900	membrane budding ({vesicle biosynthesis, membrane evagination, vesicle formation})
+---
+> false_negative	15676071	10918	10925	budding	go_bpmf	GO:0006900	membrane budding ({vesicle biosynthesis, membrane evagination, vesicle formation})
+1230c1230
+< true_positive	15676071	23006	23016	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	15676071	23006	23016	regulation	go_bpmf	GO:0065007	biological regulation ()
+1232c1232
+< true_positive	15676071	7407	7412	lysis	go_bpmf	GO:0019835	cytolysis ()
+---
+> false_negative	15676071	7407	7412	lysis	go_bpmf	GO:0019835	cytolysis ()
+1250,1252c1250,1252
+< true_positive	15676071	2088	2099	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15676071	22418	22429	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15676071	22765	22776	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15676071	2088	2099	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15676071	22418	22429	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15676071	22765	22776	development	go_bpmf	GO:0032502	developmental process ()
+1256c1256
+< false_positive	15676071	12664	12675	development	go_bpmf	GO:0022607	cellular component assembly (cell structure assembly)
+---
+> false_negative	15676071	12664	12675	development	go_bpmf	GO:0022607	cellular component assembly (cell structure assembly)
+1261c1261
+< false_positive	15676071	478	491	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15676071	478	491	transcription	go_bpmf	GO:0006350	transcription ()
+1268c1268
+< false_positive	15676071	21096	21109	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15676071	21096	21109	transcription	go_bpmf	GO:0006350	transcription ()
+1279c1279
+< false_positive	15676071	30136	30149	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15676071	30136	30149	transcription	go_bpmf	GO:0006350	transcription ()
+1331,1334c1331,1334
+< false_positive	15760270	30725	30738	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15760270	66717	66730	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15760270	3977	3990	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15760270	4085	4098	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15760270	30725	30738	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15760270	66717	66730	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15760270	3977	3990	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15760270	4085	4098	transcription	go_bpmf	GO:0006350	transcription ()
+1348c1348
+< false_positive	15760270	2744	2757	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15760270	2744	2757	transcription	go_bpmf	GO:0006350	transcription ()
+1352c1352
+< false_positive	15760270	21531	21544	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15760270	21531	21544	transcription	go_bpmf	GO:0006350	transcription ()
+1355c1355
+< false_positive	15760270	3661	3674	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15760270	3661	3674	transcription	go_bpmf	GO:0006350	transcription ()
+1360c1360
+< true_positive	15760270	5423	5434	homeostasis	go_bpmf	GO:0042592	homeostatic process ()
+---
+> false_negative	15760270	5423	5434	homeostasis	go_bpmf	GO:0042592	homeostatic process ()
+1362c1362
+< true_positive	15819996	27678	27688	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	15819996	27678	27688	regulation	go_bpmf	GO:0065007	biological regulation ()
+1366,1367c1366,1367
+< false_positive	15819996	26038	26047	ionophore	go_bpmf	GO:0022886	channel-forming ionophore activity ()
+< false_positive	15819996	26038	26047	ionophore	go_bpmf	independent_continuant	independent_continuant
+---
+> false_negative	15819996	26038	26047	ionophore	go_bpmf	GO:0022886	channel-forming ionophore activity ()
+> false_negative	15819996	26038	26047	ionophore	go_bpmf	independent_continuant	independent_continuant
+1377,1382c1377,1382
+< true_positive	15819996	6331	6342	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15819996	7137	7148	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15819996	9075	9086	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15819996	22458	22469	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15819996	27036	27047	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	15819996	38737	38748	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15819996	6331	6342	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15819996	7137	7148	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15819996	9075	9086	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15819996	22458	22469	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15819996	27036	27047	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	15819996	38737	38748	development	go_bpmf	GO:0032502	developmental process ()
+1436c1436
+< true_positive	15836427	19288	19298	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	15836427	19288	19298	regulation	go_bpmf	GO:0065007	biological regulation ()
+1439c1439
+< true_positive	15836427	36204	36209	lysis	go_bpmf	GO:0019835	cytolysis ()
+---
+> false_negative	15836427	36204	36209	lysis	go_bpmf	GO:0019835	cytolysis ()
+1442,1447c1442,1447
+< true_positive	15836427	36248	36259	phosphatase	go_bpmf	GO:0016791	phosphoric monoester hydrolase activity (phosphatase activity)
+< false_positive	15836427	36248	36259	phosphatase	go_bpmf	independent_continuant	independent_continuant
+< false_positive	15836427	51152	51165	Transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15836427	51280	51293	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15836427	52134	52147	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15836427	52547	52560	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15836427	36248	36259	phosphatase	go_bpmf	GO:0016791	phosphoric monoester hydrolase activity (phosphatase activity)
+> false_negative	15836427	36248	36259	phosphatase	go_bpmf	independent_continuant	independent_continuant
+> false_negative	15836427	51152	51165	Transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15836427	51280	51293	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15836427	52134	52147	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15836427	52547	52560	transcription	go_bpmf	GO:0006350	transcription ()
+1449c1449
+< true_positive	15836427	2239	2250	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15836427	2239	2250	development	go_bpmf	GO:0032502	developmental process ()
+1451,1452c1451,1452
+< false_positive	15836427	61	74	Transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15836427	111	124	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15836427	61	74	Transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15836427	111	124	transcription	go_bpmf	GO:0006350	transcription ()
+1454c1454
+< false_positive	15836427	879	892	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15836427	879	892	transcription	go_bpmf	GO:0006350	transcription ()
+1456c1456
+< false_positive	15836427	1328	1341	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15836427	1328	1341	transcription	go_bpmf	GO:0006350	transcription ()
+1460,1462c1460,1462
+< false_positive	15836427	3161	3174	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15836427	4015	4028	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15836427	4427	4440	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15836427	3161	3174	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15836427	4015	4028	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15836427	4427	4440	transcription	go_bpmf	GO:0006350	transcription ()
+1465,1468c1465,1468
+< false_positive	15836427	5163	5176	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15836427	6094	6107	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15836427	6250	6263	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15836427	6460	6473	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15836427	5163	5176	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15836427	6094	6107	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15836427	6250	6263	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15836427	6460	6473	transcription	go_bpmf	GO:0006350	transcription ()
+1471,1472c1471,1472
+< false_positive	15836427	10198	10211	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15836427	14100	14113	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15836427	10198	10211	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15836427	14100	14113	transcription	go_bpmf	GO:0006350	transcription ()
+1480,1482c1480,1482
+< false_positive	15836427	23189	23202	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15836427	23325	23338	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15836427	23543	23556	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15836427	23189	23202	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15836427	23325	23338	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15836427	23543	23556	transcription	go_bpmf	GO:0006350	transcription ()
+1484,1498c1484,1498
+< false_positive	15836427	23769	23782	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15836427	25627	25640	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15836427	26157	26170	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15836427	26934	26947	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15836427	27136	27149	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15836427	27252	27265	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15836427	27388	27401	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15836427	27767	27780	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15836427	28248	28261	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15836427	28378	28391	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15836427	28546	28559	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15836427	28889	28902	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15836427	29036	29049	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15836427	29197	29210	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	15836427	29457	29470	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	15836427	23769	23782	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15836427	25627	25640	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15836427	26157	26170	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15836427	26934	26947	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15836427	27136	27149	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15836427	27252	27265	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15836427	27388	27401	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15836427	27767	27780	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15836427	28248	28261	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15836427	28378	28391	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15836427	28546	28559	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15836427	28889	28902	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15836427	29036	29049	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15836427	29197	29210	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	15836427	29457	29470	transcription	go_bpmf	GO:0006350	transcription ()
+1505,1506c1505,1506
+< false_positive	15876356	2571	2581	proteinase	go_bpmf	GO:0008233	peptidase activity ({hydrolase, acting on peptide bonds, protease activity, peptide hydrolase activity})
+< false_positive	15876356	2571	2581	proteinase	go_bpmf	independent_continuant	independent_continuant
+---
+> false_negative	15876356	2571	2581	proteinase	go_bpmf	GO:0008233	peptidase activity ({hydrolase, acting on peptide bonds, protease activity, peptide hydrolase activity})
+> false_negative	15876356	2571	2581	proteinase	go_bpmf	independent_continuant	independent_continuant
+1511,1512c1511,1512
+< false_positive	15876356	8975	8983	splicing	go_bpmf	GO:0008380	RNA splicing ()
+< false_positive	15876356	21183	21191	splicing	go_bpmf	GO:0008380	RNA splicing ()
+---
+> false_negative	15876356	8975	8983	splicing	go_bpmf	GO:0008380	RNA splicing ()
+> false_negative	15876356	21183	21191	splicing	go_bpmf	GO:0008380	RNA splicing ()
+1525,1526c1525,1526
+< false_positive	15917436	8173	8183	proteinase	go_bpmf	GO:0008233	peptidase activity ({hydrolase, acting on peptide bonds, protease activity, peptide hydrolase activity})
+< false_positive	15917436	9472	9482	proteinase	go_bpmf	GO:0008233	peptidase activity ({hydrolase, acting on peptide bonds, protease activity, peptide hydrolase activity})
+---
+> false_negative	15917436	8173	8183	proteinase	go_bpmf	GO:0008233	peptidase activity ({hydrolase, acting on peptide bonds, protease activity, peptide hydrolase activity})
+> false_negative	15917436	9472	9482	proteinase	go_bpmf	GO:0008233	peptidase activity ({hydrolase, acting on peptide bonds, protease activity, peptide hydrolase activity})
+1529,1530c1529,1530
+< false_positive	15917436	8173	8183	proteinase	go_bpmf	independent_continuant	independent_continuant
+< false_positive	15917436	9472	9482	proteinase	go_bpmf	independent_continuant	independent_continuant
+---
+> false_negative	15917436	8173	8183	proteinase	go_bpmf	independent_continuant	independent_continuant
+> false_negative	15917436	9472	9482	proteinase	go_bpmf	independent_continuant	independent_continuant
+1539c1539
+< true_positive	15917436	19390	19397	budding	go_bpmf	GO:0007114	cell budding ()
+---
+> false_negative	15917436	19390	19397	budding	go_bpmf	GO:0007114	cell budding ()
+1543c1543
+< true_positive	15917436	33851	33861	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	15917436	33851	33861	regulation	go_bpmf	GO:0065007	biological regulation ()
+1546c1546
+< true_positive	15917436	33921	33932	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	15917436	33921	33932	development	go_bpmf	GO:0032502	developmental process ()
+1571,1581c1571,1581
+< true_positive	15921521	720	732	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+< true_positive	15921521	1206	1218	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+< true_positive	15921521	3636	3648	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+< true_positive	15921521	3894	3906	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+< true_positive	15921521	4722	4734	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+< true_positive	15921521	7858	7870	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+< true_positive	15921521	7068	7080	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+< true_positive	15921521	19535	19547	Inflammation	go_bpmf	GO:0006954	inflammatory response ()
+< true_positive	15921521	19645	19657	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+< true_positive	15921521	19702	19714	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+< true_positive	15921521	23099	23111	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+---
+> false_negative	15921521	720	732	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+> false_negative	15921521	1206	1218	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+> false_negative	15921521	3636	3648	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+> false_negative	15921521	3894	3906	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+> false_negative	15921521	4722	4734	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+> false_negative	15921521	7858	7870	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+> false_negative	15921521	7068	7080	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+> false_negative	15921521	19535	19547	Inflammation	go_bpmf	GO:0006954	inflammatory response ()
+> false_negative	15921521	19645	19657	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+> false_negative	15921521	19702	19714	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+> false_negative	15921521	23099	23111	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+1669,1670c1669,1670
+< true_positive	15938754	4721	4738	phosphodiesterase	go_bpmf	GO:0008081	phosphoric diester hydrolase activity ()
+< false_positive	15938754	4721	4738	phosphodiesterase	go_bpmf	independent_continuant	independent_continuant
+---
+> false_negative	15938754	4721	4738	phosphodiesterase	go_bpmf	GO:0008081	phosphoric diester hydrolase activity ()
+> false_negative	15938754	4721	4738	phosphodiesterase	go_bpmf	independent_continuant	independent_continuant
+1682,1683c1682,1683
+< false_positive	16098226	4549	4562	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16098226	4772	4785	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16098226	4549	4562	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16098226	4772	4785	transcription	go_bpmf	GO:0006350	transcription ()
+1692c1692
+< false_positive	16098226	20983	20996	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16098226	20983	20996	transcription	go_bpmf	GO:0006350	transcription ()
+1701,1702c1701,1702
+< true_positive	16103912	30764	30775	Development	go_bpmf	GO:0032502	developmental process ()
+< false_positive	16103912	11383	11391	splicing	go_bpmf	GO:0008380	RNA splicing ()
+---
+> false_negative	16103912	30764	30775	Development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16103912	11383	11391	splicing	go_bpmf	GO:0008380	RNA splicing ()
+1704c1704
+< false_positive	16103912	32200	32213	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16103912	32200	32213	transcription	go_bpmf	GO:0006350	transcription ()
+1706,1710c1706,1710
+< true_positive	16103912	2248	2259	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16103912	5330	5341	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16103912	13332	13343	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16103912	12389	12400	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16103912	13426	13437	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	16103912	2248	2259	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16103912	5330	5341	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16103912	13332	13343	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16103912	12389	12400	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16103912	13426	13437	development	go_bpmf	GO:0032502	developmental process ()
+1713,1715c1713,1715
+< true_positive	16103912	31457	31468	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16103912	32746	32757	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16103912	478	489	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	16103912	31457	31468	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16103912	32746	32757	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16103912	478	489	development	go_bpmf	GO:0032502	developmental process ()
+1721c1721
+< false_positive	16103912	15522	15535	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16103912	15522	15535	transcription	go_bpmf	GO:0006350	transcription ()
+1723c1723
+< false_positive	16103912	22429	22442	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16103912	22429	22442	transcription	go_bpmf	GO:0006350	transcription ()
+1726c1726
+< false_positive	16103912	22740	22753	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16103912	22740	22753	transcription	go_bpmf	GO:0006350	transcription ()
+1729c1729
+< false_positive	16103912	29084	29097	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16103912	29084	29097	transcription	go_bpmf	GO:0006350	transcription ()
+1732,1733c1732,1733
+< true_positive	16109169	18660	18671	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16109169	26979	26990	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	16109169	18660	18671	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16109169	26979	26990	development	go_bpmf	GO:0032502	developmental process ()
+1736,1745c1736,1745
+< true_positive	16109169	1006	1017	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16109169	1924	1935	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16109169	4416	4427	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16109169	13156	13167	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16109169	18477	18488	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16109169	25833	25844	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16109169	27839	27850	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16109169	28969	28980	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16109169	29659	29670	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16109169	29874	29885	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	16109169	1006	1017	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16109169	1924	1935	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16109169	4416	4427	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16109169	13156	13167	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16109169	18477	18488	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16109169	25833	25844	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16109169	27839	27850	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16109169	28969	28980	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16109169	29659	29670	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16109169	29874	29885	development	go_bpmf	GO:0032502	developmental process ()
+1747,1748c1747,1748
+< true_positive	16109169	9741	9751	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16109169	18092	18102	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	16109169	9741	9751	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16109169	18092	18102	regulation	go_bpmf	GO:0065007	biological regulation ()
+1750,1751c1750,1751
+< true_positive	16109169	31199	31209	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16109169	31373	31383	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	16109169	31199	31209	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16109169	31373	31383	regulation	go_bpmf	GO:0065007	biological regulation ()
+1784c1784
+< false_positive	16109169	1706	1719	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16109169	1706	1719	transcription	go_bpmf	GO:0006350	transcription ()
+1787c1787
+< false_positive	16109169	3351	3364	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16109169	3351	3364	transcription	go_bpmf	GO:0006350	transcription ()
+1793,1794c1793,1794
+< false_positive	16109169	5624	5637	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16109169	5701	5714	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16109169	5624	5637	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16109169	5701	5714	transcription	go_bpmf	GO:0006350	transcription ()
+1796c1796
+< false_positive	16109169	6172	6185	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16109169	6172	6185	transcription	go_bpmf	GO:0006350	transcription ()
+1805,1806c1805,1806
+< false_positive	16109169	18255	18268	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16109169	18715	18728	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16109169	18255	18268	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16109169	18715	18728	transcription	go_bpmf	GO:0006350	transcription ()
+1808c1808
+< false_positive	16109169	19363	19376	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16109169	19363	19376	transcription	go_bpmf	GO:0006350	transcription ()
+1817c1817
+< false_positive	16109169	31046	31059	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16109169	31046	31059	transcription	go_bpmf	GO:0006350	transcription ()
+1819c1819
+< false_positive	16109169	31708	31721	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16109169	31708	31721	transcription	go_bpmf	GO:0006350	transcription ()
+1824c1824
+< true_positive	16110338	7064	7081	phosphodiesterase	go_bpmf	GO:0008081	phosphoric diester hydrolase activity ()
+---
+> false_negative	16110338	7064	7081	phosphodiesterase	go_bpmf	GO:0008081	phosphoric diester hydrolase activity ()
+1834,1835c1834,1835
+< true_positive	16110338	30450	30461	development	go_bpmf	GO:0032502	developmental process ()
+< false_positive	16110338	7064	7081	phosphodiesterase	go_bpmf	independent_continuant	independent_continuant
+---
+> false_negative	16110338	30450	30461	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16110338	7064	7081	phosphodiesterase	go_bpmf	independent_continuant	independent_continuant
+1839,1841c1839,1841
+< false_positive	16110338	68708	68721	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16110338	68948	68961	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16110338	68625	68638	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16110338	68708	68721	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16110338	68948	68961	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16110338	68625	68638	transcription	go_bpmf	GO:0006350	transcription ()
+1846c1846
+< false_positive	16110338	63768	63781	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16110338	63768	63781	transcription	go_bpmf	GO:0006350	transcription ()
+1848,1849c1848,1849
+< true_positive	16110338	31146	31156	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16110338	31610	31620	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	16110338	31146	31156	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16110338	31610	31620	regulation	go_bpmf	GO:0065007	biological regulation ()
+1851,1852c1851,1852
+< false_positive	16110338	618	631	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16110338	3423	3436	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16110338	618	631	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16110338	3423	3436	transcription	go_bpmf	GO:0006350	transcription ()
+1867c1867
+< false_positive	16110338	19123	19136	Transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16110338	19123	19136	Transcription	go_bpmf	GO:0006350	transcription ()
+1869,1871c1869,1871
+< false_positive	16110338	19219	19232	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16110338	19426	19439	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16110338	19671	19684	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16110338	19219	19232	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16110338	19426	19439	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16110338	19671	19684	transcription	go_bpmf	GO:0006350	transcription ()
+1873c1873
+< false_positive	16110338	20433	20446	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16110338	20433	20446	transcription	go_bpmf	GO:0006350	transcription ()
+1876c1876
+< false_positive	16110338	25262	25275	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16110338	25262	25275	transcription	go_bpmf	GO:0006350	transcription ()
+1878c1878
+< false_positive	16110338	26864	26877	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16110338	26864	26877	transcription	go_bpmf	GO:0006350	transcription ()
+1883,1889c1883,1889
+< false_positive	16110338	31351	31364	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16110338	31404	31417	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16110338	31554	31567	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16110338	31710	31723	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16110338	31791	31804	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16110338	31852	31865	transcription	go_bpmf	GO:0006350	transcription ()
+< true_positive	16110338	33964	33974	glycolysis	go_bpmf	GO:0006096	glycolysis ()
+---
+> false_negative	16110338	31351	31364	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16110338	31404	31417	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16110338	31554	31567	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16110338	31710	31723	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16110338	31791	31804	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16110338	31852	31865	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16110338	33964	33974	glycolysis	go_bpmf	GO:0006096	glycolysis ()
+1891c1891
+< false_positive	16110338	35948	35961	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16110338	35948	35961	transcription	go_bpmf	GO:0006350	transcription ()
+1897c1897
+< true_positive	16121255	25671	25680	retention	go_bpmf	GO:0051235	maintenance of localization ()
+---
+> false_negative	16121255	25671	25680	retention	go_bpmf	GO:0051235	maintenance of localization ()
+1945,1946c1945,1946
+< false_positive	16216087	3453	3470	neurotransmission	go_bpmf	GO:0019226	transmission of nerve impulse ()
+< false_positive	16216087	7728	7745	neurotransmission	go_bpmf	GO:0019226	transmission of nerve impulse ()
+---
+> false_negative	16216087	3453	3470	neurotransmission	go_bpmf	GO:0019226	transmission of nerve impulse ()
+> false_negative	16216087	7728	7745	neurotransmission	go_bpmf	GO:0019226	transmission of nerve impulse ()
+1948c1948
+< false_positive	16216087	8196	8204	splicing	go_bpmf	GO:0008380	RNA splicing ()
+---
+> false_negative	16216087	8196	8204	splicing	go_bpmf	GO:0008380	RNA splicing ()
+2126,2128c2126,2128
+< false_positive	16221973	46518	46531	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16221973	46597	46610	transcription	go_bpmf	GO:0006350	transcription ()
+< true_positive	16221973	3460	3471	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	16221973	46518	46531	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16221973	46597	46610	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16221973	3460	3471	development	go_bpmf	GO:0032502	developmental process ()
+2139,2142c2139,2142
+< false_positive	16221973	41112	41125	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16221973	42288	42301	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16221973	43486	43499	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16221973	44646	44659	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16221973	41112	41125	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16221973	42288	42301	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16221973	43486	43499	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16221973	44646	44659	transcription	go_bpmf	GO:0006350	transcription ()
+2144,2146c2144,2146
+< false_positive	16221973	41633	41646	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16221973	33991	34004	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16221973	124	137	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16221973	41633	41646	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16221973	33991	34004	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16221973	124	137	transcription	go_bpmf	GO:0006350	transcription ()
+2149,2151c2149,2151
+< false_positive	16221973	633	646	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16221973	1501	1514	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16221973	2503	2516	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16221973	633	646	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16221973	1501	1514	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16221973	2503	2516	transcription	go_bpmf	GO:0006350	transcription ()
+2155c2155
+< false_positive	16221973	8325	8338	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16221973	8325	8338	transcription	go_bpmf	GO:0006350	transcription ()
+2161,2162c2161,2162
+< false_positive	16221973	18437	18450	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16221973	19747	19760	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16221973	18437	18450	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16221973	19747	19760	transcription	go_bpmf	GO:0006350	transcription ()
+2165,2167c2165,2167
+< false_positive	16221973	20723	20736	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16221973	21048	21061	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16221973	21159	21172	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16221973	20723	20736	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16221973	21048	21061	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16221973	21159	21172	transcription	go_bpmf	GO:0006350	transcription ()
+2170,2171c2170,2171
+< false_positive	16221973	22456	22469	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16221973	23859	23872	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16221973	22456	22469	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16221973	23859	23872	transcription	go_bpmf	GO:0006350	transcription ()
+2174,2175c2174,2175
+< false_positive	16221973	25075	25088	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16221973	25653	25666	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16221973	25075	25088	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16221973	25653	25666	transcription	go_bpmf	GO:0006350	transcription ()
+2182c2182
+< false_positive	16221973	30045	30058	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16221973	30045	30058	transcription	go_bpmf	GO:0006350	transcription ()
+2185,2186c2185,2186
+< false_positive	16221973	30468	30481	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16221973	30541	30554	Transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16221973	30468	30481	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16221973	30541	30554	Transcription	go_bpmf	GO:0006350	transcription ()
+2189,2190c2189,2190
+< false_positive	16221973	31406	31419	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16221973	32450	32463	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16221973	31406	31419	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16221973	32450	32463	transcription	go_bpmf	GO:0006350	transcription ()
+2193c2193
+< false_positive	16221973	33787	33800	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16221973	33787	33800	transcription	go_bpmf	GO:0006350	transcription ()
+2195c2195
+< false_positive	16221973	33952	33965	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16221973	33952	33965	transcription	go_bpmf	GO:0006350	transcription ()
+2197c2197
+< false_positive	16221973	34682	34695	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16221973	34682	34695	transcription	go_bpmf	GO:0006350	transcription ()
+2199c2199
+< false_positive	16221973	35927	35940	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16221973	35927	35940	transcription	go_bpmf	GO:0006350	transcription ()
+2203,2204c2203,2204
+< false_positive	16255782	26374	26387	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16255782	27081	27094	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16255782	26374	26387	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16255782	27081	27094	transcription	go_bpmf	GO:0006350	transcription ()
+2206c2206
+< false_positive	16255782	27538	27551	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16255782	27538	27551	transcription	go_bpmf	GO:0006350	transcription ()
+2210,2222c2210,2222
+< false_positive	16255782	24237	24250	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16255782	24373	24386	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16255782	26932	26945	transcription	go_bpmf	GO:0006350	transcription ()
+< true_positive	16255782	2391	2401	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16255782	4409	4419	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16255782	4543	4553	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16255782	13598	13608	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16255782	13729	13739	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16255782	17062	17072	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16255782	17255	17265	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16255782	21158	21168	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16255782	21398	21408	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16255782	22633	22643	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	16255782	24237	24250	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16255782	24373	24386	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16255782	26932	26945	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16255782	2391	2401	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16255782	4409	4419	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16255782	4543	4553	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16255782	13598	13608	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16255782	13729	13739	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16255782	17062	17072	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16255782	17255	17265	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16255782	21158	21168	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16255782	21398	21408	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16255782	22633	22643	regulation	go_bpmf	GO:0065007	biological regulation ()
+2224c2224
+< false_positive	16255782	6	19	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16255782	6	19	transcription	go_bpmf	GO:0006350	transcription ()
+2228,2231c2228,2231
+< false_positive	16255782	824	837	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16255782	936	949	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16255782	1043	1056	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16255782	1219	1232	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16255782	824	837	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16255782	936	949	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16255782	1043	1056	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16255782	1219	1232	transcription	go_bpmf	GO:0006350	transcription ()
+2233c2233
+< false_positive	16255782	1425	1438	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16255782	1425	1438	transcription	go_bpmf	GO:0006350	transcription ()
+2235,2237c2235,2237
+< false_positive	16255782	1818	1831	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16255782	2150	2163	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16255782	2208	2221	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16255782	1818	1831	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16255782	2150	2163	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16255782	2208	2221	transcription	go_bpmf	GO:0006350	transcription ()
+2243c2243
+< false_positive	16255782	4223	4236	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16255782	4223	4236	transcription	go_bpmf	GO:0006350	transcription ()
+2245,2246c2245,2246
+< false_positive	16255782	4475	4488	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16255782	4641	4654	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16255782	4475	4488	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16255782	4641	4654	transcription	go_bpmf	GO:0006350	transcription ()
+2248c2248
+< false_positive	16255782	8536	8549	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16255782	8536	8549	transcription	go_bpmf	GO:0006350	transcription ()
+2250c2250
+< false_positive	16255782	8718	8731	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16255782	8718	8731	transcription	go_bpmf	GO:0006350	transcription ()
+2252c2252
+< false_positive	16255782	9126	9139	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16255782	9126	9139	transcription	go_bpmf	GO:0006350	transcription ()
+2254,2259c2254,2259
+< false_positive	16255782	9559	9572	Transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16255782	9842	9855	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16255782	10049	10062	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16255782	10173	10186	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16255782	10399	10412	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16255782	10504	10517	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16255782	9559	9572	Transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16255782	9842	9855	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16255782	10049	10062	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16255782	10173	10186	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16255782	10399	10412	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16255782	10504	10517	transcription	go_bpmf	GO:0006350	transcription ()
+2263,2264c2263,2264
+< false_positive	16255782	11882	11895	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16255782	13130	13143	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16255782	11882	11895	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16255782	13130	13143	transcription	go_bpmf	GO:0006350	transcription ()
+2267c2267
+< false_positive	16255782	13664	13677	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16255782	13664	13677	transcription	go_bpmf	GO:0006350	transcription ()
+2270c2270
+< false_positive	16255782	14552	14565	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16255782	14552	14565	transcription	go_bpmf	GO:0006350	transcription ()
+2274c2274
+< false_positive	16255782	15070	15083	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16255782	15070	15083	transcription	go_bpmf	GO:0006350	transcription ()
+2281c2281
+< false_positive	16255782	17538	17551	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16255782	17538	17551	transcription	go_bpmf	GO:0006350	transcription ()
+2283c2283
+< false_positive	16255782	17829	17842	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16255782	17829	17842	transcription	go_bpmf	GO:0006350	transcription ()
+2287c2287
+< false_positive	16255782	19242	19255	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16255782	19242	19255	transcription	go_bpmf	GO:0006350	transcription ()
+2291,2292c2291,2292
+< false_positive	16255782	20676	20689	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16255782	20725	20738	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16255782	20676	20689	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16255782	20725	20738	transcription	go_bpmf	GO:0006350	transcription ()
+2294,2295c2294,2295
+< false_positive	16255782	22440	22453	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16255782	22530	22543	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16255782	22440	22453	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16255782	22530	22543	transcription	go_bpmf	GO:0006350	transcription ()
+2300c2300
+< true_positive	16279840	49441	49452	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	16279840	49441	49452	development	go_bpmf	GO:0032502	developmental process ()
+2311c2311
+< true_positive	16279840	46513	46525	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+---
+> false_negative	16279840	46513	46525	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+2314c2314
+< true_positive	16279840	4173	4184	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	16279840	4173	4184	development	go_bpmf	GO:0032502	developmental process ()
+2326c2326
+< false_positive	16279840	22951	22964	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16279840	22951	22964	transcription	go_bpmf	GO:0006350	transcription ()
+2365,2367c2365,2367
+< true_positive	16362077	3514	3525	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16362077	8962	8973	Development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16362077	24397	24408	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	16362077	3514	3525	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16362077	8962	8973	Development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16362077	24397	24408	development	go_bpmf	GO:0032502	developmental process ()
+2398c2398
+< false_positive	16362077	19553	19566	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16362077	19553	19566	transcription	go_bpmf	GO:0006350	transcription ()
+2426,2429c2426,2429
+< true_positive	16433929	6268	6279	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16433929	16878	16889	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16433929	17829	17840	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16433929	28726	28737	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	16433929	6268	6279	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16433929	16878	16889	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16433929	17829	17840	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16433929	28726	28737	development	go_bpmf	GO:0032502	developmental process ()
+2435,2444c2435,2444
+< false_positive	16433929	12964	12974	proteinase	go_bpmf	GO:0008233	peptidase activity ({hydrolase, acting on peptide bonds, protease activity, peptide hydrolase activity})
+< false_positive	16433929	12964	12974	proteinase	go_bpmf	independent_continuant	independent_continuant
+< false_positive	16433929	35929	35939	proteinase	go_bpmf	GO:0008233	peptidase activity ({hydrolase, acting on peptide bonds, protease activity, peptide hydrolase activity})
+< false_positive	16433929	35929	35939	proteinase	go_bpmf	independent_continuant	independent_continuant
+< true_positive	16433929	38137	38142	lysis	go_bpmf	GO:0019835	cytolysis ()
+< false_positive	16433929	38196	38206	proteinase	go_bpmf	independent_continuant	independent_continuant
+< false_positive	16433929	38196	38206	proteinase	go_bpmf	GO:0008233	peptidase activity ({hydrolase, acting on peptide bonds, protease activity, peptide hydrolase activity})
+< false_positive	16433929	38269	38279	proteinase	go_bpmf	GO:0008233	peptidase activity ({hydrolase, acting on peptide bonds, protease activity, peptide hydrolase activity})
+< false_positive	16433929	38269	38279	proteinase	go_bpmf	independent_continuant	independent_continuant
+< true_positive	16433929	2902	2912	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	16433929	12964	12974	proteinase	go_bpmf	GO:0008233	peptidase activity ({hydrolase, acting on peptide bonds, protease activity, peptide hydrolase activity})
+> false_negative	16433929	12964	12974	proteinase	go_bpmf	independent_continuant	independent_continuant
+> false_negative	16433929	35929	35939	proteinase	go_bpmf	GO:0008233	peptidase activity ({hydrolase, acting on peptide bonds, protease activity, peptide hydrolase activity})
+> false_negative	16433929	35929	35939	proteinase	go_bpmf	independent_continuant	independent_continuant
+> false_negative	16433929	38137	38142	lysis	go_bpmf	GO:0019835	cytolysis ()
+> false_negative	16433929	38196	38206	proteinase	go_bpmf	independent_continuant	independent_continuant
+> false_negative	16433929	38196	38206	proteinase	go_bpmf	GO:0008233	peptidase activity ({hydrolase, acting on peptide bonds, protease activity, peptide hydrolase activity})
+> false_negative	16433929	38269	38279	proteinase	go_bpmf	GO:0008233	peptidase activity ({hydrolase, acting on peptide bonds, protease activity, peptide hydrolase activity})
+> false_negative	16433929	38269	38279	proteinase	go_bpmf	independent_continuant	independent_continuant
+> false_negative	16433929	2902	2912	regulation	go_bpmf	GO:0065007	biological regulation ()
+2449c2449
+< true_positive	16433929	3455	3465	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	16433929	3455	3465	regulation	go_bpmf	GO:0065007	biological regulation ()
+2485c2485
+< true_positive	16462940	24885	24895	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	16462940	24885	24895	regulation	go_bpmf	GO:0065007	biological regulation ()
+2488,2496c2488,2496
+< true_positive	16462940	283	293	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16462940	1448	1458	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16462940	6035	6045	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16462940	11600	11610	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16462940	17622	17632	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16462940	21837	21847	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16462940	24457	24467	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16462940	27847	27857	Regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16462940	32205	32215	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	16462940	283	293	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16462940	1448	1458	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16462940	6035	6045	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16462940	11600	11610	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16462940	17622	17632	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16462940	21837	21847	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16462940	24457	24467	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16462940	27847	27857	Regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16462940	32205	32215	regulation	go_bpmf	GO:0065007	biological regulation ()
+2500,2513c2500,2513
+< true_positive	16462940	1063	1073	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16462940	5191	5201	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16462940	16164	16174	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16462940	18523	18533	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16462940	18590	18600	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16462940	20533	20543	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16462940	21592	21602	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16462940	22290	22300	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16462940	24061	24071	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16462940	25719	25729	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16462940	30347	30357	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16462940	30772	30782	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16462940	31618	31628	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16462940	32359	32369	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	16462940	1063	1073	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16462940	5191	5201	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16462940	16164	16174	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16462940	18523	18533	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16462940	18590	18600	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16462940	20533	20543	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16462940	21592	21602	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16462940	22290	22300	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16462940	24061	24071	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16462940	25719	25729	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16462940	30347	30357	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16462940	30772	30782	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16462940	31618	31628	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16462940	32359	32369	regulation	go_bpmf	GO:0065007	biological regulation ()
+2517c2517
+< false_positive	16462940	2470	2483	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16462940	2470	2483	transcription	go_bpmf	GO:0006350	transcription ()
+2526c2526
+< false_positive	16462940	15564	15577	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16462940	15564	15577	transcription	go_bpmf	GO:0006350	transcription ()
+2529c2529
+< false_positive	16462940	19159	19172	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16462940	19159	19172	transcription	go_bpmf	GO:0006350	transcription ()
+2539c2539
+< false_positive	16462940	24674	24687	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16462940	24674	24687	transcription	go_bpmf	GO:0006350	transcription ()
+2541,2542c2541,2542
+< false_positive	16462940	25005	25018	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16462940	25407	25420	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16462940	25005	25018	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16462940	25407	25420	transcription	go_bpmf	GO:0006350	transcription ()
+2545c2545
+< false_positive	16462940	27291	27304	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16462940	27291	27304	transcription	go_bpmf	GO:0006350	transcription ()
+2557c2557
+< true_positive	16504143	1297	1307	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	16504143	1297	1307	regulation	go_bpmf	GO:0065007	biological regulation ()
+2559,2560c2559,2560
+< true_positive	16504143	6066	6077	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16504143	3262	3272	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	16504143	6066	6077	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16504143	3262	3272	regulation	go_bpmf	GO:0065007	biological regulation ()
+2571c2571
+< true_positive	16504143	12059	12069	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	16504143	12059	12069	regulation	go_bpmf	GO:0065007	biological regulation ()
+2590c2590
+< true_positive	16504143	16448	16458	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	16504143	16448	16458	regulation	go_bpmf	GO:0065007	biological regulation ()
+2600c2600
+< true_positive	16504143	14910	14921	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	16504143	14910	14921	development	go_bpmf	GO:0032502	developmental process ()
+2603,2604c2603,2604
+< true_positive	16504143	1091	1102	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16504143	1866	1877	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	16504143	1091	1102	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16504143	1866	1877	development	go_bpmf	GO:0032502	developmental process ()
+2608,2610c2608,2610
+< true_positive	16504174	13514	13525	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16504174	13731	13742	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16504174	14391	14402	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	16504174	13514	13525	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16504174	13731	13742	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16504174	14391	14402	development	go_bpmf	GO:0032502	developmental process ()
+2612c2612
+< true_positive	16504174	21242	21253	Development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	16504174	21242	21253	Development	go_bpmf	GO:0032502	developmental process ()
+2617,2619c2617,2619
+< true_positive	16507151	6483	6495	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+< true_positive	16507151	6531	6543	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+< true_positive	16507151	16105	16117	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+---
+> false_negative	16507151	6483	6495	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+> false_negative	16507151	6531	6543	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+> false_negative	16507151	16105	16117	inflammation	go_bpmf	GO:0006954	inflammatory response ()
+2629c2629
+< true_positive	16539743	5852	5862	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	16539743	5852	5862	regulation	go_bpmf	GO:0065007	biological regulation ()
+2633,2635c2633,2635
+< true_positive	16539743	3228	3239	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16539743	5774	5785	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16539743	49864	49875	Development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	16539743	3228	3239	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16539743	5774	5785	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16539743	49864	49875	Development	go_bpmf	GO:0032502	developmental process ()
+2642c2642
+< false_positive	16539743	18185	18198	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16539743	18185	18198	transcription	go_bpmf	GO:0006350	transcription ()
+2646c2646
+< false_positive	16539743	377	390	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16539743	377	390	transcription	go_bpmf	GO:0006350	transcription ()
+2649c2649
+< false_positive	16539743	1336	1349	Transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16539743	1336	1349	Transcription	go_bpmf	GO:0006350	transcription ()
+2652c2652
+< false_positive	16539743	3649	3662	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16539743	3649	3662	transcription	go_bpmf	GO:0006350	transcription ()
+2654,2657c2654,2657
+< false_positive	16539743	3734	3747	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16539743	4107	4120	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16539743	4422	4435	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16539743	5062	5075	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16539743	3734	3747	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16539743	4107	4120	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16539743	4422	4435	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16539743	5062	5075	transcription	go_bpmf	GO:0006350	transcription ()
+2659c2659
+< false_positive	16539743	5659	5672	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16539743	5659	5672	transcription	go_bpmf	GO:0006350	transcription ()
+2665,2672c2665,2672
+< false_positive	16539743	13896	13909	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16539743	13938	13951	Transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16539743	14293	14306	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16539743	14579	14592	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16539743	14797	14810	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16539743	14917	14930	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16539743	15017	15030	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16539743	15566	15579	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16539743	13896	13909	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16539743	13938	13951	Transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16539743	14293	14306	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16539743	14579	14592	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16539743	14797	14810	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16539743	14917	14930	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16539743	15017	15030	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16539743	15566	15579	transcription	go_bpmf	GO:0006350	transcription ()
+2674c2674
+< false_positive	16539743	16091	16104	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16539743	16091	16104	transcription	go_bpmf	GO:0006350	transcription ()
+2678c2678
+< false_positive	16539743	17588	17601	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16539743	17588	17601	transcription	go_bpmf	GO:0006350	transcription ()
+2681,2682c2681,2682
+< false_positive	16539743	18261	18274	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16539743	19296	19309	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16539743	18261	18274	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16539743	19296	19309	transcription	go_bpmf	GO:0006350	transcription ()
+2684,2686c2684,2686
+< false_positive	16539743	19861	19874	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16539743	19961	19974	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16539743	20122	20135	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16539743	19861	19874	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16539743	19961	19974	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16539743	20122	20135	transcription	go_bpmf	GO:0006350	transcription ()
+2693c2693
+< false_positive	16539743	27563	27576	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16539743	27563	27576	transcription	go_bpmf	GO:0006350	transcription ()
+2695,2699c2695,2699
+< false_positive	16539743	32253	32266	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16539743	32483	32496	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16539743	32722	32735	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16539743	32818	32831	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16539743	32925	32938	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16539743	32253	32266	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16539743	32483	32496	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16539743	32722	32735	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16539743	32818	32831	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16539743	32925	32938	transcription	go_bpmf	GO:0006350	transcription ()
+2704,2705c2704,2705
+< false_positive	16539743	35639	35652	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	16539743	35719	35732	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16539743	35639	35652	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16539743	35719	35732	transcription	go_bpmf	GO:0006350	transcription ()
+2716c2716
+< false_positive	16579849	32089	32100	development	go_bpmf	GO:0000003	reproduction (reproductive physiological process)
+---
+> false_negative	16579849	32089	32100	development	go_bpmf	GO:0000003	reproduction (reproductive physiological process)
+2718,2722c2718,2722
+< false_positive	16579849	39079	39090	development	go_bpmf	GO:0000003	reproduction (reproductive physiological process)
+< true_positive	16579849	3976	3987	phosphatase	go_bpmf	GO:0016791	phosphoric monoester hydrolase activity (phosphatase activity)
+< true_positive	16579849	4398	4409	phosphatase	go_bpmf	GO:0016791	phosphoric monoester hydrolase activity (phosphatase activity)
+< false_positive	16579849	3976	3987	phosphatase	go_bpmf	independent_continuant	independent_continuant
+< false_positive	16579849	4398	4409	phosphatase	go_bpmf	independent_continuant	independent_continuant
+---
+> false_negative	16579849	39079	39090	development	go_bpmf	GO:0000003	reproduction (reproductive physiological process)
+> false_negative	16579849	3976	3987	phosphatase	go_bpmf	GO:0016791	phosphoric monoester hydrolase activity (phosphatase activity)
+> false_negative	16579849	4398	4409	phosphatase	go_bpmf	GO:0016791	phosphoric monoester hydrolase activity (phosphatase activity)
+> false_negative	16579849	3976	3987	phosphatase	go_bpmf	independent_continuant	independent_continuant
+> false_negative	16579849	4398	4409	phosphatase	go_bpmf	independent_continuant	independent_continuant
+2732c2732
+< false_positive	16579849	23411	23424	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16579849	23411	23424	transcription	go_bpmf	GO:0006350	transcription ()
+2739,2740c2739,2740
+< true_positive	16628246	61888	61899	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16628246	33	44	Development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	16628246	61888	61899	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16628246	33	44	Development	go_bpmf	GO:0032502	developmental process ()
+2742,2743c2742,2743
+< true_positive	16628246	421	432	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16628246	624	635	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	16628246	421	432	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16628246	624	635	development	go_bpmf	GO:0032502	developmental process ()
+2745,2750c2745,2750
+< true_positive	16628246	1355	1366	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16628246	2221	2232	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16628246	5579	5590	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16628246	5645	5656	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16628246	12972	12983	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16628246	14344	14355	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	16628246	1355	1366	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16628246	2221	2232	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16628246	5579	5590	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16628246	5645	5656	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16628246	12972	12983	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16628246	14344	14355	development	go_bpmf	GO:0032502	developmental process ()
+2752,2761c2752,2761
+< true_positive	16628246	26185	26196	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16628246	27937	27948	Development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16628246	28296	28307	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16628246	29070	29081	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16628246	30947	30958	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16628246	31322	31333	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16628246	31896	31907	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16628246	35175	35186	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16628246	38326	38337	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16628246	39614	39625	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	16628246	26185	26196	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16628246	27937	27948	Development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16628246	28296	28307	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16628246	29070	29081	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16628246	30947	30958	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16628246	31322	31333	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16628246	31896	31907	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16628246	35175	35186	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16628246	38326	38337	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16628246	39614	39625	development	go_bpmf	GO:0032502	developmental process ()
+2765c2765
+< true_positive	16628246	34156	34166	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	16628246	34156	34166	regulation	go_bpmf	GO:0065007	biological regulation ()
+2782c2782
+< false_positive	16628246	5284	5297	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16628246	5284	5297	transcription	go_bpmf	GO:0006350	transcription ()
+2800c2800
+< false_positive	16628246	14200	14213	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16628246	14200	14213	transcription	go_bpmf	GO:0006350	transcription ()
+2811c2811
+< false_positive	16628246	32581	32594	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16628246	32581	32594	transcription	go_bpmf	GO:0006350	transcription ()
+2828,2829c2828,2829
+< false_positive	16670015	34642	34652	Proteinase	go_bpmf	GO:0008233	peptidase activity ({hydrolase, acting on peptide bonds, protease activity, peptide hydrolase activity})
+< false_positive	16670015	34642	34652	Proteinase	go_bpmf	independent_continuant	independent_continuant
+---
+> false_negative	16670015	34642	34652	Proteinase	go_bpmf	GO:0008233	peptidase activity ({hydrolase, acting on peptide bonds, protease activity, peptide hydrolase activity})
+> false_negative	16670015	34642	34652	Proteinase	go_bpmf	independent_continuant	independent_continuant
+2840c2840
+< false_positive	16670015	51184	51195	development	go_bpmf	GO:0000003	reproduction (reproductive physiological process)
+---
+> false_negative	16670015	51184	51195	development	go_bpmf	GO:0000003	reproduction (reproductive physiological process)
+2845,2850c2845,2850
+< false_positive	16670015	6361	6372	development	go_bpmf	GO:0000003	reproduction (reproductive physiological process)
+< false_positive	16670015	23141	23152	development	go_bpmf	GO:0000003	reproduction (reproductive physiological process)
+< false_positive	16670015	33542	33553	development	go_bpmf	GO:0000003	reproduction (reproductive physiological process)
+< false_positive	16670015	35541	35552	Development	go_bpmf	GO:0000003	reproduction (reproductive physiological process)
+< false_positive	16670015	37211	37222	Development	go_bpmf	GO:0000003	reproduction (reproductive physiological process)
+< false_positive	16670015	38936	38947	Development	go_bpmf	GO:0000003	reproduction (reproductive physiological process)
+---
+> false_negative	16670015	6361	6372	development	go_bpmf	GO:0000003	reproduction (reproductive physiological process)
+> false_negative	16670015	23141	23152	development	go_bpmf	GO:0000003	reproduction (reproductive physiological process)
+> false_negative	16670015	33542	33553	development	go_bpmf	GO:0000003	reproduction (reproductive physiological process)
+> false_negative	16670015	35541	35552	Development	go_bpmf	GO:0000003	reproduction (reproductive physiological process)
+> false_negative	16670015	37211	37222	Development	go_bpmf	GO:0000003	reproduction (reproductive physiological process)
+> false_negative	16670015	38936	38947	Development	go_bpmf	GO:0000003	reproduction (reproductive physiological process)
+2892c2892
+< false_positive	16670015	28445	28458	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16670015	28445	28458	transcription	go_bpmf	GO:0006350	transcription ()
+2895c2895
+< false_positive	16670015	30659	30672	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	16670015	30659	30672	transcription	go_bpmf	GO:0006350	transcription ()
+2915,2920c2915,2920
+< true_positive	16700629	301	312	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16700629	2805	2816	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16700629	4572	4583	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16700629	10676	10687	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16700629	13361	13372	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	16700629	27110	27121	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	16700629	301	312	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16700629	2805	2816	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16700629	4572	4583	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16700629	10676	10687	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16700629	13361	13372	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	16700629	27110	27121	development	go_bpmf	GO:0032502	developmental process ()
+2926c2926
+< true_positive	16700629	10092	10102	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	16700629	10092	10102	regulation	go_bpmf	GO:0065007	biological regulation ()
+2929c2929
+< true_positive	16700629	18877	18887	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	16700629	18877	18887	regulation	go_bpmf	GO:0065007	biological regulation ()
+2932c2932
+< true_positive	16700629	23450	23460	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	16700629	23450	23460	regulation	go_bpmf	GO:0065007	biological regulation ()
+2951c2951
+< true_positive	16700629	494	505	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	16700629	494	505	development	go_bpmf	GO:0032502	developmental process ()
+2992,2995c2992,2995
+< false_positive	16700629	34161	34174	Transcription	go_bpmf	GO:0006350	transcription ()
+< true_positive	16870721	163	173	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16870721	2025	2035	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	16870721	20519	20529	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	16700629	34161	34174	Transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	16870721	163	173	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16870721	2025	2035	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	16870721	20519	20529	regulation	go_bpmf	GO:0065007	biological regulation ()
+3012c3012
+< false_positive	17002498	9047	9060	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	17002498	9047	9060	transcription	go_bpmf	GO:0006350	transcription ()
+3037c3037
+< true_positive	17002498	2905	2915	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	17002498	2905	2915	regulation	go_bpmf	GO:0065007	biological regulation ()
+3040c3040
+< true_positive	17002498	3549	3559	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	17002498	3549	3559	regulation	go_bpmf	GO:0065007	biological regulation ()
+3043,3045c3043,3045
+< true_positive	17002498	6449	6459	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	17002498	31817	31828	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	17002498	40162	40173	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17002498	6449	6459	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	17002498	31817	31828	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17002498	40162	40173	development	go_bpmf	GO:0032502	developmental process ()
+3050,3059c3050,3059
+< true_positive	17002498	1995	2006	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	17002498	1385	1396	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	17002498	402	413	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	17002498	218	229	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	17002498	22431	22442	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	17002498	8969	8980	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	17002498	5467	5478	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	17002498	4990	5001	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	17002498	4834	4845	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	17002498	13563	13574	Development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17002498	1995	2006	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17002498	1385	1396	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17002498	402	413	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17002498	218	229	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17002498	22431	22442	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17002498	8969	8980	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17002498	5467	5478	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17002498	4990	5001	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17002498	4834	4845	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17002498	13563	13574	Development	go_bpmf	GO:0032502	developmental process ()
+3069c3069
+< true_positive	17002498	24250	24261	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17002498	24250	24261	development	go_bpmf	GO:0032502	developmental process ()
+3073c3073
+< true_positive	17002498	34565	34576	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17002498	34565	34576	development	go_bpmf	GO:0032502	developmental process ()
+3077c3077
+< true_positive	17002498	43744	43755	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17002498	43744	43755	development	go_bpmf	GO:0032502	developmental process ()
+3080,3081c3080,3081
+< true_positive	17002498	45229	45239	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	17002498	17517	17528	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17002498	45229	45239	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	17002498	17517	17528	development	go_bpmf	GO:0032502	developmental process ()
+3083c3083
+< true_positive	17002498	25856	25867	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17002498	25856	25867	development	go_bpmf	GO:0032502	developmental process ()
+3085,3089c3085,3089
+< false_positive	17020410	20129	20142	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	17020410	17160	17173	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	17020410	2981	2994	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	17020410	26069	26082	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	17020410	29265	29278	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	17020410	20129	20142	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	17020410	17160	17173	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	17020410	2981	2994	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	17020410	26069	26082	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	17020410	29265	29278	transcription	go_bpmf	GO:0006350	transcription ()
+3091c3091
+< false_positive	17020410	37175	37188	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	17020410	37175	37188	transcription	go_bpmf	GO:0006350	transcription ()
+3098c3098
+< false_positive	17020410	29763	29776	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	17020410	29763	29776	transcription	go_bpmf	GO:0006350	transcription ()
+3103,3105c3103,3105
+< false_positive	17020410	4028	4041	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	17020410	712	725	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	17020410	1120	1133	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	17020410	4028	4041	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	17020410	712	725	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	17020410	1120	1133	transcription	go_bpmf	GO:0006350	transcription ()
+3107,3110c3107,3110
+< false_positive	17020410	25884	25897	Transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	17020410	26372	26385	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	17020410	29494	29507	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	17020410	3123	3136	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	17020410	25884	25897	Transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	17020410	26372	26385	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	17020410	29494	29507	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	17020410	3123	3136	transcription	go_bpmf	GO:0006350	transcription ()
+3117c3117
+< true_positive	17022820	16879	16889	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	17022820	16879	16889	regulation	go_bpmf	GO:0065007	biological regulation ()
+3144,3146c3144,3146
+< true_positive	17069463	1928	1939	homeostasis	go_bpmf	GO:0042592	homeostatic process ()
+< true_positive	17069463	21065	21076	homeostasis	go_bpmf	GO:0042592	homeostatic process ()
+< true_positive	17069463	37237	37248	homeostasis	go_bpmf	GO:0042592	homeostatic process ()
+---
+> false_negative	17069463	1928	1939	homeostasis	go_bpmf	GO:0042592	homeostatic process ()
+> false_negative	17069463	21065	21076	homeostasis	go_bpmf	GO:0042592	homeostatic process ()
+> false_negative	17069463	37237	37248	homeostasis	go_bpmf	GO:0042592	homeostatic process ()
+3154,3155c3154,3155
+< true_positive	17069463	18922	18932	regulation	go_bpmf	GO:0065007	biological regulation ()
+< false_positive	17069463	18949	18957	splicing	go_bpmf	GO:0008380	RNA splicing ()
+---
+> false_negative	17069463	18922	18932	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	17069463	18949	18957	splicing	go_bpmf	GO:0008380	RNA splicing ()
+3160c3160
+< true_positive	17069463	746	756	glycolysis	go_bpmf	GO:0006096	glycolysis ()
+---
+> false_negative	17069463	746	756	glycolysis	go_bpmf	GO:0006096	glycolysis ()
+3177c3177
+< true_positive	17069463	20971	20981	glycolysis	go_bpmf	GO:0006096	glycolysis ()
+---
+> false_negative	17069463	20971	20981	glycolysis	go_bpmf	GO:0006096	glycolysis ()
+3186c3186
+< true_positive	17069463	35427	35437	glycolysis	go_bpmf	GO:0006096	glycolysis ()
+---
+> false_negative	17069463	35427	35437	glycolysis	go_bpmf	GO:0006096	glycolysis ()
+3194,3195c3194,3195
+< true_positive	17078885	3276	3287	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	17078885	9594	9605	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17078885	3276	3287	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17078885	9594	9605	development	go_bpmf	GO:0032502	developmental process ()
+3197c3197
+< true_positive	17078885	21726	21737	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17078885	21726	21737	development	go_bpmf	GO:0032502	developmental process ()
+3212c3212
+< true_positive	17078885	2251	2262	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17078885	2251	2262	development	go_bpmf	GO:0032502	developmental process ()
+3218c3218
+< true_positive	17078885	881	892	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17078885	881	892	development	go_bpmf	GO:0032502	developmental process ()
+3240,3244c3240,3244
+< true_positive	17083276	111	122	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	17083276	3234	3245	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	17083276	1150	1161	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	17083276	3738	3749	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	17083276	4027	4038	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17083276	111	122	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17083276	3234	3245	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17083276	1150	1161	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17083276	3738	3749	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17083276	4027	4038	development	go_bpmf	GO:0032502	developmental process ()
+3248c3248
+< true_positive	17083276	18631	18642	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17083276	18631	18642	development	go_bpmf	GO:0032502	developmental process ()
+3250,3252c3250,3252
+< true_positive	17083276	8549	8560	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	17083276	9311	9322	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	17083276	24446	24457	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17083276	8549	8560	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17083276	9311	9322	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17083276	24446	24457	development	go_bpmf	GO:0032502	developmental process ()
+3254c3254
+< true_positive	17083276	2231	2241	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	17083276	2231	2241	regulation	go_bpmf	GO:0065007	biological regulation ()
+3265,3267c3265,3267
+< true_positive	17083276	21592	21599	budding	go_bpmf	GO:0007114	cell budding ()
+< false_positive	17083276	30088	30098	proteinase	go_bpmf	GO:0008233	peptidase activity ({hydrolase, acting on peptide bonds, protease activity, peptide hydrolase activity})
+< false_positive	17083276	30088	30098	proteinase	go_bpmf	independent_continuant	independent_continuant
+---
+> false_negative	17083276	21592	21599	budding	go_bpmf	GO:0007114	cell budding ()
+> false_negative	17083276	30088	30098	proteinase	go_bpmf	GO:0008233	peptidase activity ({hydrolase, acting on peptide bonds, protease activity, peptide hydrolase activity})
+> false_negative	17083276	30088	30098	proteinase	go_bpmf	independent_continuant	independent_continuant
+3291,3293c3291,3293
+< true_positive	17083276	18862	18873	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	17083276	5309	5320	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	17083276	5458	5469	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17083276	18862	18873	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17083276	5309	5320	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17083276	5458	5469	development	go_bpmf	GO:0032502	developmental process ()
+3295c3295
+< true_positive	17083276	381	392	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17083276	381	392	development	go_bpmf	GO:0032502	developmental process ()
+3347,3349c3347,3349
+< true_positive	17194222	2005	2016	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	17194222	18217	18228	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	17194222	43694	43705	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17194222	2005	2016	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17194222	18217	18228	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17194222	43694	43705	development	go_bpmf	GO:0032502	developmental process ()
+3397,3400c3397,3400
+< false_positive	17194222	45882	45892	proteinase	go_bpmf	GO:0008233	peptidase activity ({hydrolase, acting on peptide bonds, protease activity, peptide hydrolase activity})
+< false_positive	17194222	45882	45892	proteinase	go_bpmf	independent_continuant	independent_continuant
+< false_positive	17194222	51714	51724	proteinase	go_bpmf	GO:0008233	peptidase activity ({hydrolase, acting on peptide bonds, protease activity, peptide hydrolase activity})
+< false_positive	17194222	51714	51724	proteinase	go_bpmf	independent_continuant	independent_continuant
+---
+> false_negative	17194222	45882	45892	proteinase	go_bpmf	GO:0008233	peptidase activity ({hydrolase, acting on peptide bonds, protease activity, peptide hydrolase activity})
+> false_negative	17194222	45882	45892	proteinase	go_bpmf	independent_continuant	independent_continuant
+> false_negative	17194222	51714	51724	proteinase	go_bpmf	GO:0008233	peptidase activity ({hydrolase, acting on peptide bonds, protease activity, peptide hydrolase activity})
+> false_negative	17194222	51714	51724	proteinase	go_bpmf	independent_continuant	independent_continuant
+3404c3404
+< true_positive	17194222	35309	35320	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17194222	35309	35320	development	go_bpmf	GO:0032502	developmental process ()
+3421c3421
+< false_positive	17194222	12844	12857	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	17194222	12844	12857	transcription	go_bpmf	GO:0006350	transcription ()
+3448,3449c3448,3449
+< false_positive	17244351	29324	29337	transcription	go_bpmf	GO:0006350	transcription ()
+< true_positive	17244351	23618	23629	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17244351	29324	29337	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	17244351	23618	23629	development	go_bpmf	GO:0032502	developmental process ()
+3481,3486c3481,3486
+< true_positive	17425782	4363	4374	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	17425782	4860	4871	Development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	17425782	6394	6405	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	17425782	7334	7345	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	17425782	25203	25214	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	17425782	32608	32619	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17425782	4363	4374	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17425782	4860	4871	Development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17425782	6394	6405	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17425782	7334	7345	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17425782	25203	25214	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17425782	32608	32619	development	go_bpmf	GO:0032502	developmental process ()
+3513,3514c3513,3514
+< false_positive	17425782	35172	35185	transcription	go_bpmf	GO:0006350	transcription ()
+< true_positive	17425782	21236	21247	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17425782	35172	35185	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	17425782	21236	21247	development	go_bpmf	GO:0032502	developmental process ()
+3517c3517
+< true_positive	17425782	7245	7256	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17425782	7245	7256	development	go_bpmf	GO:0032502	developmental process ()
+3519c3519
+< false_positive	17425782	185	198	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	17425782	185	198	transcription	go_bpmf	GO:0006350	transcription ()
+3533c3533
+< false_positive	17425782	25310	25323	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	17425782	25310	25323	transcription	go_bpmf	GO:0006350	transcription ()
+3537c3537
+< false_positive	17425782	28908	28921	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	17425782	28908	28921	transcription	go_bpmf	GO:0006350	transcription ()
+3543,3544c3543,3544
+< false_positive	17425782	35307	35320	transcription	go_bpmf	GO:0006350	transcription ()
+< true_positive	17447844	1987	1998	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17425782	35307	35320	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	17447844	1987	1998	development	go_bpmf	GO:0032502	developmental process ()
+3547,3548c3547,3548
+< true_positive	17447844	8026	8037	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	17447844	3002	3012	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	17447844	8026	8037	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17447844	3002	3012	regulation	go_bpmf	GO:0065007	biological regulation ()
+3551,3552c3551,3552
+< true_positive	17447844	40827	40837	regulation	go_bpmf	GO:0065007	biological regulation ()
+< true_positive	17447844	44179	44189	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	17447844	40827	40837	regulation	go_bpmf	GO:0065007	biological regulation ()
+> false_negative	17447844	44179	44189	regulation	go_bpmf	GO:0065007	biological regulation ()
+3563,3565c3563,3565
+< false_positive	17447844	47808	47818	proteinase	go_bpmf	GO:0008233	peptidase activity ({hydrolase, acting on peptide bonds, protease activity, peptide hydrolase activity})
+< true_positive	17447844	16039	16050	development	go_bpmf	GO:0032502	developmental process ()
+< false_positive	17447844	47808	47818	proteinase	go_bpmf	independent_continuant	independent_continuant
+---
+> false_negative	17447844	47808	47818	proteinase	go_bpmf	GO:0008233	peptidase activity ({hydrolase, acting on peptide bonds, protease activity, peptide hydrolase activity})
+> false_negative	17447844	16039	16050	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17447844	47808	47818	proteinase	go_bpmf	independent_continuant	independent_continuant
+3567,3568c3567,3568
+< true_positive	17447844	10316	10327	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	17447844	6661	6672	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17447844	10316	10327	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17447844	6661	6672	development	go_bpmf	GO:0032502	developmental process ()
+3658c3658
+< false_positive	17447844	32322	32335	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	17447844	32322	32335	transcription	go_bpmf	GO:0006350	transcription ()
+3672c3672
+< false_positive	17447844	33772	33785	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	17447844	33772	33785	transcription	go_bpmf	GO:0006350	transcription ()
+3689c3689
+< false_positive	17447844	37054	37067	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	17447844	37054	37067	transcription	go_bpmf	GO:0006350	transcription ()
+3724,3726c3724,3726
+< true_positive	17590087	24365	24370	lysis	go_bpmf	GO:0019835	cytolysis ()
+< true_positive	17590087	24475	24480	lysis	go_bpmf	GO:0019835	cytolysis ()
+< false_positive	17590087	8640	8648	splicing	go_bpmf	GO:0008380	RNA splicing ()
+---
+> false_negative	17590087	24365	24370	lysis	go_bpmf	GO:0019835	cytolysis ()
+> false_negative	17590087	24475	24480	lysis	go_bpmf	GO:0019835	cytolysis ()
+> false_negative	17590087	8640	8648	splicing	go_bpmf	GO:0008380	RNA splicing ()
+3733c3733
+< true_positive	17608565	68	78	Regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	17608565	68	78	Regulation	go_bpmf	GO:0065007	biological regulation ()
+3735,3737c3735,3737
+< true_positive	17608565	2974	2985	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	17608565	3369	3380	development	go_bpmf	GO:0032502	developmental process ()
+< true_positive	17608565	4600	4611	Development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17608565	2974	2985	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17608565	3369	3380	development	go_bpmf	GO:0032502	developmental process ()
+> false_negative	17608565	4600	4611	Development	go_bpmf	GO:0032502	developmental process ()
+3739c3739
+< true_positive	17608565	4929	4939	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	17608565	4929	4939	regulation	go_bpmf	GO:0065007	biological regulation ()
+3743c3743
+< true_positive	17608565	10447	10458	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17608565	10447	10458	development	go_bpmf	GO:0032502	developmental process ()
+3748c3748
+< true_positive	17608565	13129	13140	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17608565	13129	13140	development	go_bpmf	GO:0032502	developmental process ()
+3759c3759
+< true_positive	17608565	36918	36929	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17608565	36918	36929	development	go_bpmf	GO:0032502	developmental process ()
+3762c3762
+< true_positive	17608565	42803	42813	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	17608565	42803	42813	regulation	go_bpmf	GO:0065007	biological regulation ()
+3766c3766
+< true_positive	17608565	46116	46127	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17608565	46116	46127	development	go_bpmf	GO:0032502	developmental process ()
+3772c3772
+< true_positive	17608565	52257	52267	regulation	go_bpmf	GO:0065007	biological regulation ()
+---
+> false_negative	17608565	52257	52267	regulation	go_bpmf	GO:0065007	biological regulation ()
+3786,3788c3786,3788
+< false_positive	17608565	598	611	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	17608565	1796	1809	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	17608565	1911	1924	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	17608565	598	611	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	17608565	1796	1809	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	17608565	1911	1924	transcription	go_bpmf	GO:0006350	transcription ()
+3798c3798
+< false_positive	17608565	4772	4785	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	17608565	4772	4785	transcription	go_bpmf	GO:0006350	transcription ()
+3804,3805c3804,3805
+< false_positive	17608565	5912	5925	transcription	go_bpmf	GO:0006350	transcription ()
+< false_positive	17608565	5971	5984	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	17608565	5912	5925	transcription	go_bpmf	GO:0006350	transcription ()
+> false_negative	17608565	5971	5984	transcription	go_bpmf	GO:0006350	transcription ()
+3813c3813
+< false_positive	17608565	9156	9169	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	17608565	9156	9169	transcription	go_bpmf	GO:0006350	transcription ()
+3815c3815
+< false_positive	17608565	10392	10405	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	17608565	10392	10405	transcription	go_bpmf	GO:0006350	transcription ()
+3825c3825
+< false_positive	17608565	17638	17651	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	17608565	17638	17651	transcription	go_bpmf	GO:0006350	transcription ()
+3839c3839
+< false_positive	17608565	29508	29521	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	17608565	29508	29521	transcription	go_bpmf	GO:0006350	transcription ()
+3847c3847
+< false_positive	17608565	38155	38168	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	17608565	38155	38168	transcription	go_bpmf	GO:0006350	transcription ()
+3860c3860
+< false_positive	17608565	44347	44360	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	17608565	44347	44360	transcription	go_bpmf	GO:0006350	transcription ()
+3866c3866
+< false_positive	17608565	46454	46467	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	17608565	46454	46467	transcription	go_bpmf	GO:0006350	transcription ()
+3875c3875
+< false_positive	17608565	52464	52477	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	17608565	52464	52477	transcription	go_bpmf	GO:0006350	transcription ()
+3878c3878
+< false_positive	17608565	53418	53431	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	17608565	53418	53431	transcription	go_bpmf	GO:0006350	transcription ()
+3885c3885
+< false_positive	17608565	66938	66951	transcription	go_bpmf	GO:0006350	transcription ()
+---
+> false_negative	17608565	66938	66951	transcription	go_bpmf	GO:0006350	transcription ()
+3889c3889
+< true_positive	17696610	3394	3401	budding	go_bpmf	GO:0007114	cell budding ()
+---
+> false_negative	17696610	3394	3401	budding	go_bpmf	GO:0007114	cell budding ()
+3892c3892
+< true_positive	17696610	11117	11128	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17696610	11117	11128	development	go_bpmf	GO:0032502	developmental process ()
+3902c3902
+< true_positive	17696610	32909	32916	budding	go_bpmf	GO:0007114	cell budding ()
+---
+> false_negative	17696610	32909	32916	budding	go_bpmf	GO:0007114	cell budding ()
+3906,3908c3906,3908
+< true_positive	17696610	37162	37169	budding	go_bpmf	GO:0007114	cell budding ()
+< true_positive	17696610	37910	37917	budding	go_bpmf	GO:0007114	cell budding ()
+< true_positive	17696610	13319	13330	development	go_bpmf	GO:0032502	developmental process ()
+---
+> false_negative	17696610	37162	37169	budding	go_bpmf	GO:0007114	cell budding ()
+> false_negative	17696610	37910	37917	budding	go_bpmf	GO:0007114	cell budding ()
+> false_negative	17696610	13319	13330	development	go_bpmf	GO:0032502	developmental process ()
+5789c5789
+< true_positive	15588329	15785	15790	Golgi	go_cc	GO:0005794	Golgi apparatus
+---
+> false_negative	15588329	15785	15790	Golgi	go_cc	GO:0005794	Golgi apparatus
+5927c5927
+< true_positive	15588329	15802	15807	Golgi	go_cc	GO:0005794	Golgi apparatus
+---
+> false_negative	15588329	15802	15807	Golgi	go_cc	GO:0005794	Golgi apparatus
+6181c6181
+< false_positive	15676071	4592	4596	apex	go_cc	GO:0045177	apical part of cell
+---
+> false_negative	15676071	4592	4596	apex	go_cc	GO:0045177	apical part of cell
+6206c6206
+< false_positive	15676071	11748	11752	apex	go_cc	GO:0045177	apical part of cell
+---
+> false_negative	15676071	11748	11752	apex	go_cc	GO:0045177	apical part of cell
+6227c6227
+< true_positive	15676071	20274	20284	microvilli	go_cc	GO:0005902	microvillus
+---
+> false_negative	15676071	20274	20284	microvilli	go_cc	GO:0005902	microvillus
+6370,6373c6370,6373
+< false_positive	15819996	16176	16184	neurites	go_cc	GO:0030424	axon
+< false_positive	15819996	16338	16346	neurites	go_cc	GO:0030424	axon
+< false_positive	15819996	16546	16554	neurites	go_cc	GO:0030424	axon
+< false_positive	15819996	24529	24537	neurites	go_cc	GO:0030424	axon
+---
+> false_negative	15819996	16176	16184	neurites	go_cc	GO:0030424	axon
+> false_negative	15819996	16338	16346	neurites	go_cc	GO:0030424	axon
+> false_negative	15819996	16546	16554	neurites	go_cc	GO:0030424	axon
+> false_negative	15819996	24529	24537	neurites	go_cc	GO:0030424	axon
+6667c6667
+< false_positive	15921521	20262	20276	immunoglobulin	go_cc	GO:0019814	immunoglobulin complex
+---
+> false_negative	15921521	20262	20276	immunoglobulin	go_cc	GO:0019814	immunoglobulin complex
+6725,6730c6725,6730
+< false_positive	16098226	20756	20762	dynein	go_cc	GO:0030286	dynein complex
+< false_positive	16098226	934	940	dynein	go_cc	GO:0030286	dynein complex
+< false_positive	16098226	8964	8970	Dynein	go_cc	GO:0030286	dynein complex
+< false_positive	16098226	9600	9606	dynein	go_cc	GO:0030286	dynein complex
+< false_positive	16098226	19165	19171	dynein	go_cc	GO:0030286	dynein complex
+< false_positive	16098226	19192	19198	Dynein	go_cc	GO:0030286	dynein complex
+---
+> false_negative	16098226	20756	20762	dynein	go_cc	GO:0030286	dynein complex
+> false_negative	16098226	934	940	dynein	go_cc	GO:0030286	dynein complex
+> false_negative	16098226	8964	8970	Dynein	go_cc	GO:0030286	dynein complex
+> false_negative	16098226	9600	9606	dynein	go_cc	GO:0030286	dynein complex
+> false_negative	16098226	19165	19171	dynein	go_cc	GO:0030286	dynein complex
+> false_negative	16098226	19192	19198	Dynein	go_cc	GO:0030286	dynein complex
+6923c6923
+< false_positive	16110338	7064	7081	phosphodiesterase	go_cc	GO:0005966	photoreceptor cyclic-nucleotide phosphodiesterase complex
+---
+> false_negative	16110338	7064	7081	phosphodiesterase	go_cc	GO:0005966	photoreceptor cyclic-nucleotide phosphodiesterase complex
+7606c7606
+< false_positive	16504174	19787	19802	immunoglobulins	go_cc	GO:0019814	immunoglobulin complex
+---
+> false_negative	16504174	19787	19802	immunoglobulins	go_cc	GO:0019814	immunoglobulin complex
+8454,8455c8454,8455
+< false_positive	17069463	12675	12682	kinesin	go_cc	GO:0005871	kinesin complex
+< false_positive	17069463	4857	4865	kinesins	go_cc	GO:0005871	kinesin complex
+---
+> false_negative	17069463	12675	12682	kinesin	go_cc	GO:0005871	kinesin complex
+> false_negative	17069463	4857	4865	kinesins	go_cc	GO:0005871	kinesin complex
+9702c9702
+< ### Strategy:all
+---
+> ### Strategy:exact
+9704,9709c9704,9709
+< ### TP: 8178
+< ### FP: 1216
+< ### FN: 23022
+< ### Precision: 0.8705556738343624
+< ### Recall: 0.26211538461538464
+< ### F1: 0.402916687195152
+---
+> ### TP: 7807
+> ### FP: 820
+> ### FN: 23789
+> ### Precision: 0.9049495769097021
+> ### Recall: 0.24708823901759716
+> ### F1: 0.38818586380926334

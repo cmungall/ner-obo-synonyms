@@ -1,0 +1,8 @@
+*.old
+*.tmp
+target/*.json
+target/*.json.gz
+target/*.yaml
+semantic.cache
+mirror/%
+craft-1.0

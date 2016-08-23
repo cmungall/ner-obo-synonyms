@@ -1,0 +1,2238 @@
+1,2c1,2
+< ## STRATEGY: all
+< ## SKIPPED: ['is_conjugate_base_of', 'has_role', 'has_part', 'is_conjugate_acid_of', 'is_tautomer_of', 'has_functional_parent', 'is_substituent_group_from', 'is_enantiomer_of', 'has_parent_hydride']
+---
+> ## STRATEGY: exact
+> ## SKIPPED: ['is_substituent_group_from', 'is_conjugate_acid_of', 'is_enantiomer_of', 'has_part', 'is_tautomer_of', 'has_parent_hydride', 'is_conjugate_base_of', 'has_role', 'has_functional_parent']
+11,15c11,15
+< true_positive	11532192	12861	12871	anesthetic	chebi	CHEBI:38867	anaesthetic
+< true_positive	11532192	14633	14643	anesthetic	chebi	CHEBI:38867	anaesthetic
+< true_positive	11532192	14790	14800	anesthetic	chebi	CHEBI:38867	anaesthetic
+< true_positive	11532192	15175	15185	anesthetic	chebi	CHEBI:38867	anaesthetic
+< true_positive	11532192	23787	23797	anesthetic	chebi	CHEBI:38867	anaesthetic
+---
+> false_negative	11532192	12861	12871	anesthetic	chebi	CHEBI:38867	anaesthetic
+> false_negative	11532192	14633	14643	anesthetic	chebi	CHEBI:38867	anaesthetic
+> false_negative	11532192	14790	14800	anesthetic	chebi	CHEBI:38867	anaesthetic
+> false_negative	11532192	15175	15185	anesthetic	chebi	CHEBI:38867	anaesthetic
+> false_negative	11532192	23787	23797	anesthetic	chebi	CHEBI:38867	anaesthetic
+18c18
+< false_positive	11532192	17391	17392	G	chebi	CHEBI:30755	guanine group
+---
+> false_negative	11532192	17391	17392	G	chebi	CHEBI:30755	guanine group
+21,22c21,22
+< true_positive	11532192	5742	5749	Pigment	chebi	CHEBI:26130	pigment
+< true_positive	11532192	32651	32658	pigment	chebi	CHEBI:26130	pigment
+---
+> false_negative	11532192	5742	5749	Pigment	chebi	CHEBI:26130	pigment
+> false_negative	11532192	32651	32658	pigment	chebi	CHEBI:26130	pigment
+206,212c206,212
+< true_positive	12546709	30291	30295	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	12546709	30354	30358	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	12546709	32676	32680	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	12546709	4523	4527	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	12546709	8094	8104	cacodylate	chebi	CHEBI:16223	dimethylarsinate
+< true_positive	12546709	8747	8757	cacodylate	chebi	CHEBI:16223	dimethylarsinate
+< true_positive	12546709	9884	9894	cacodylate	chebi	CHEBI:16223	dimethylarsinate
+---
+> false_negative	12546709	30291	30295	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	12546709	30354	30358	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	12546709	32676	32680	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	12546709	4523	4527	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	12546709	8094	8104	cacodylate	chebi	CHEBI:16223	dimethylarsinate
+> false_negative	12546709	8747	8757	cacodylate	chebi	CHEBI:16223	dimethylarsinate
+> false_negative	12546709	9884	9894	cacodylate	chebi	CHEBI:16223	dimethylarsinate
+275c275
+< true_positive	12546709	8859	8863	NaCl	chebi	CHEBI:26710	sodium chloride
+---
+> false_negative	12546709	8859	8863	NaCl	chebi	CHEBI:26710	sodium chloride
+281,284c281,284
+< false_positive	12585968	13870	13875	epoxy	chebi	CHEBI:37407	epoxy compounds
+< true_positive	12585968	20796	20800	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	12585968	22414	22418	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	12585968	36163	36167	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	12585968	13870	13875	epoxy	chebi	CHEBI:37407	epoxy compounds
+> false_negative	12585968	20796	20800	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	12585968	22414	22418	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	12585968	36163	36167	mRNA	chebi	CHEBI:33699	messenger RNA
+288,290c288,290
+< false_positive	12585968	35267	35272	epoxy	chebi	CHEBI:37407	epoxy compounds
+< true_positive	12585968	13870	13875	epoxy	chebi	CHEBI:30721	epoxy group
+< true_positive	12585968	35267	35272	epoxy	chebi	CHEBI:30721	epoxy group
+---
+> false_negative	12585968	35267	35272	epoxy	chebi	CHEBI:37407	epoxy compounds
+> false_negative	12585968	13870	13875	epoxy	chebi	CHEBI:30721	epoxy group
+> false_negative	12585968	35267	35272	epoxy	chebi	CHEBI:30721	epoxy group
+294c294
+< true_positive	12925238	174	178	Ca2+	chebi	CHEBI:29108	calcium(2+)
+---
+> false_negative	12925238	174	178	Ca2+	chebi	CHEBI:29108	calcium(2+)
+296,324c296,324
+< true_positive	12925238	443	447	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	12925238	714	718	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	12925238	1864	1868	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	12925238	2041	2045	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	12925238	2361	2365	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	12925238	3259	3263	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	12925238	3306	3310	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	12925238	3701	3705	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	12925238	3819	3823	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	12925238	4170	4174	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	12925238	4210	4214	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	12925238	5133	5137	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	12925238	5154	5158	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	12925238	6072	6076	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	12925238	8863	8867	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	12925238	9818	9822	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	12925238	21554	21558	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	12925238	21806	21810	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	12925238	22628	22632	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	12925238	22836	22840	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	12925238	24244	24248	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	12925238	24809	24813	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	12925238	24897	24901	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	12925238	25050	25054	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	12925238	25162	25166	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	12925238	26540	26544	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	12925238	27109	27113	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	12925238	30109	30113	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	12925238	30489	30493	Ca2+	chebi	CHEBI:29108	calcium(2+)
+---
+> false_negative	12925238	443	447	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	12925238	714	718	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	12925238	1864	1868	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	12925238	2041	2045	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	12925238	2361	2365	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	12925238	3259	3263	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	12925238	3306	3310	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	12925238	3701	3705	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	12925238	3819	3823	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	12925238	4170	4174	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	12925238	4210	4214	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	12925238	5133	5137	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	12925238	5154	5158	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	12925238	6072	6076	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	12925238	8863	8867	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	12925238	9818	9822	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	12925238	21554	21558	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	12925238	21806	21810	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	12925238	22628	22632	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	12925238	22836	22840	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	12925238	24244	24248	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	12925238	24809	24813	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	12925238	24897	24901	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	12925238	25050	25054	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	12925238	25162	25166	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	12925238	26540	26544	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	12925238	27109	27113	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	12925238	30109	30113	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	12925238	30489	30493	Ca2+	chebi	CHEBI:29108	calcium(2+)
+382,383c382,383
+< true_positive	12925238	5459	5466	insulin	chebi	CHEBI:5931	insulin
+< true_positive	12925238	5584	5591	insulin	chebi	CHEBI:5931	insulin
+---
+> false_negative	12925238	5459	5466	insulin	chebi	CHEBI:5931	insulin
+> false_negative	12925238	5584	5591	insulin	chebi	CHEBI:5931	insulin
+394,403c394,403
+< true_positive	12925238	13603	13607	NaCl	chebi	CHEBI:26710	sodium chloride
+< true_positive	12925238	13691	13695	NaCl	chebi	CHEBI:26710	sodium chloride
+< true_positive	12925238	13734	13738	NaCl	chebi	CHEBI:26710	sodium chloride
+< true_positive	12925238	13890	13894	NaCl	chebi	CHEBI:26710	sodium chloride
+< true_positive	12925238	30314	30318	NaCl	chebi	CHEBI:26710	sodium chloride
+< true_positive	12925238	30455	30459	NaCl	chebi	CHEBI:26710	sodium chloride
+< true_positive	12925238	31430	31434	NaCl	chebi	CHEBI:26710	sodium chloride
+< true_positive	12925238	31953	31957	NaCl	chebi	CHEBI:26710	sodium chloride
+< true_positive	12925238	32003	32007	NaCl	chebi	CHEBI:26710	sodium chloride
+< true_positive	12925238	32954	32958	NaCl	chebi	CHEBI:26710	sodium chloride
+---
+> false_negative	12925238	13603	13607	NaCl	chebi	CHEBI:26710	sodium chloride
+> false_negative	12925238	13691	13695	NaCl	chebi	CHEBI:26710	sodium chloride
+> false_negative	12925238	13734	13738	NaCl	chebi	CHEBI:26710	sodium chloride
+> false_negative	12925238	13890	13894	NaCl	chebi	CHEBI:26710	sodium chloride
+> false_negative	12925238	30314	30318	NaCl	chebi	CHEBI:26710	sodium chloride
+> false_negative	12925238	30455	30459	NaCl	chebi	CHEBI:26710	sodium chloride
+> false_negative	12925238	31430	31434	NaCl	chebi	CHEBI:26710	sodium chloride
+> false_negative	12925238	31953	31957	NaCl	chebi	CHEBI:26710	sodium chloride
+> false_negative	12925238	32003	32007	NaCl	chebi	CHEBI:26710	sodium chloride
+> false_negative	12925238	32954	32958	NaCl	chebi	CHEBI:26710	sodium chloride
+406c406
+< true_positive	12925238	15667	15678	haemoglobin	chebi	CHEBI:35143	hemoglobin
+---
+> false_negative	12925238	15667	15678	haemoglobin	chebi	CHEBI:35143	hemoglobin
+409,413c409,413
+< true_positive	12925238	15737	15748	haemoglobin	chebi	CHEBI:35143	hemoglobin
+< true_positive	12925238	15764	15775	haemoglobin	chebi	CHEBI:35143	hemoglobin
+< true_positive	12925238	34506	34517	haemoglobin	chebi	CHEBI:35143	hemoglobin
+< true_positive	12925238	34568	34579	haemoglobin	chebi	CHEBI:35143	hemoglobin
+< true_positive	12925238	34595	34606	haemoglobin	chebi	CHEBI:35143	hemoglobin
+---
+> false_negative	12925238	15737	15748	haemoglobin	chebi	CHEBI:35143	hemoglobin
+> false_negative	12925238	15764	15775	haemoglobin	chebi	CHEBI:35143	hemoglobin
+> false_negative	12925238	34506	34517	haemoglobin	chebi	CHEBI:35143	hemoglobin
+> false_negative	12925238	34568	34579	haemoglobin	chebi	CHEBI:35143	hemoglobin
+> false_negative	12925238	34595	34606	haemoglobin	chebi	CHEBI:35143	hemoglobin
+422,423c422,423
+< false_positive	12925238	28086	28090	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+< false_positive	12925238	30567	30571	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+---
+> false_negative	12925238	28086	28090	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+> false_negative	12925238	30567	30571	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+427c427
+< true_positive	12925238	29021	29026	CaCl2	chebi	CHEBI:3312	calcium dichloride
+---
+> false_negative	12925238	29021	29026	CaCl2	chebi	CHEBI:3312	calcium dichloride
+430c430
+< true_positive	12925238	29319	29324	CaCl2	chebi	CHEBI:3312	calcium dichloride
+---
+> false_negative	12925238	29319	29324	CaCl2	chebi	CHEBI:3312	calcium dichloride
+436c436
+< true_positive	12925238	30466	30471	CaCl2	chebi	CHEBI:3312	calcium dichloride
+---
+> false_negative	12925238	30466	30471	CaCl2	chebi	CHEBI:3312	calcium dichloride
+445,446c445,446
+< true_positive	12925238	31928	31935	Na2HPO4	chebi	CHEBI:34683	disodium hydrogenphosphate
+< true_positive	12925238	31936	31943	NaH2PO4	chebi	CHEBI:37585	sodium dihydrogenphosphate
+---
+> false_negative	12925238	31928	31935	Na2HPO4	chebi	CHEBI:34683	disodium hydrogenphosphate
+> false_negative	12925238	31936	31943	NaH2PO4	chebi	CHEBI:37585	sodium dihydrogenphosphate
+448,449c448,449
+< true_positive	12925238	28086	28090	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+< true_positive	12925238	30567	30571	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+---
+> false_negative	12925238	28086	28090	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+> false_negative	12925238	30567	30571	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+557,558c557,558
+< false_positive	14609438	20310	20313	Pro	chebi	CHEBI:32874	proline residue
+< false_positive	14609438	20306	20309	Gly	chebi	CHEBI:29947	glycine residue
+---
+> false_negative	14609438	20310	20313	Pro	chebi	CHEBI:32874	proline residue
+> false_negative	14609438	20306	20309	Gly	chebi	CHEBI:29947	glycine residue
+560,563c560,563
+< false_positive	14609438	20319	20322	Gly	chebi	CHEBI:29947	glycine residue
+< false_positive	14609438	20323	20326	Pro	chebi	CHEBI:32874	proline residue
+< false_positive	14609438	20340	20343	Pro	chebi	CHEBI:32874	proline residue
+< false_positive	14609438	20336	20339	Gly	chebi	CHEBI:29947	glycine residue
+---
+> false_negative	14609438	20319	20322	Gly	chebi	CHEBI:29947	glycine residue
+> false_negative	14609438	20323	20326	Pro	chebi	CHEBI:32874	proline residue
+> false_negative	14609438	20340	20343	Pro	chebi	CHEBI:32874	proline residue
+> false_negative	14609438	20336	20339	Gly	chebi	CHEBI:29947	glycine residue
+581c581
+< false_positive	14609438	16480	16491	carboxylate	chebi	CHEBI:18245	carboxylato group
+---
+> false_negative	14609438	16480	16491	carboxylate	chebi	CHEBI:18245	carboxylato group
+619,621c619,621
+< true_positive	14611657	31345	31350	mRNAs	chebi	CHEBI:33699	messenger RNA
+< true_positive	14611657	34646	34650	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	14611657	35072	35076	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	14611657	31345	31350	mRNAs	chebi	CHEBI:33699	messenger RNA
+> false_negative	14611657	34646	34650	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	14611657	35072	35076	mRNA	chebi	CHEBI:33699	messenger RNA
+835,870c835,870
+< true_positive	14737183	2662	2669	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	2775	2782	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	3123	3130	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	3764	3771	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	3884	3891	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	4048	4055	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	4337	4344	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	4918	4925	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	6649	6656	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	7155	7162	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	8195	8202	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	9624	9631	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	9662	9669	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	10171	10178	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	11257	11264	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	12159	12166	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	12943	12950	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	13036	13043	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	13264	13271	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	14162	14169	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	14455	14462	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	15944	15951	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	16777	16784	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	22289	22296	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	23953	23960	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	26537	26544	Pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	32038	32045	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	32065	32072	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	32235	32242	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	32491	32498	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	36472	36479	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	39374	39381	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	39925	39932	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	40072	40079	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	42284	42291	pigment	chebi	CHEBI:26130	pigment
+< true_positive	14737183	45050	45057	pigment	chebi	CHEBI:26130	pigment
+---
+> false_negative	14737183	2662	2669	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	2775	2782	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	3123	3130	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	3764	3771	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	3884	3891	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	4048	4055	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	4337	4344	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	4918	4925	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	6649	6656	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	7155	7162	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	8195	8202	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	9624	9631	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	9662	9669	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	10171	10178	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	11257	11264	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	12159	12166	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	12943	12950	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	13036	13043	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	13264	13271	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	14162	14169	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	14455	14462	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	15944	15951	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	16777	16784	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	22289	22296	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	23953	23960	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	26537	26544	Pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	32038	32045	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	32065	32072	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	32235	32242	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	32491	32498	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	36472	36479	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	39374	39381	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	39925	39932	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	40072	40079	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	42284	42291	pigment	chebi	CHEBI:26130	pigment
+> false_negative	14737183	45050	45057	pigment	chebi	CHEBI:26130	pigment
+872c872
+< true_positive	14737183	5809	5813	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	14737183	5809	5813	mRNA	chebi	CHEBI:33699	messenger RNA
+881,888c881,888
+< true_positive	14737183	21113	21117	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	14737183	30011	30015	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	14737183	31564	31568	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	14737183	32178	32182	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	14737183	51996	52000	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	14737183	63613	63617	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	14737183	63820	63824	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	14737183	63997	64001	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	14737183	21113	21117	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	14737183	30011	30015	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	14737183	31564	31568	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	14737183	32178	32182	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	14737183	51996	52000	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	14737183	63613	63617	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	14737183	63820	63824	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	14737183	63997	64001	mRNA	chebi	CHEBI:33699	messenger RNA
+914,915c914,915
+< false_positive	15005800	47593	47597	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+< true_positive	15005800	20967	20972	mRNAs	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	15005800	47593	47597	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+> false_negative	15005800	20967	20972	mRNAs	chebi	CHEBI:33699	messenger RNA
+1009c1009
+< true_positive	15005800	1391	1396	mRNAs	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	15005800	1391	1396	mRNAs	chebi	CHEBI:33699	messenger RNA
+1052,1053c1052,1053
+< true_positive	15005800	47582	47586	NaCl	chebi	CHEBI:26710	sodium chloride
+< true_positive	15005800	47593	47597	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+---
+> false_negative	15005800	47582	47586	NaCl	chebi	CHEBI:26710	sodium chloride
+> false_negative	15005800	47593	47597	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+1093,1097c1093,1097
+< false_positive	15040800	10310	10314	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+< false_positive	15040800	15457	15461	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+< false_positive	15040800	23856	23860	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+< false_positive	15040800	24088	24092	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+< false_positive	15040800	24495	24499	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+---
+> false_negative	15040800	10310	10314	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+> false_negative	15040800	15457	15461	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+> false_negative	15040800	23856	23860	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+> false_negative	15040800	24088	24092	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+> false_negative	15040800	24495	24499	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+1312,1338c1312,1338
+< true_positive	15040800	12968	12972	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15040800	14952	14956	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15040800	27130	27134	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15040800	27480	27484	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15040800	31625	31629	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15040800	31708	31712	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15040800	31892	31896	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15040800	32094	32098	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15040800	32284	32288	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15040800	32593	32597	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15040800	32643	32647	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15040800	32814	32818	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15040800	40991	40995	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15040800	41213	41217	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15040800	43236	43240	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15040800	43340	43344	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15040800	43754	43758	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15040800	43875	43879	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15040800	46224	46228	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15040800	46440	46444	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15040800	49573	49577	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15040800	52810	52814	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15040800	52864	52868	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15040800	52916	52920	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15040800	54374	54378	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15040800	54466	54470	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15040800	54686	54690	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	15040800	12968	12972	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15040800	14952	14956	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15040800	27130	27134	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15040800	27480	27484	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15040800	31625	31629	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15040800	31708	31712	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15040800	31892	31896	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15040800	32094	32098	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15040800	32284	32288	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15040800	32593	32597	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15040800	32643	32647	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15040800	32814	32818	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15040800	40991	40995	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15040800	41213	41217	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15040800	43236	43240	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15040800	43340	43344	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15040800	43754	43758	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15040800	43875	43879	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15040800	46224	46228	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15040800	46440	46444	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15040800	49573	49577	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15040800	52810	52814	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15040800	52864	52868	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15040800	52916	52920	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15040800	54374	54378	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15040800	54466	54470	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15040800	54686	54690	mRNA	chebi	CHEBI:33699	messenger RNA
+1342,1347c1342,1347
+< true_positive	15040800	10310	10314	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+< true_positive	15040800	10323	10327	NaCl	chebi	CHEBI:26710	sodium chloride
+< true_positive	15040800	10407	10411	NaCl	chebi	CHEBI:26710	sodium chloride
+< true_positive	15040800	10643	10647	EtOH	chebi	CHEBI:16236	ethanol
+< true_positive	15040800	10705	10709	EtOH	chebi	CHEBI:16236	ethanol
+< true_positive	15040800	11148	11153	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+---
+> false_negative	15040800	10310	10314	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+> false_negative	15040800	10323	10327	NaCl	chebi	CHEBI:26710	sodium chloride
+> false_negative	15040800	10407	10411	NaCl	chebi	CHEBI:26710	sodium chloride
+> false_negative	15040800	10643	10647	EtOH	chebi	CHEBI:16236	ethanol
+> false_negative	15040800	10705	10709	EtOH	chebi	CHEBI:16236	ethanol
+> false_negative	15040800	11148	11153	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+1357c1357
+< true_positive	15040800	15457	15461	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+---
+> false_negative	15040800	15457	15461	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+1359c1359
+< true_positive	15040800	16198	16202	NaOH	chebi	CHEBI:32145	sodium hydroxide
+---
+> false_negative	15040800	16198	16202	NaOH	chebi	CHEBI:32145	sodium hydroxide
+1371,1372c1371,1372
+< true_positive	15040800	18966	18970	NaCl	chebi	CHEBI:26710	sodium chloride
+< true_positive	15040800	19161	19165	NaCl	chebi	CHEBI:26710	sodium chloride
+---
+> false_negative	15040800	18966	18970	NaCl	chebi	CHEBI:26710	sodium chloride
+> false_negative	15040800	19161	19165	NaCl	chebi	CHEBI:26710	sodium chloride
+1383,1384c1383,1384
+< true_positive	15040800	24059	24062	KCl	chebi	CHEBI:32588	potassium chloride
+< true_positive	15040800	24088	24092	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+---
+> false_negative	15040800	24059	24062	KCl	chebi	CHEBI:32588	potassium chloride
+> false_negative	15040800	24088	24092	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+1390c1390
+< true_positive	15040800	23856	23860	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+---
+> false_negative	15040800	23856	23860	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+1394c1394
+< true_positive	15040800	24495	24499	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+---
+> false_negative	15040800	24495	24499	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+1399,1400c1399,1400
+< false_positive	15040800	24792	24811	glucose-6-phosphate	chebi	CHEBI:15954	D-glucose 6-phosphate
+< false_positive	15040800	24822	24841	glucose-6-phosphate	chebi	CHEBI:15954	D-glucose 6-phosphate
+---
+> false_negative	15040800	24792	24811	glucose-6-phosphate	chebi	CHEBI:15954	D-glucose 6-phosphate
+> false_negative	15040800	24822	24841	glucose-6-phosphate	chebi	CHEBI:15954	D-glucose 6-phosphate
+1405c1405
+< true_positive	15040800	25310	25320	2-propanol	chebi	CHEBI:17824	propan-2-ol
+---
+> false_negative	15040800	25310	25320	2-propanol	chebi	CHEBI:17824	propan-2-ol
+1408c1408
+< true_positive	15040800	25405	25415	2-propanol	chebi	CHEBI:17824	propan-2-ol
+---
+> false_negative	15040800	25405	25415	2-propanol	chebi	CHEBI:17824	propan-2-ol
+1410c1410
+< true_positive	15040800	25488	25498	2-propanol	chebi	CHEBI:17824	propan-2-ol
+---
+> false_negative	15040800	25488	25498	2-propanol	chebi	CHEBI:17824	propan-2-ol
+1414,1422c1414,1422
+< false_positive	15040800	25810	25817	HMG-CoA	chebi	CHEBI:11814	3-hydroxy-3-methylglutaryl-CoA
+< false_positive	15040800	32076	32083	HMG-CoA	chebi	CHEBI:11814	3-hydroxy-3-methylglutaryl-CoA
+< false_positive	15040800	32384	32391	HMG-CoA	chebi	CHEBI:11814	3-hydroxy-3-methylglutaryl-CoA
+< false_positive	15040800	32444	32451	HMG-CoA	chebi	CHEBI:11814	3-hydroxy-3-methylglutaryl-CoA
+< false_positive	15040800	40893	40900	HMG-CoA	chebi	CHEBI:11814	3-hydroxy-3-methylglutaryl-CoA
+< false_positive	15040800	43251	43258	HMG-CoA	chebi	CHEBI:11814	3-hydroxy-3-methylglutaryl-CoA
+< false_positive	15040800	54891	54898	HMG-CoA	chebi	CHEBI:11814	3-hydroxy-3-methylglutaryl-CoA
+< false_positive	15040800	54987	54994	HMG-CoA	chebi	CHEBI:11814	3-hydroxy-3-methylglutaryl-CoA
+< false_positive	15040800	23580	23587	HMG-CoA	chebi	CHEBI:11814	3-hydroxy-3-methylglutaryl-CoA
+---
+> false_negative	15040800	25810	25817	HMG-CoA	chebi	CHEBI:11814	3-hydroxy-3-methylglutaryl-CoA
+> false_negative	15040800	32076	32083	HMG-CoA	chebi	CHEBI:11814	3-hydroxy-3-methylglutaryl-CoA
+> false_negative	15040800	32384	32391	HMG-CoA	chebi	CHEBI:11814	3-hydroxy-3-methylglutaryl-CoA
+> false_negative	15040800	32444	32451	HMG-CoA	chebi	CHEBI:11814	3-hydroxy-3-methylglutaryl-CoA
+> false_negative	15040800	40893	40900	HMG-CoA	chebi	CHEBI:11814	3-hydroxy-3-methylglutaryl-CoA
+> false_negative	15040800	43251	43258	HMG-CoA	chebi	CHEBI:11814	3-hydroxy-3-methylglutaryl-CoA
+> false_negative	15040800	54891	54898	HMG-CoA	chebi	CHEBI:11814	3-hydroxy-3-methylglutaryl-CoA
+> false_negative	15040800	54987	54994	HMG-CoA	chebi	CHEBI:11814	3-hydroxy-3-methylglutaryl-CoA
+> false_negative	15040800	23580	23587	HMG-CoA	chebi	CHEBI:11814	3-hydroxy-3-methylglutaryl-CoA
+1586,1589c1586,1589
+< false_positive	15207008	48689	48693	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+< false_positive	15207008	48963	48967	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+< false_positive	15207008	49313	49317	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+< false_positive	15207008	49486	49490	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+---
+> false_negative	15207008	48689	48693	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+> false_negative	15207008	48963	48967	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+> false_negative	15207008	49313	49317	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+> false_negative	15207008	49486	49490	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+1700,1701c1700,1701
+< true_positive	15207008	44196	44200	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15207008	44428	44432	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	15207008	44196	44200	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15207008	44428	44432	mRNA	chebi	CHEBI:33699	messenger RNA
+1728,1729c1728,1729
+< true_positive	15207008	48678	48682	NaCl	chebi	CHEBI:26710	sodium chloride
+< true_positive	15207008	48689	48693	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+---
+> false_negative	15207008	48678	48682	NaCl	chebi	CHEBI:26710	sodium chloride
+> false_negative	15207008	48689	48693	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+1734,1735c1734,1735
+< true_positive	15207008	48952	48956	NaCl	chebi	CHEBI:26710	sodium chloride
+< true_positive	15207008	48963	48967	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+---
+> false_negative	15207008	48952	48956	NaCl	chebi	CHEBI:26710	sodium chloride
+> false_negative	15207008	48963	48967	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+1742,1745c1742,1745
+< true_positive	15207008	49302	49306	NaCl	chebi	CHEBI:26710	sodium chloride
+< true_positive	15207008	49475	49479	NaCl	chebi	CHEBI:26710	sodium chloride
+< true_positive	15207008	49313	49317	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+< true_positive	15207008	49486	49490	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+---
+> false_negative	15207008	49302	49306	NaCl	chebi	CHEBI:26710	sodium chloride
+> false_negative	15207008	49475	49479	NaCl	chebi	CHEBI:26710	sodium chloride
+> false_negative	15207008	49313	49317	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+> false_negative	15207008	49486	49490	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+1750c1750
+< false_positive	15207008	33940	33941	G	chebi	CHEBI:30755	guanine group
+---
+> false_negative	15207008	33940	33941	G	chebi	CHEBI:30755	guanine group
+1799,1818c1799,1818
+< true_positive	15314655	911	915	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15314655	1019	1023	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15314655	12240	12244	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15314655	13027	13031	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15314655	14547	14551	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15314655	15405	15409	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15314655	20001	20005	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15314655	21838	21842	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15314655	22042	22046	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15314655	24839	24843	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15314655	25001	25005	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15314655	25594	25598	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15314655	25657	25661	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15314655	28811	28815	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15314655	28968	28972	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15314655	36677	36681	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15314655	37822	37826	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15314655	37950	37954	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15314655	38246	38250	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15314655	39663	39667	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	15314655	911	915	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15314655	1019	1023	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15314655	12240	12244	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15314655	13027	13031	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15314655	14547	14551	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15314655	15405	15409	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15314655	20001	20005	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15314655	21838	21842	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15314655	22042	22046	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15314655	24839	24843	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15314655	25001	25005	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15314655	25594	25598	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15314655	25657	25661	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15314655	28811	28815	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15314655	28968	28972	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15314655	36677	36681	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15314655	37822	37826	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15314655	37950	37954	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15314655	38246	38250	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15314655	39663	39667	mRNA	chebi	CHEBI:33699	messenger RNA
+1863c1863
+< true_positive	15314655	39731	39735	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	15314655	39731	39735	mRNA	chebi	CHEBI:33699	messenger RNA
+1875c1875
+< true_positive	15314659	31980	31985	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+---
+> false_negative	15314659	31980	31985	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+1881c1881
+< false_positive	15320950	5613	5617	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+---
+> false_negative	15320950	5613	5617	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+1886,1887c1886,1887
+< true_positive	15320950	20129	20133	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15320950	20026	20030	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	15320950	20129	20133	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15320950	20026	20030	mRNA	chebi	CHEBI:33699	messenger RNA
+1911,1923c1911,1923
+< true_positive	15320950	562	566	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15320950	1540	1544	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15320950	3271	3275	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15320950	8260	8264	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15320950	11810	11814	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15320950	14576	14580	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15320950	18982	18986	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15320950	19492	19496	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15320950	19666	19670	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15320950	20448	20452	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15320950	21306	21310	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15320950	21390	21394	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15320950	29289	29293	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	15320950	562	566	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15320950	1540	1544	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15320950	3271	3275	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15320950	8260	8264	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15320950	11810	11814	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15320950	14576	14580	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15320950	18982	18986	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15320950	19492	19496	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15320950	19666	19670	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15320950	20448	20452	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15320950	21306	21310	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15320950	21390	21394	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15320950	29289	29293	mRNA	chebi	CHEBI:33699	messenger RNA
+1935,1942c1935,1942
+< true_positive	15320950	1738	1741	Na+	chebi	CHEBI:29101	sodium(1+)
+< true_positive	15320950	11019	11022	Na+	chebi	CHEBI:29101	sodium(1+)
+< true_positive	15320950	11096	11099	Na+	chebi	CHEBI:29101	sodium(1+)
+< true_positive	15320950	11299	11302	Na+	chebi	CHEBI:29101	sodium(1+)
+< true_positive	15320950	11369	11372	Na+	chebi	CHEBI:29101	sodium(1+)
+< true_positive	15320950	11377	11380	Na+	chebi	CHEBI:29101	sodium(1+)
+< true_positive	15320950	28459	28462	Na+	chebi	CHEBI:29101	sodium(1+)
+< true_positive	15320950	28840	28843	Na+	chebi	CHEBI:29101	sodium(1+)
+---
+> false_negative	15320950	1738	1741	Na+	chebi	CHEBI:29101	sodium(1+)
+> false_negative	15320950	11019	11022	Na+	chebi	CHEBI:29101	sodium(1+)
+> false_negative	15320950	11096	11099	Na+	chebi	CHEBI:29101	sodium(1+)
+> false_negative	15320950	11299	11302	Na+	chebi	CHEBI:29101	sodium(1+)
+> false_negative	15320950	11369	11372	Na+	chebi	CHEBI:29101	sodium(1+)
+> false_negative	15320950	11377	11380	Na+	chebi	CHEBI:29101	sodium(1+)
+> false_negative	15320950	28459	28462	Na+	chebi	CHEBI:29101	sodium(1+)
+> false_negative	15320950	28840	28843	Na+	chebi	CHEBI:29101	sodium(1+)
+1947c1947
+< true_positive	15320950	2851	2854	Cl-	chebi	CHEBI:17996	chloride
+---
+> false_negative	15320950	2851	2854	Cl-	chebi	CHEBI:17996	chloride
+1951c1951
+< true_positive	15320950	5441	5444	Cl-	chebi	CHEBI:17996	chloride
+---
+> false_negative	15320950	5441	5444	Cl-	chebi	CHEBI:17996	chloride
+1954,1955c1954,1955
+< true_positive	15320950	5469	5471	Na	chebi	CHEBI:26708	sodium
+< true_positive	15320950	5613	5617	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+---
+> false_negative	15320950	5469	5471	Na	chebi	CHEBI:26708	sodium
+> false_negative	15320950	5613	5617	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+1975c1975
+< true_positive	15320950	31857	31860	Gly	chebi	CHEBI:15428	glycine
+---
+> false_negative	15320950	31857	31860	Gly	chebi	CHEBI:15428	glycine
+1979,1980c1979,1980
+< true_positive	15320950	30537	30544	pigment	chebi	CHEBI:26130	pigment
+< false_positive	15320950	31912	31913	S	chebi	CHEBI:26833	sulfur
+---
+> false_negative	15320950	30537	30544	pigment	chebi	CHEBI:26130	pigment
+> false_negative	15320950	31912	31913	S	chebi	CHEBI:26833	sulfur
+1988c1988
+< true_positive	15328533	3273	3280	insulin	chebi	CHEBI:5931	insulin
+---
+> false_negative	15328533	3273	3280	insulin	chebi	CHEBI:5931	insulin
+1990c1990
+< true_positive	15328533	6449	6453	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	15328533	6449	6453	mRNA	chebi	CHEBI:33699	messenger RNA
+2022,2024c2022,2024
+< true_positive	15328533	15761	15768	insulin	chebi	CHEBI:5931	insulin
+< true_positive	15328533	16061	16068	insulin	chebi	CHEBI:5931	insulin
+< true_positive	15328533	16250	16257	insulin	chebi	CHEBI:5931	insulin
+---
+> false_negative	15328533	15761	15768	insulin	chebi	CHEBI:5931	insulin
+> false_negative	15328533	16061	16068	insulin	chebi	CHEBI:5931	insulin
+> false_negative	15328533	16250	16257	insulin	chebi	CHEBI:5931	insulin
+2082,2083c2082,2083
+< true_positive	15345036	53727	53731	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15345036	53804	53808	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	15345036	53727	53731	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15345036	53804	53808	mRNA	chebi	CHEBI:33699	messenger RNA
+2111,2126c2111,2126
+< true_positive	15345036	4	22	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+< true_positive	15345036	250	268	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+< true_positive	15345036	453	471	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+< true_positive	15345036	1811	1829	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+< true_positive	15345036	4533	4551	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+< true_positive	15345036	5693	5711	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+< true_positive	15345036	7958	7976	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+< true_positive	15345036	29859	29877	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+< true_positive	15345036	40839	40857	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+< true_positive	15345036	43614	43632	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+< true_positive	15345036	45890	45908	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+< true_positive	15345036	47193	47211	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+< true_positive	15345036	48515	48533	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+< true_positive	15345036	48579	48597	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+< true_positive	15345036	48699	48717	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+< true_positive	15345036	62442	62460	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+---
+> false_negative	15345036	4	22	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+> false_negative	15345036	250	268	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+> false_negative	15345036	453	471	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+> false_negative	15345036	1811	1829	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+> false_negative	15345036	4533	4551	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+> false_negative	15345036	5693	5711	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+> false_negative	15345036	7958	7976	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+> false_negative	15345036	29859	29877	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+> false_negative	15345036	40839	40857	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+> false_negative	15345036	43614	43632	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+> false_negative	15345036	45890	45908	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+> false_negative	15345036	47193	47211	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+> false_negative	15345036	48515	48533	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+> false_negative	15345036	48579	48597	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+> false_negative	15345036	48699	48717	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+> false_negative	15345036	62442	62460	phosphatidylserine	chebi	CHEBI:18303	phosphatidyl-L-serines
+2139,2144c2139,2144
+< false_positive	15345036	44143	44157	thioglycollate	chebi	CHEBI:47869	thioglycolate(2-)
+< false_positive	15345036	44622	44636	thioglycollate	chebi	CHEBI:47869	thioglycolate(2-)
+< false_positive	15345036	44931	44945	thioglycollate	chebi	CHEBI:47869	thioglycolate(2-)
+< true_positive	15345036	44143	44157	thioglycollate	chebi	CHEBI:30066	thioglycolate(1-)
+< true_positive	15345036	44622	44636	thioglycollate	chebi	CHEBI:30066	thioglycolate(1-)
+< true_positive	15345036	44931	44945	thioglycollate	chebi	CHEBI:30066	thioglycolate(1-)
+---
+> false_negative	15345036	44143	44157	thioglycollate	chebi	CHEBI:47869	thioglycolate(2-)
+> false_negative	15345036	44622	44636	thioglycollate	chebi	CHEBI:47869	thioglycolate(2-)
+> false_negative	15345036	44931	44945	thioglycollate	chebi	CHEBI:47869	thioglycolate(2-)
+> false_negative	15345036	44143	44157	thioglycollate	chebi	CHEBI:30066	thioglycolate(1-)
+> false_negative	15345036	44622	44636	thioglycollate	chebi	CHEBI:30066	thioglycolate(1-)
+> false_negative	15345036	44931	44945	thioglycollate	chebi	CHEBI:30066	thioglycolate(1-)
+2149,2150c2149,2150
+< false_positive	15492776	43544	43548	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+< false_positive	15492776	48288	48292	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+---
+> false_negative	15492776	43544	43548	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+> false_negative	15492776	48288	48292	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+2153c2153
+< true_positive	15492776	17631	17643	deoxyuridine	chebi	CHEBI:16450	2'-deoxyuridine
+---
+> false_negative	15492776	17631	17643	deoxyuridine	chebi	CHEBI:16450	2'-deoxyuridine
+2170,2171c2170,2171
+< true_positive	15492776	33371	33375	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15492776	33589	33593	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	15492776	33371	33375	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15492776	33589	33593	mRNA	chebi	CHEBI:33699	messenger RNA
+2181c2181
+< true_positive	15492776	43544	43548	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+---
+> false_negative	15492776	43544	43548	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+2183c2183
+< true_positive	15492776	48288	48292	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+---
+> false_negative	15492776	48288	48292	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+2192c2192
+< true_positive	15492776	52693	52705	deoxyuridine	chebi	CHEBI:16450	2'-deoxyuridine
+---
+> false_negative	15492776	52693	52705	deoxyuridine	chebi	CHEBI:16450	2'-deoxyuridine
+2202,2205c2202,2205
+< true_positive	15550985	20813	20817	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15550985	20732	20736	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15550985	20444	20448	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15550985	19334	19338	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	15550985	20813	20817	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15550985	20732	20736	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15550985	20444	20448	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15550985	19334	19338	mRNA	chebi	CHEBI:33699	messenger RNA
+2226c2226
+< false_positive	15588329	27767	27771	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+---
+> false_negative	15588329	27767	27771	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+2231,2233c2231,2233
+< true_positive	15588329	6656	6660	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15588329	7840	7844	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15588329	6383	6387	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	15588329	6656	6660	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15588329	7840	7844	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15588329	6383	6387	mRNA	chebi	CHEBI:33699	messenger RNA
+2284c2284
+< true_positive	15588329	30566	30576	cacodylate	chebi	CHEBI:16223	dimethylarsinate
+---
+> false_negative	15588329	30566	30576	cacodylate	chebi	CHEBI:16223	dimethylarsinate
+2297c2297
+< true_positive	15588329	28196	28199	KCl	chebi	CHEBI:32588	potassium chloride
+---
+> false_negative	15588329	28196	28199	KCl	chebi	CHEBI:32588	potassium chloride
+2299c2299
+< true_positive	15588329	27767	27771	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+---
+> false_negative	15588329	27767	27771	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+2354c2354
+< false_positive	15630473	45389	45393	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+---
+> false_negative	15630473	45389	45393	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+2436,2450c2436,2450
+< true_positive	15630473	63630	63634	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15630473	63942	63947	mRNAs	chebi	CHEBI:33699	messenger RNA
+< true_positive	15630473	63965	63969	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15630473	65011	65015	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15630473	7443	7447	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15630473	8200	8204	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15630473	9089	9093	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15630473	9240	9244	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15630473	9862	9866	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15630473	10204	10208	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15630473	18839	18843	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15630473	23645	23649	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15630473	26521	26525	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15630473	28145	28149	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15630473	29321	29326	mRNAs	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	15630473	63630	63634	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15630473	63942	63947	mRNAs	chebi	CHEBI:33699	messenger RNA
+> false_negative	15630473	63965	63969	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15630473	65011	65015	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15630473	7443	7447	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15630473	8200	8204	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15630473	9089	9093	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15630473	9240	9244	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15630473	9862	9866	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15630473	10204	10208	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15630473	18839	18843	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15630473	23645	23649	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15630473	26521	26525	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15630473	28145	28149	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15630473	29321	29326	mRNAs	chebi	CHEBI:33699	messenger RNA
+2469c2469
+< true_positive	15630473	45051	45055	NaCl	chebi	CHEBI:26710	sodium chloride
+---
+> false_negative	15630473	45051	45055	NaCl	chebi	CHEBI:26710	sodium chloride
+2474,2475c2474,2475
+< true_positive	15630473	45389	45393	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+< true_positive	15630473	45402	45406	NaCl	chebi	CHEBI:26710	sodium chloride
+---
+> false_negative	15630473	45389	45393	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+> false_negative	15630473	45402	45406	NaCl	chebi	CHEBI:26710	sodium chloride
+2513,2514c2513,2514
+< true_positive	15676071	21563	21567	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15676071	28943	28947	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	15676071	21563	21567	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15676071	28943	28947	mRNA	chebi	CHEBI:33699	messenger RNA
+2545,2546c2545,2546
+< true_positive	15676071	32636	32643	maleate	chebi	CHEBI:30780	maleate(2-)
+< true_positive	15676071	32718	32728	cacodylate	chebi	CHEBI:16223	dimethylarsinate
+---
+> false_negative	15676071	32636	32643	maleate	chebi	CHEBI:30780	maleate(2-)
+> false_negative	15676071	32718	32728	cacodylate	chebi	CHEBI:16223	dimethylarsinate
+2553c2553
+< true_positive	15676071	33340	33350	cacodylate	chebi	CHEBI:16223	dimethylarsinate
+---
+> false_negative	15676071	33340	33350	cacodylate	chebi	CHEBI:16223	dimethylarsinate
+2560c2560
+< false_positive	15676071	32636	32643	maleate	chebi	CHEBI:37156	maleate(1-)
+---
+> false_negative	15676071	32636	32643	maleate	chebi	CHEBI:37156	maleate(1-)
+2566,2567c2566,2567
+< true_positive	15760270	50310	50314	EGTA	chebi	CHEBI:30741	ethylene glycol bis(2-aminoethyl)tetraacetate
+< true_positive	15760270	50605	50609	EGTA	chebi	CHEBI:30741	ethylene glycol bis(2-aminoethyl)tetraacetate
+---
+> false_negative	15760270	50310	50314	EGTA	chebi	CHEBI:30741	ethylene glycol bis(2-aminoethyl)tetraacetate
+> false_negative	15760270	50605	50609	EGTA	chebi	CHEBI:30741	ethylene glycol bis(2-aminoethyl)tetraacetate
+2578c2578
+< true_positive	15760270	52555	52565	cacodylate	chebi	CHEBI:16223	dimethylarsinate
+---
+> false_negative	15760270	52555	52565	cacodylate	chebi	CHEBI:16223	dimethylarsinate
+2581c2581
+< true_positive	15760270	61324	61328	NaCl	chebi	CHEBI:26710	sodium chloride
+---
+> false_negative	15760270	61324	61328	NaCl	chebi	CHEBI:26710	sodium chloride
+2584,2585c2584,2585
+< true_positive	15760270	61336	61342	NaHCO3	chebi	CHEBI:32139	sodium bicarbonate
+< true_positive	15760270	61351	61354	KCl	chebi	CHEBI:32588	potassium chloride
+---
+> false_negative	15760270	61336	61342	NaHCO3	chebi	CHEBI:32139	sodium bicarbonate
+> false_negative	15760270	61351	61354	KCl	chebi	CHEBI:32588	potassium chloride
+2587c2587
+< true_positive	15760270	61378	61383	CaCl2	chebi	CHEBI:3312	calcium dichloride
+---
+> false_negative	15760270	61378	61383	CaCl2	chebi	CHEBI:3312	calcium dichloride
+2630c2630
+< true_positive	15760270	1385	1392	insulin	chebi	CHEBI:5931	insulin
+---
+> false_negative	15760270	1385	1392	insulin	chebi	CHEBI:5931	insulin
+2635,2636c2635,2636
+< true_positive	15760270	21632	21636	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15760270	33607	33611	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	15760270	21632	21636	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15760270	33607	33611	mRNA	chebi	CHEBI:33699	messenger RNA
+2641,2660c2641,2660
+< true_positive	15760270	5014	5021	insulin	chebi	CHEBI:5931	insulin
+< true_positive	15760270	26758	26765	Insulin	chebi	CHEBI:5931	insulin
+< true_positive	15760270	26909	26916	insulin	chebi	CHEBI:5931	insulin
+< true_positive	15760270	26990	26997	insulin	chebi	CHEBI:5931	insulin
+< true_positive	15760270	27082	27089	insulin	chebi	CHEBI:5931	insulin
+< true_positive	15760270	27419	27426	insulin	chebi	CHEBI:5931	insulin
+< true_positive	15760270	28204	28211	insulin	chebi	CHEBI:5931	insulin
+< true_positive	15760270	28403	28410	insulin	chebi	CHEBI:5931	insulin
+< true_positive	15760270	28482	28489	insulin	chebi	CHEBI:5931	insulin
+< true_positive	15760270	37055	37062	insulin	chebi	CHEBI:5931	insulin
+< true_positive	15760270	37180	37187	insulin	chebi	CHEBI:5931	insulin
+< true_positive	15760270	37661	37668	insulin	chebi	CHEBI:5931	insulin
+< true_positive	15760270	40453	40460	insulin	chebi	CHEBI:5931	insulin
+< true_positive	15760270	40619	40626	insulin	chebi	CHEBI:5931	insulin
+< true_positive	15760270	40781	40788	insulin	chebi	CHEBI:5931	insulin
+< true_positive	15760270	51381	51388	Insulin	chebi	CHEBI:5931	insulin
+< true_positive	15760270	51430	51437	Insulin	chebi	CHEBI:5931	insulin
+< true_positive	15760270	51687	51694	insulin	chebi	CHEBI:5931	insulin
+< true_positive	15760270	61417	61424	insulin	chebi	CHEBI:5931	insulin
+< true_positive	15760270	77349	77356	Insulin	chebi	CHEBI:5931	insulin
+---
+> false_negative	15760270	5014	5021	insulin	chebi	CHEBI:5931	insulin
+> false_negative	15760270	26758	26765	Insulin	chebi	CHEBI:5931	insulin
+> false_negative	15760270	26909	26916	insulin	chebi	CHEBI:5931	insulin
+> false_negative	15760270	26990	26997	insulin	chebi	CHEBI:5931	insulin
+> false_negative	15760270	27082	27089	insulin	chebi	CHEBI:5931	insulin
+> false_negative	15760270	27419	27426	insulin	chebi	CHEBI:5931	insulin
+> false_negative	15760270	28204	28211	insulin	chebi	CHEBI:5931	insulin
+> false_negative	15760270	28403	28410	insulin	chebi	CHEBI:5931	insulin
+> false_negative	15760270	28482	28489	insulin	chebi	CHEBI:5931	insulin
+> false_negative	15760270	37055	37062	insulin	chebi	CHEBI:5931	insulin
+> false_negative	15760270	37180	37187	insulin	chebi	CHEBI:5931	insulin
+> false_negative	15760270	37661	37668	insulin	chebi	CHEBI:5931	insulin
+> false_negative	15760270	40453	40460	insulin	chebi	CHEBI:5931	insulin
+> false_negative	15760270	40619	40626	insulin	chebi	CHEBI:5931	insulin
+> false_negative	15760270	40781	40788	insulin	chebi	CHEBI:5931	insulin
+> false_negative	15760270	51381	51388	Insulin	chebi	CHEBI:5931	insulin
+> false_negative	15760270	51430	51437	Insulin	chebi	CHEBI:5931	insulin
+> false_negative	15760270	51687	51694	insulin	chebi	CHEBI:5931	insulin
+> false_negative	15760270	61417	61424	insulin	chebi	CHEBI:5931	insulin
+> false_negative	15760270	77349	77356	Insulin	chebi	CHEBI:5931	insulin
+2769,2770c2769,2770
+< false_positive	15760270	50310	50314	EGTA	chebi	CHEBI:30740	ethylene glycol bis(2-aminoethyl)tetraacetic acid
+< true_positive	15760270	50340	50345	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+---
+> false_negative	15760270	50310	50314	EGTA	chebi	CHEBI:30740	ethylene glycol bis(2-aminoethyl)tetraacetic acid
+> false_negative	15760270	50340	50345	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+2775,2776c2775,2776
+< false_positive	15760270	50605	50609	EGTA	chebi	CHEBI:30740	ethylene glycol bis(2-aminoethyl)tetraacetic acid
+< true_positive	15760270	50635	50640	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+---
+> false_negative	15760270	50605	50609	EGTA	chebi	CHEBI:30740	ethylene glycol bis(2-aminoethyl)tetraacetic acid
+> false_negative	15760270	50635	50640	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+2819c2819
+< true_positive	15760270	25812	25820	stearoyl	chebi	CHEBI:26753	stearoyl group
+---
+> false_negative	15760270	25812	25820	stearoyl	chebi	CHEBI:26753	stearoyl group
+2822c2822
+< true_positive	15760270	50190	50197	chloral	chebi	CHEBI:48814	trichloroacetaldehyde
+---
+> false_negative	15760270	50190	50197	chloral	chebi	CHEBI:48814	trichloroacetaldehyde
+2837,2840c2837,2840
+< true_positive	15760270	78841	78845	mRNA	chebi	CHEBI:33699	messenger RNA
+< false_positive	15819996	36810	36814	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+< false_positive	15819996	37376	37380	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+< false_positive	15819996	37600	37604	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+---
+> false_negative	15760270	78841	78845	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15819996	36810	36814	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+> false_negative	15819996	37376	37380	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+> false_negative	15819996	37600	37604	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+2863c2863
+< true_positive	15819996	278	282	Ca2+	chebi	CHEBI:29108	calcium(2+)
+---
+> false_negative	15819996	278	282	Ca2+	chebi	CHEBI:29108	calcium(2+)
+2866,2882c2866,2882
+< true_positive	15819996	336	340	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	15819996	2056	2060	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	15819996	2378	2382	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	15819996	4064	4068	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	15819996	4164	4168	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	15819996	26033	26037	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	15819996	27235	27239	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	15819996	27370	27374	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	15819996	27464	27468	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	15819996	27495	27499	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	15819996	27698	27702	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	15819996	27972	27976	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	15819996	28505	28509	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	15819996	29136	29140	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	15819996	29250	29254	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	15819996	29404	29408	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	15819996	30635	30639	Ca2+	chebi	CHEBI:29108	calcium(2+)
+---
+> false_negative	15819996	336	340	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	15819996	2056	2060	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	15819996	2378	2382	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	15819996	4064	4068	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	15819996	4164	4168	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	15819996	26033	26037	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	15819996	27235	27239	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	15819996	27370	27374	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	15819996	27464	27468	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	15819996	27495	27499	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	15819996	27698	27702	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	15819996	27972	27976	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	15819996	28505	28509	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	15819996	29136	29140	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	15819996	29250	29254	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	15819996	29404	29408	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	15819996	30635	30639	Ca2+	chebi	CHEBI:29108	calcium(2+)
+2901,2906c2901,2906
+< true_positive	15819996	4692	4696	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15819996	4903	4907	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15819996	5047	5051	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15819996	5181	5185	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15819996	22477	22481	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15819996	38440	38444	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	15819996	4692	4696	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15819996	4903	4907	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15819996	5047	5051	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15819996	5181	5185	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15819996	22477	22481	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15819996	38440	38444	mRNA	chebi	CHEBI:33699	messenger RNA
+2915,2917c2915,2917
+< true_positive	15819996	34624	34628	NaCl	chebi	CHEBI:26710	sodium chloride
+< true_positive	15819996	34637	34640	KCl	chebi	CHEBI:32588	potassium chloride
+< true_positive	15819996	34649	34656	Na2HPO4	chebi	CHEBI:34683	disodium hydrogenphosphate
+---
+> false_negative	15819996	34624	34628	NaCl	chebi	CHEBI:26710	sodium chloride
+> false_negative	15819996	34637	34640	KCl	chebi	CHEBI:32588	potassium chloride
+> false_negative	15819996	34649	34656	Na2HPO4	chebi	CHEBI:34683	disodium hydrogenphosphate
+2921,2922c2921,2922
+< true_positive	15819996	36779	36784	CaCl2	chebi	CHEBI:3312	calcium dichloride
+< true_positive	15819996	36791	36793	Mg	chebi	CHEBI:25107	magnesium
+---
+> false_negative	15819996	36779	36784	CaCl2	chebi	CHEBI:3312	calcium dichloride
+> false_negative	15819996	36791	36793	Mg	chebi	CHEBI:25107	magnesium
+2924c2924
+< true_positive	15819996	36810	36814	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+---
+> false_negative	15819996	36810	36814	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+2926,2928c2926,2928
+< true_positive	15819996	37351	37356	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+< true_positive	15819996	37364	37367	KCl	chebi	CHEBI:32588	potassium chloride
+< true_positive	15819996	37376	37380	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+---
+> false_negative	15819996	37351	37356	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+> false_negative	15819996	37364	37367	KCl	chebi	CHEBI:32588	potassium chloride
+> false_negative	15819996	37376	37380	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+2930,2934c2930,2934
+< true_positive	15819996	37574	37579	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+< true_positive	15819996	37588	37591	KCl	chebi	CHEBI:32588	potassium chloride
+< true_positive	15819996	37600	37604	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+< true_positive	15819996	37613	37622	glycerine	chebi	CHEBI:17754	glycerol
+< true_positive	15819996	37389	37398	glycerine	chebi	CHEBI:17754	glycerol
+---
+> false_negative	15819996	37574	37579	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+> false_negative	15819996	37588	37591	KCl	chebi	CHEBI:32588	potassium chloride
+> false_negative	15819996	37600	37604	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+> false_negative	15819996	37613	37622	glycerine	chebi	CHEBI:17754	glycerol
+> false_negative	15819996	37389	37398	glycerine	chebi	CHEBI:17754	glycerol
+2992,3002c2992,3002
+< true_positive	15876356	24270	24274	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15876356	25948	25952	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15876356	26000	26004	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15876356	26400	26404	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15876356	6097	6101	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15876356	6352	6356	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15876356	6742	6746	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15876356	6802	6806	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15876356	6969	6974	mRNAs	chebi	CHEBI:33699	messenger RNA
+< true_positive	15876356	9648	9652	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15876356	9922	9927	mRNAs	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	15876356	24270	24274	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15876356	25948	25952	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15876356	26000	26004	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15876356	26400	26404	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15876356	6097	6101	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15876356	6352	6356	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15876356	6742	6746	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15876356	6802	6806	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15876356	6969	6974	mRNAs	chebi	CHEBI:33699	messenger RNA
+> false_negative	15876356	9648	9652	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15876356	9922	9927	mRNAs	chebi	CHEBI:33699	messenger RNA
+3013c3013
+< true_positive	15876356	19248	19252	NaCl	chebi	CHEBI:26710	sodium chloride
+---
+> false_negative	15876356	19248	19252	NaCl	chebi	CHEBI:26710	sodium chloride
+3038c3038
+< true_positive	15876356	18251	18253	Ni	chebi	CHEBI:28112	nickel
+---
+> false_negative	15876356	18251	18253	Ni	chebi	CHEBI:28112	nickel
+3041,3044c3041,3044
+< false_positive	15917436	8139	8143	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+< false_positive	15917436	9438	9442	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+< false_positive	15917436	10146	10150	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+< false_positive	15917436	10472	10476	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+---
+> false_negative	15917436	8139	8143	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+> false_negative	15917436	9438	9442	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+> false_negative	15917436	10146	10150	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+> false_negative	15917436	10472	10476	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+3057c3057
+< false_positive	15917436	8425	8426	G	chebi	CHEBI:30755	guanine group
+---
+> false_negative	15917436	8425	8426	G	chebi	CHEBI:30755	guanine group
+3061c3061
+< false_positive	15917436	16367	16368	G	chebi	CHEBI:30755	guanine group
+---
+> false_negative	15917436	16367	16368	G	chebi	CHEBI:30755	guanine group
+3064,3065c3064,3065
+< false_positive	15917436	16452	16453	G	chebi	CHEBI:30755	guanine group
+< false_positive	15917436	16474	16475	G	chebi	CHEBI:30755	guanine group
+---
+> false_negative	15917436	16452	16453	G	chebi	CHEBI:30755	guanine group
+> false_negative	15917436	16474	16475	G	chebi	CHEBI:30755	guanine group
+3068c3068
+< false_positive	15917436	16683	16684	G	chebi	CHEBI:30755	guanine group
+---
+> false_negative	15917436	16683	16684	G	chebi	CHEBI:30755	guanine group
+3070c3070
+< false_positive	15917436	17093	17094	G	chebi	CHEBI:30755	guanine group
+---
+> false_negative	15917436	17093	17094	G	chebi	CHEBI:30755	guanine group
+3094c3094
+< false_positive	15917436	26348	26349	G	chebi	CHEBI:30755	guanine group
+---
+> false_negative	15917436	26348	26349	G	chebi	CHEBI:30755	guanine group
+3098c3098
+< false_positive	15917436	27414	27415	I	chebi	CHEBI:24849	inosyl groups
+---
+> false_negative	15917436	27414	27415	I	chebi	CHEBI:24849	inosyl groups
+3100c3100
+< false_positive	15917436	27454	27455	G	chebi	CHEBI:30755	guanine group
+---
+> false_negative	15917436	27454	27455	G	chebi	CHEBI:30755	guanine group
+3123,3125c3123,3125
+< false_positive	15917436	44691	44692	G	chebi	CHEBI:30755	guanine group
+< false_positive	15917436	44867	44868	G	chebi	CHEBI:30755	guanine group
+< false_positive	15917436	45077	45078	I	chebi	CHEBI:24849	inosyl groups
+---
+> false_negative	15917436	44691	44692	G	chebi	CHEBI:30755	guanine group
+> false_negative	15917436	44867	44868	G	chebi	CHEBI:30755	guanine group
+> false_negative	15917436	45077	45078	I	chebi	CHEBI:24849	inosyl groups
+3130c3130
+< true_positive	15917436	27344	27345	I	chebi	CHEBI:17596	inosine
+---
+> false_negative	15917436	27344	27345	I	chebi	CHEBI:17596	inosine
+3187,3188c3187,3188
+< true_positive	15917436	7220	7225	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+< true_positive	15917436	7236	7240	NaCl	chebi	CHEBI:26710	sodium chloride
+---
+> false_negative	15917436	7220	7225	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+> false_negative	15917436	7236	7240	NaCl	chebi	CHEBI:26710	sodium chloride
+3190c3190
+< true_positive	15917436	8139	8143	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+---
+> false_negative	15917436	8139	8143	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+3192c3192
+< true_positive	15917436	8804	8808	NaOH	chebi	CHEBI:32145	sodium hydroxide
+---
+> false_negative	15917436	8804	8808	NaOH	chebi	CHEBI:32145	sodium hydroxide
+3198c3198
+< true_positive	15917436	9438	9442	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+---
+> false_negative	15917436	9438	9442	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+3200c3200
+< true_positive	15917436	9702	9706	NaOH	chebi	CHEBI:32145	sodium hydroxide
+---
+> false_negative	15917436	9702	9706	NaOH	chebi	CHEBI:32145	sodium hydroxide
+3204,3205c3204,3205
+< true_positive	15917436	9807	9812	CaCl2	chebi	CHEBI:3312	calcium dichloride
+< true_positive	15917436	10146	10150	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+---
+> false_negative	15917436	9807	9812	CaCl2	chebi	CHEBI:3312	calcium dichloride
+> false_negative	15917436	10146	10150	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+3207,3209c3207,3209
+< true_positive	15917436	10317	10322	CaCl2	chebi	CHEBI:3312	calcium dichloride
+< true_positive	15917436	10472	10476	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+< true_positive	15917436	10487	10491	NaOH	chebi	CHEBI:32145	sodium hydroxide
+---
+> false_negative	15917436	10317	10322	CaCl2	chebi	CHEBI:3312	calcium dichloride
+> false_negative	15917436	10472	10476	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+> false_negative	15917436	10487	10491	NaOH	chebi	CHEBI:32145	sodium hydroxide
+3227,3230c3227,3230
+< true_positive	15917436	8847	8849	Mg	chebi	CHEBI:25107	magnesium
+< false_positive	15917436	8899	8900	S	chebi	CHEBI:26833	sulfur
+< true_positive	15917436	9745	9747	Mg	chebi	CHEBI:25107	magnesium
+< false_positive	15917436	9797	9798	S	chebi	CHEBI:26833	sulfur
+---
+> false_negative	15917436	8847	8849	Mg	chebi	CHEBI:25107	magnesium
+> false_negative	15917436	8899	8900	S	chebi	CHEBI:26833	sulfur
+> false_negative	15917436	9745	9747	Mg	chebi	CHEBI:25107	magnesium
+> false_negative	15917436	9797	9798	S	chebi	CHEBI:26833	sulfur
+3232,3233c3232,3233
+< false_positive	15917436	11320	11321	S	chebi	CHEBI:26833	sulfur
+< false_positive	15917436	14293	14294	S	chebi	CHEBI:26833	sulfur
+---
+> false_negative	15917436	11320	11321	S	chebi	CHEBI:26833	sulfur
+> false_negative	15917436	14293	14294	S	chebi	CHEBI:26833	sulfur
+3248,3253c3248,3253
+< true_positive	15921521	9012	9016	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15921521	10015	10019	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15921521	13748	13752	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15921521	14026	14030	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15921521	14202	14206	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	15921521	25995	25999	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	15921521	9012	9016	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15921521	10015	10019	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15921521	13748	13752	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15921521	14026	14030	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15921521	14202	14206	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	15921521	25995	25999	mRNA	chebi	CHEBI:33699	messenger RNA
+3261c3261
+< true_positive	15921521	2440	2443	Cl-	chebi	CHEBI:17996	chloride
+---
+> false_negative	15921521	2440	2443	Cl-	chebi	CHEBI:17996	chloride
+3652c3652
+< true_positive	16098226	30570	30575	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+---
+> false_negative	16098226	30570	30575	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+3659c3659
+< false_positive	16098226	15209	15210	G	chebi	CHEBI:30755	guanine group
+---
+> false_negative	16098226	15209	15210	G	chebi	CHEBI:30755	guanine group
+3664,3665c3664,3665
+< true_positive	16098226	18704	18708	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16098226	19440	19449	guanylate	chebi	CHEBI:17345	GMP
+---
+> false_negative	16098226	18704	18708	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16098226	19440	19449	guanylate	chebi	CHEBI:17345	GMP
+3667c3667
+< false_positive	16098226	26726	26727	G	chebi	CHEBI:30755	guanine group
+---
+> false_negative	16098226	26726	26727	G	chebi	CHEBI:30755	guanine group
+3676,3677c3676,3677
+< false_positive	16098226	30164	30165	G	chebi	CHEBI:30755	guanine group
+< false_positive	16098226	30270	30271	G	chebi	CHEBI:30755	guanine group
+---
+> false_negative	16098226	30164	30165	G	chebi	CHEBI:30755	guanine group
+> false_negative	16098226	30270	30271	G	chebi	CHEBI:30755	guanine group
+3736c3736
+< true_positive	16109169	26573	26577	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	16109169	26573	26577	mRNA	chebi	CHEBI:33699	messenger RNA
+3748,3753c3748,3753
+< false_positive	16109169	33968	33975	Maleate	chebi	CHEBI:37156	maleate(1-)
+< true_positive	16109169	33968	33975	Maleate	chebi	CHEBI:30780	maleate(2-)
+< true_positive	16109169	33995	34002	Maleate	chebi	CHEBI:30780	maleate(2-)
+< false_positive	16109169	33995	34002	Maleate	chebi	CHEBI:37156	maleate(1-)
+< true_positive	16109169	34021	34026	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+< true_positive	16109169	34140	34145	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+---
+> false_negative	16109169	33968	33975	Maleate	chebi	CHEBI:37156	maleate(1-)
+> false_negative	16109169	33968	33975	Maleate	chebi	CHEBI:30780	maleate(2-)
+> false_negative	16109169	33995	34002	Maleate	chebi	CHEBI:30780	maleate(2-)
+> false_negative	16109169	33995	34002	Maleate	chebi	CHEBI:37156	maleate(1-)
+> false_negative	16109169	34021	34026	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+> false_negative	16109169	34140	34145	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+3755,3756c3755,3756
+< false_positive	16109169	34114	34121	Maleate	chebi	CHEBI:37156	maleate(1-)
+< true_positive	16109169	34114	34121	Maleate	chebi	CHEBI:30780	maleate(2-)
+---
+> false_negative	16109169	34114	34121	Maleate	chebi	CHEBI:37156	maleate(1-)
+> false_negative	16109169	34114	34121	Maleate	chebi	CHEBI:30780	maleate(2-)
+3771c3771
+< true_positive	16110338	49765	49775	cacodylate	chebi	CHEBI:16223	dimethylarsinate
+---
+> false_negative	16110338	49765	49775	cacodylate	chebi	CHEBI:16223	dimethylarsinate
+3784c3784
+< true_positive	16110338	50145	50152	pigment	chebi	CHEBI:26130	pigment
+---
+> false_negative	16110338	50145	50152	pigment	chebi	CHEBI:26130	pigment
+3786,3791c3786,3791
+< false_positive	16110338	50474	50481	maleate	chebi	CHEBI:37156	maleate(1-)
+< true_positive	16110338	50474	50481	maleate	chebi	CHEBI:30780	maleate(2-)
+< false_positive	16110338	50569	50576	maleate	chebi	CHEBI:37156	maleate(1-)
+< false_positive	16110338	50643	50650	maleate	chebi	CHEBI:37156	maleate(1-)
+< true_positive	16110338	50569	50576	maleate	chebi	CHEBI:30780	maleate(2-)
+< true_positive	16110338	50643	50650	maleate	chebi	CHEBI:30780	maleate(2-)
+---
+> false_negative	16110338	50474	50481	maleate	chebi	CHEBI:37156	maleate(1-)
+> false_negative	16110338	50474	50481	maleate	chebi	CHEBI:30780	maleate(2-)
+> false_negative	16110338	50569	50576	maleate	chebi	CHEBI:37156	maleate(1-)
+> false_negative	16110338	50643	50650	maleate	chebi	CHEBI:37156	maleate(1-)
+> false_negative	16110338	50569	50576	maleate	chebi	CHEBI:30780	maleate(2-)
+> false_negative	16110338	50643	50650	maleate	chebi	CHEBI:30780	maleate(2-)
+3811c3811
+< true_positive	16110338	63334	63341	pigment	chebi	CHEBI:26130	pigment
+---
+> false_negative	16110338	63334	63341	pigment	chebi	CHEBI:26130	pigment
+3818c3818
+< true_positive	16110338	50842	50851	propylene	chebi	CHEBI:16052	propene
+---
+> false_negative	16110338	50842	50851	propylene	chebi	CHEBI:16052	propene
+3821,3822c3821,3822
+< false_positive	16121255	29147	29151	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+< false_positive	16121255	30774	30778	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+---
+> false_negative	16121255	29147	29151	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+> false_negative	16121255	30774	30778	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+3925c3925
+< false_positive	16121255	7313	7314	G	chebi	CHEBI:30755	guanine group
+---
+> false_negative	16121255	7313	7314	G	chebi	CHEBI:30755	guanine group
+3943,3946c3943,3946
+< true_positive	16121255	4633	4637	cAMP	chebi	CHEBI:17489	3',5'-cyclic AMP
+< true_positive	16121255	4704	4708	cAMP	chebi	CHEBI:17489	3',5'-cyclic AMP
+< true_positive	16121255	5106	5110	cAMP	chebi	CHEBI:17489	3',5'-cyclic AMP
+< true_positive	16121255	14891	14895	cAMP	chebi	CHEBI:17489	3',5'-cyclic AMP
+---
+> false_negative	16121255	4633	4637	cAMP	chebi	CHEBI:17489	3',5'-cyclic AMP
+> false_negative	16121255	4704	4708	cAMP	chebi	CHEBI:17489	3',5'-cyclic AMP
+> false_negative	16121255	5106	5110	cAMP	chebi	CHEBI:17489	3',5'-cyclic AMP
+> false_negative	16121255	14891	14895	cAMP	chebi	CHEBI:17489	3',5'-cyclic AMP
+3952c3952
+< true_positive	16121255	29147	29151	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+---
+> false_negative	16121255	29147	29151	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+3959c3959
+< true_positive	16121255	30774	30778	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+---
+> false_negative	16121255	30774	30778	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+3971c3971
+< true_positive	16121255	34075	34078	Na+	chebi	CHEBI:29101	sodium(1+)
+---
+> false_negative	16121255	34075	34078	Na+	chebi	CHEBI:29101	sodium(1+)
+3975c3975
+< true_positive	16121255	39288	39291	Na+	chebi	CHEBI:29101	sodium(1+)
+---
+> false_negative	16121255	39288	39291	Na+	chebi	CHEBI:29101	sodium(1+)
+4002c4002
+< true_positive	16121256	23688	23692	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	16121256	23688	23692	mRNA	chebi	CHEBI:33699	messenger RNA
+4009c4009
+< true_positive	16121256	25428	25441	orthovanadate	chebi	CHEBI:46442	vanadate(3-)
+---
+> false_negative	16121256	25428	25441	orthovanadate	chebi	CHEBI:46442	vanadate(3-)
+4048c4048
+< true_positive	16121256	7955	7959	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	16121256	7955	7959	mRNA	chebi	CHEBI:33699	messenger RNA
+4055c4055
+< true_positive	16121256	9994	10003	palmitoyl	chebi	CHEBI:45021	palmitoyl group
+---
+> false_negative	16121256	9994	10003	palmitoyl	chebi	CHEBI:45021	palmitoyl group
+4068,4069c4068,4069
+< true_positive	16121256	10155	10164	palmitoyl	chebi	CHEBI:45021	palmitoyl group
+< true_positive	16121256	10259	10268	palmitoyl	chebi	CHEBI:45021	palmitoyl group
+---
+> false_negative	16121256	10155	10164	palmitoyl	chebi	CHEBI:45021	palmitoyl group
+> false_negative	16121256	10259	10268	palmitoyl	chebi	CHEBI:45021	palmitoyl group
+4090c4090
+< false_positive	16121256	12452	12465	Acylcarnitine	chebi	CHEBI:17387	O-acylcarnitines
+---
+> false_negative	16121256	12452	12465	Acylcarnitine	chebi	CHEBI:17387	O-acylcarnitines
+4096,4109c4096,4109
+< false_positive	16121256	13306	13319	acylcarnitine	chebi	CHEBI:17387	O-acylcarnitines
+< false_positive	16121256	13346	13359	acylcarnitine	chebi	CHEBI:17387	O-acylcarnitines
+< false_positive	16121256	13388	13401	acylcarnitine	chebi	CHEBI:17387	O-acylcarnitines
+< false_positive	16121256	13448	13461	acylcarnitine	chebi	CHEBI:17387	O-acylcarnitines
+< false_positive	16121256	13704	13717	acylcarnitine	chebi	CHEBI:17387	O-acylcarnitines
+< false_positive	16121256	13763	13776	acylcarnitine	chebi	CHEBI:17387	O-acylcarnitines
+< false_positive	16121256	13789	13802	Acylcarnitine	chebi	CHEBI:17387	O-acylcarnitines
+< false_positive	16121256	13823	13836	acylcarnitine	chebi	CHEBI:17387	O-acylcarnitines
+< false_positive	16121256	13927	13940	acylcarnitine	chebi	CHEBI:17387	O-acylcarnitines
+< false_positive	16121256	14270	14283	acylcarnitine	chebi	CHEBI:17387	O-acylcarnitines
+< false_positive	16121256	16673	16686	Acylcarnitine	chebi	CHEBI:17387	O-acylcarnitines
+< false_positive	16121256	27495	27508	Acylcarnitine	chebi	CHEBI:17387	O-acylcarnitines
+< false_positive	16121256	13627	13641	acylcarnitines	chebi	CHEBI:17387	O-acylcarnitines
+< false_positive	16121256	14136	14150	acylcarnitines	chebi	CHEBI:17387	O-acylcarnitines
+---
+> false_negative	16121256	13306	13319	acylcarnitine	chebi	CHEBI:17387	O-acylcarnitines
+> false_negative	16121256	13346	13359	acylcarnitine	chebi	CHEBI:17387	O-acylcarnitines
+> false_negative	16121256	13388	13401	acylcarnitine	chebi	CHEBI:17387	O-acylcarnitines
+> false_negative	16121256	13448	13461	acylcarnitine	chebi	CHEBI:17387	O-acylcarnitines
+> false_negative	16121256	13704	13717	acylcarnitine	chebi	CHEBI:17387	O-acylcarnitines
+> false_negative	16121256	13763	13776	acylcarnitine	chebi	CHEBI:17387	O-acylcarnitines
+> false_negative	16121256	13789	13802	Acylcarnitine	chebi	CHEBI:17387	O-acylcarnitines
+> false_negative	16121256	13823	13836	acylcarnitine	chebi	CHEBI:17387	O-acylcarnitines
+> false_negative	16121256	13927	13940	acylcarnitine	chebi	CHEBI:17387	O-acylcarnitines
+> false_negative	16121256	14270	14283	acylcarnitine	chebi	CHEBI:17387	O-acylcarnitines
+> false_negative	16121256	16673	16686	Acylcarnitine	chebi	CHEBI:17387	O-acylcarnitines
+> false_negative	16121256	27495	27508	Acylcarnitine	chebi	CHEBI:17387	O-acylcarnitines
+> false_negative	16121256	13627	13641	acylcarnitines	chebi	CHEBI:17387	O-acylcarnitines
+> false_negative	16121256	14136	14150	acylcarnitines	chebi	CHEBI:17387	O-acylcarnitines
+4112c4112
+< true_positive	16121256	16131	16138	pigment	chebi	CHEBI:26130	pigment
+---
+> false_negative	16121256	16131	16138	pigment	chebi	CHEBI:26130	pigment
+4114,4115c4114,4115
+< true_positive	16121256	17345	17354	palmitoyl	chebi	CHEBI:45021	palmitoyl group
+< true_positive	16121256	18543	18547	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	16121256	17345	17354	palmitoyl	chebi	CHEBI:45021	palmitoyl group
+> false_negative	16121256	18543	18547	mRNA	chebi	CHEBI:33699	messenger RNA
+4119c4119
+< true_positive	16121256	26421	26430	palmitoyl	chebi	CHEBI:45021	palmitoyl group
+---
+> false_negative	16121256	26421	26430	palmitoyl	chebi	CHEBI:45021	palmitoyl group
+4138c4138
+< false_positive	16216087	6191	6192	Q	chebi	CHEBI:32677	glutamine residue
+---
+> false_negative	16216087	6191	6192	Q	chebi	CHEBI:32677	glutamine residue
+4141,4144c4141,4144
+< false_positive	16216087	7884	7885	Q	chebi	CHEBI:32677	glutamine residue
+< true_positive	16216087	8107	8111	mRNA	chebi	CHEBI:33699	messenger RNA
+< false_positive	16216087	8127	8128	Q	chebi	CHEBI:32677	glutamine residue
+< false_positive	16216087	8626	8627	Q	chebi	CHEBI:32677	glutamine residue
+---
+> false_negative	16216087	7884	7885	Q	chebi	CHEBI:32677	glutamine residue
+> false_negative	16216087	8107	8111	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	16216087	8127	8128	Q	chebi	CHEBI:32677	glutamine residue
+> false_negative	16216087	8626	8627	Q	chebi	CHEBI:32677	glutamine residue
+4146,4148c4146,4148
+< false_positive	16216087	8759	8760	Q	chebi	CHEBI:32677	glutamine residue
+< false_positive	16216087	11274	11275	Q	chebi	CHEBI:32677	glutamine residue
+< false_positive	16216087	16494	16495	Q	chebi	CHEBI:32677	glutamine residue
+---
+> false_negative	16216087	8759	8760	Q	chebi	CHEBI:32677	glutamine residue
+> false_negative	16216087	11274	11275	Q	chebi	CHEBI:32677	glutamine residue
+> false_negative	16216087	16494	16495	Q	chebi	CHEBI:32677	glutamine residue
+4150,4154c4150,4154
+< false_positive	16216087	32315	32316	Q	chebi	CHEBI:32677	glutamine residue
+< false_positive	16216087	44512	44513	Q	chebi	CHEBI:32677	glutamine residue
+< false_positive	16216087	61328	61329	Q	chebi	CHEBI:32677	glutamine residue
+< false_positive	16216087	61660	61661	Q	chebi	CHEBI:32677	glutamine residue
+< false_positive	16216087	61847	61848	Q	chebi	CHEBI:32677	glutamine residue
+---
+> false_negative	16216087	32315	32316	Q	chebi	CHEBI:32677	glutamine residue
+> false_negative	16216087	44512	44513	Q	chebi	CHEBI:32677	glutamine residue
+> false_negative	16216087	61328	61329	Q	chebi	CHEBI:32677	glutamine residue
+> false_negative	16216087	61660	61661	Q	chebi	CHEBI:32677	glutamine residue
+> false_negative	16216087	61847	61848	Q	chebi	CHEBI:32677	glutamine residue
+4204,4232c4204,4232
+< true_positive	16216087	344	348	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16216087	519	523	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16216087	3247	3251	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16216087	4082	4086	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16216087	4535	4539	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16216087	5136	5140	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16216087	8797	8801	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16216087	10904	10908	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16216087	11232	11236	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16216087	12105	12109	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16216087	13482	13486	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16216087	16544	16548	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16216087	16602	16606	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16216087	16808	16812	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16216087	22975	22979	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16216087	26902	26906	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16216087	28297	28301	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16216087	28873	28877	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16216087	32218	32222	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16216087	32466	32470	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16216087	33366	33370	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16216087	33505	33509	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16216087	33814	33818	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16216087	34417	34421	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16216087	39606	39610	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16216087	40554	40558	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16216087	40583	40587	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16216087	40738	40742	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16216087	43404	43408	Ca2+	chebi	CHEBI:29108	calcium(2+)
+---
+> false_negative	16216087	344	348	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16216087	519	523	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16216087	3247	3251	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16216087	4082	4086	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16216087	4535	4539	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16216087	5136	5140	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16216087	8797	8801	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16216087	10904	10908	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16216087	11232	11236	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16216087	12105	12109	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16216087	13482	13486	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16216087	16544	16548	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16216087	16602	16606	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16216087	16808	16812	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16216087	22975	22979	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16216087	26902	26906	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16216087	28297	28301	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16216087	28873	28877	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16216087	32218	32222	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16216087	32466	32470	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16216087	33366	33370	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16216087	33505	33509	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16216087	33814	33818	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16216087	34417	34421	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16216087	39606	39610	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16216087	40554	40558	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16216087	40583	40587	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16216087	40738	40742	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16216087	43404	43408	Ca2+	chebi	CHEBI:29108	calcium(2+)
+4251,4252c4251,4252
+< false_positive	16216087	4257	4258	Q	chebi	CHEBI:32677	glutamine residue
+< true_positive	16216087	4351	4355	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	16216087	4257	4258	Q	chebi	CHEBI:32677	glutamine residue
+> false_negative	16216087	4351	4355	mRNA	chebi	CHEBI:33699	messenger RNA
+4254c4254
+< false_positive	16216087	4436	4437	Q	chebi	CHEBI:32677	glutamine residue
+---
+> false_negative	16216087	4436	4437	Q	chebi	CHEBI:32677	glutamine residue
+4257,4258c4257,4258
+< false_positive	16216087	4832	4833	Q	chebi	CHEBI:32677	glutamine residue
+< false_positive	16216087	5764	5765	Q	chebi	CHEBI:32677	glutamine residue
+---
+> false_negative	16216087	4832	4833	Q	chebi	CHEBI:32677	glutamine residue
+> false_negative	16216087	5764	5765	Q	chebi	CHEBI:32677	glutamine residue
+4277,4279c4277,4279
+< false_positive	16216087	63780	63782	Eu	chebi	CHEBI:4917	eugenol
+< false_positive	16216087	63804	63806	Eu	chebi	CHEBI:4917	eugenol
+< false_positive	16216087	64724	64726	Eu	chebi	CHEBI:4917	eugenol
+---
+> false_negative	16216087	63780	63782	Eu	chebi	CHEBI:4917	eugenol
+> false_negative	16216087	63804	63806	Eu	chebi	CHEBI:4917	eugenol
+> false_negative	16216087	64724	64726	Eu	chebi	CHEBI:4917	eugenol
+4299,4317c4299,4317
+< false_positive	16216087	4687	4688	Q	chebi	CHEBI:32677	glutamine residue
+< false_positive	16216087	7609	7610	Q	chebi	CHEBI:32677	glutamine residue
+< false_positive	16216087	8651	8652	Q	chebi	CHEBI:32677	glutamine residue
+< false_positive	16216087	8784	8785	Q	chebi	CHEBI:32677	glutamine residue
+< false_positive	16216087	8974	8975	Q	chebi	CHEBI:32677	glutamine residue
+< false_positive	16216087	12047	12048	Q	chebi	CHEBI:32677	glutamine residue
+< false_positive	16216087	13445	13446	Q	chebi	CHEBI:32677	glutamine residue
+< false_positive	16216087	29156	29157	Q	chebi	CHEBI:32677	glutamine residue
+< false_positive	16216087	29202	29203	Q	chebi	CHEBI:32677	glutamine residue
+< false_positive	16216087	29344	29345	Q	chebi	CHEBI:32677	glutamine residue
+< false_positive	16216087	32779	32780	Q	chebi	CHEBI:32677	glutamine residue
+< false_positive	16216087	33076	33077	Q	chebi	CHEBI:32677	glutamine residue
+< false_positive	16216087	33586	33587	Q	chebi	CHEBI:32677	glutamine residue
+< false_positive	16216087	33986	33987	Q	chebi	CHEBI:32677	glutamine residue
+< false_positive	16216087	34383	34384	Q	chebi	CHEBI:32677	glutamine residue
+< false_positive	16216087	35041	35042	Q	chebi	CHEBI:32677	glutamine residue
+< false_positive	16216087	41220	41221	Q	chebi	CHEBI:32677	glutamine residue
+< false_positive	16216087	61521	61522	Q	chebi	CHEBI:32677	glutamine residue
+< false_positive	16216087	489	490	Q	chebi	CHEBI:32677	glutamine residue
+---
+> false_negative	16216087	4687	4688	Q	chebi	CHEBI:32677	glutamine residue
+> false_negative	16216087	7609	7610	Q	chebi	CHEBI:32677	glutamine residue
+> false_negative	16216087	8651	8652	Q	chebi	CHEBI:32677	glutamine residue
+> false_negative	16216087	8784	8785	Q	chebi	CHEBI:32677	glutamine residue
+> false_negative	16216087	8974	8975	Q	chebi	CHEBI:32677	glutamine residue
+> false_negative	16216087	12047	12048	Q	chebi	CHEBI:32677	glutamine residue
+> false_negative	16216087	13445	13446	Q	chebi	CHEBI:32677	glutamine residue
+> false_negative	16216087	29156	29157	Q	chebi	CHEBI:32677	glutamine residue
+> false_negative	16216087	29202	29203	Q	chebi	CHEBI:32677	glutamine residue
+> false_negative	16216087	29344	29345	Q	chebi	CHEBI:32677	glutamine residue
+> false_negative	16216087	32779	32780	Q	chebi	CHEBI:32677	glutamine residue
+> false_negative	16216087	33076	33077	Q	chebi	CHEBI:32677	glutamine residue
+> false_negative	16216087	33586	33587	Q	chebi	CHEBI:32677	glutamine residue
+> false_negative	16216087	33986	33987	Q	chebi	CHEBI:32677	glutamine residue
+> false_negative	16216087	34383	34384	Q	chebi	CHEBI:32677	glutamine residue
+> false_negative	16216087	35041	35042	Q	chebi	CHEBI:32677	glutamine residue
+> false_negative	16216087	41220	41221	Q	chebi	CHEBI:32677	glutamine residue
+> false_negative	16216087	61521	61522	Q	chebi	CHEBI:32677	glutamine residue
+> false_negative	16216087	489	490	Q	chebi	CHEBI:32677	glutamine residue
+4367,4368c4367,4368
+< true_positive	16221973	39948	39952	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	16221973	39957	39961	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	16221973	39948	39952	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	16221973	39957	39961	mRNA	chebi	CHEBI:33699	messenger RNA
+4380c4380
+< true_positive	16221973	40491	40495	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	16221973	40491	40495	mRNA	chebi	CHEBI:33699	messenger RNA
+4382c4382
+< true_positive	16221973	40735	40739	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	16221973	40735	40739	mRNA	chebi	CHEBI:33699	messenger RNA
+4391,4396c4391,4396
+< true_positive	16221973	40836	40840	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	16221973	40936	40940	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	16221973	41841	41845	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	16221973	42085	42089	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	16221973	43039	43043	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	16221973	43283	43287	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	16221973	40836	40840	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	16221973	40936	40940	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	16221973	41841	41845	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	16221973	42085	42089	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	16221973	43039	43043	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	16221973	43283	43287	mRNA	chebi	CHEBI:33699	messenger RNA
+4518,4520c4518,4520
+< false_positive	16221973	26896	26897	S	chebi	CHEBI:26833	sulfur
+< false_positive	16221973	26962	26963	S	chebi	CHEBI:26833	sulfur
+< false_positive	16221973	37296	37297	S	chebi	CHEBI:26833	sulfur
+---
+> false_negative	16221973	26896	26897	S	chebi	CHEBI:26833	sulfur
+> false_negative	16221973	26962	26963	S	chebi	CHEBI:26833	sulfur
+> false_negative	16221973	37296	37297	S	chebi	CHEBI:26833	sulfur
+4548c4548
+< true_positive	16221973	2117	2121	Cu2+	chebi	CHEBI:29036	copper(2+)
+---
+> false_negative	16221973	2117	2121	Cu2+	chebi	CHEBI:29036	copper(2+)
+4550c4550
+< true_positive	16221973	2126	2130	Cd2+	chebi	CHEBI:48775	cadmium(2+)
+---
+> false_negative	16221973	2126	2130	Cd2+	chebi	CHEBI:48775	cadmium(2+)
+4559c4559
+< true_positive	16221973	10021	10027	guanin	chebi	CHEBI:16235	guanine
+---
+> false_negative	16221973	10021	10027	guanin	chebi	CHEBI:16235	guanine
+4573,4574c4573,4574
+< true_positive	16221973	14800	14805	CdCl2	chebi	CHEBI:35456	cadmium dichloride
+< true_positive	16221973	16591	16595	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	16221973	14800	14805	CdCl2	chebi	CHEBI:35456	cadmium dichloride
+> false_negative	16221973	16591	16595	mRNA	chebi	CHEBI:33699	messenger RNA
+4577,4578c4577,4578
+< true_positive	16221973	44196	44200	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	16221973	44440	44444	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	16221973	44196	44200	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	16221973	44440	44444	mRNA	chebi	CHEBI:33699	messenger RNA
+4591c4591
+< true_positive	16221973	45647	45652	CdCl2	chebi	CHEBI:35456	cadmium dichloride
+---
+> false_negative	16221973	45647	45652	CdCl2	chebi	CHEBI:35456	cadmium dichloride
+4690,4694c4690,4694
+< false_positive	16279840	11079	11083	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+< false_positive	16279840	11306	11310	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+< false_positive	16279840	13712	13716	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+< false_positive	16279840	13839	13843	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+< false_positive	16279840	13940	13944	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+---
+> false_negative	16279840	11079	11083	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+> false_negative	16279840	11306	11310	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+> false_negative	16279840	13712	13716	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+> false_negative	16279840	13839	13843	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+> false_negative	16279840	13940	13944	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+4781c4781
+< true_positive	16279840	9513	9517	NaOH	chebi	CHEBI:32145	sodium hydroxide
+---
+> false_negative	16279840	9513	9517	NaOH	chebi	CHEBI:32145	sodium hydroxide
+4786,4787c4786,4787
+< true_positive	16279840	11079	11083	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+< true_positive	16279840	11306	11310	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+---
+> false_negative	16279840	11079	11083	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+> false_negative	16279840	11306	11310	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+4800c4800
+< true_positive	16279840	13285	13289	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	16279840	13285	13289	mRNA	chebi	CHEBI:33699	messenger RNA
+4805,4806c4805,4806
+< true_positive	16279840	13712	13716	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+< true_positive	16279840	13839	13843	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+---
+> false_negative	16279840	13712	13716	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+> false_negative	16279840	13839	13843	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+4871,4873c4871,4873
+< true_positive	16279840	51415	51419	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	16279840	51454	51458	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	16279840	51592	51596	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	16279840	51415	51419	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	16279840	51454	51458	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	16279840	51592	51596	mRNA	chebi	CHEBI:33699	messenger RNA
+4887c4887
+< true_positive	16279840	13940	13944	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+---
+> false_negative	16279840	13940	13944	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+4958,4961c4958,4961
+< true_positive	16362077	6569	6573	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	16362077	7540	7544	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	16362077	10161	10165	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	16362077	23424	23428	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	16362077	6569	6573	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	16362077	7540	7544	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	16362077	10161	10165	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	16362077	23424	23428	mRNA	chebi	CHEBI:33699	messenger RNA
+4990c4990
+< true_positive	16362077	20763	20768	mRNAs	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	16362077	20763	20768	mRNAs	chebi	CHEBI:33699	messenger RNA
+4996c4996
+< false_positive	16362077	32070	32071	G	chebi	CHEBI:30755	guanine group
+---
+> false_negative	16362077	32070	32071	G	chebi	CHEBI:30755	guanine group
+5011,5012c5011,5012
+< true_positive	16362077	34102	34112	anesthetic	chebi	CHEBI:38867	anaesthetic
+< true_positive	16362077	42985	42995	anesthetic	chebi	CHEBI:38867	anaesthetic
+---
+> false_negative	16362077	34102	34112	anesthetic	chebi	CHEBI:38867	anaesthetic
+> false_negative	16362077	42985	42995	anesthetic	chebi	CHEBI:38867	anaesthetic
+5016,5018c5016,5018
+< true_positive	16362077	36484	36486	Au	chebi	CHEBI:29287	gold
+< true_positive	16362077	36487	36489	Pd	chebi	CHEBI:33363	palladium
+< true_positive	16433929	24514	24518	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	16362077	36484	36486	Au	chebi	CHEBI:29287	gold
+> false_negative	16362077	36487	36489	Pd	chebi	CHEBI:33363	palladium
+> false_negative	16433929	24514	24518	mRNA	chebi	CHEBI:33699	messenger RNA
+5024,5029c5024,5029
+< true_positive	16433929	2476	2480	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16433929	2532	2536	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16433929	2567	2571	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16433929	2789	2793	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16433929	21717	21721	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	16433929	1680	1684	Ca2+	chebi	CHEBI:29108	calcium(2+)
+---
+> false_negative	16433929	2476	2480	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16433929	2532	2536	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16433929	2567	2571	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16433929	2789	2793	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16433929	21717	21721	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	16433929	1680	1684	Ca2+	chebi	CHEBI:29108	calcium(2+)
+5053c5053
+< true_positive	16433929	20078	20082	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	16433929	20078	20082	mRNA	chebi	CHEBI:33699	messenger RNA
+5074c5074
+< true_positive	16433929	32696	32713	2-mercaptoethanol	chebi	CHEBI:41218	mercaptoethanol
+---
+> false_negative	16433929	32696	32713	2-mercaptoethanol	chebi	CHEBI:41218	mercaptoethanol
+5091c5091
+< true_positive	16462940	3213	3220	insulin	chebi	CHEBI:5931	insulin
+---
+> false_negative	16462940	3213	3220	insulin	chebi	CHEBI:5931	insulin
+5095c5095
+< true_positive	16462940	27308	27312	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	16462940	27308	27312	mRNA	chebi	CHEBI:33699	messenger RNA
+5106c5106
+< true_positive	16504143	19845	19849	NaCl	chebi	CHEBI:26710	sodium chloride
+---
+> false_negative	16504143	19845	19849	NaCl	chebi	CHEBI:26710	sodium chloride
+5149c5149
+< true_positive	16504143	10843	10847	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	16504143	10843	10847	mRNA	chebi	CHEBI:33699	messenger RNA
+5167c5167
+< true_positive	16504174	12661	12665	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	16504174	12661	12665	mRNA	chebi	CHEBI:33699	messenger RNA
+5181c5181
+< true_positive	16504174	19062	19064	Ni	chebi	CHEBI:28112	nickel
+---
+> false_negative	16504174	19062	19064	Ni	chebi	CHEBI:28112	nickel
+5193c5193
+< true_positive	16504174	20506	20523	2-mercaptoethanol	chebi	CHEBI:41218	mercaptoethanol
+---
+> false_negative	16504174	20506	20523	2-mercaptoethanol	chebi	CHEBI:41218	mercaptoethanol
+5204c5204
+< true_positive	16507151	7518	7521	KCl	chebi	CHEBI:32588	potassium chloride
+---
+> false_negative	16507151	7518	7521	KCl	chebi	CHEBI:32588	potassium chloride
+5208c5208
+< true_positive	16507151	7561	7566	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+---
+> false_negative	16507151	7561	7566	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+5212c5212
+< false_positive	16539743	45072	45076	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+---
+> false_negative	16539743	45072	45076	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+5312c5312
+< true_positive	16539743	11349	11353	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	16539743	11349	11353	mRNA	chebi	CHEBI:33699	messenger RNA
+5317c5317
+< true_positive	16539743	4643	4651	pigments	chebi	CHEBI:26130	pigment
+---
+> false_negative	16539743	4643	4651	pigments	chebi	CHEBI:26130	pigment
+5436c5436
+< true_positive	16539743	14351	14355	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	16539743	14351	14355	mRNA	chebi	CHEBI:33699	messenger RNA
+5515,5517c5515,5517
+< true_positive	16539743	45072	45076	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+< true_positive	16539743	45083	45088	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+< true_positive	16539743	45097	45101	NaCl	chebi	CHEBI:26710	sodium chloride
+---
+> false_negative	16539743	45072	45076	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+> false_negative	16539743	45083	45088	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+> false_negative	16539743	45097	45101	NaCl	chebi	CHEBI:26710	sodium chloride
+5524,5525c5524,5525
+< true_positive	16539743	45649	45653	NaCl	chebi	CHEBI:26710	sodium chloride
+< true_positive	16539743	45661	45666	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+---
+> false_negative	16539743	45649	45653	NaCl	chebi	CHEBI:26710	sodium chloride
+> false_negative	16539743	45661	45666	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+5635c5635
+< true_positive	16579849	10994	10998	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	16579849	10994	10998	mRNA	chebi	CHEBI:33699	messenger RNA
+5645,5647c5645,5647
+< true_positive	16579849	14751	14756	CoASH	chebi	CHEBI:15346	coenzyme A
+< true_positive	16579849	14805	14819	dithiothreitol	chebi	CHEBI:18320	1,4-dithiothreitol
+< true_positive	16579849	14826	14830	Mg2+	chebi	CHEBI:18420	magnesium(2+)
+---
+> false_negative	16579849	14751	14756	CoASH	chebi	CHEBI:15346	coenzyme A
+> false_negative	16579849	14805	14819	dithiothreitol	chebi	CHEBI:18320	1,4-dithiothreitol
+> false_negative	16579849	14826	14830	Mg2+	chebi	CHEBI:18420	magnesium(2+)
+5773,5774c5773,5774
+< true_positive	16628246	3170	3181	haemoglobin	chebi	CHEBI:35143	hemoglobin
+< true_positive	16628246	3271	3282	haemoglobin	chebi	CHEBI:35143	hemoglobin
+---
+> false_negative	16628246	3170	3181	haemoglobin	chebi	CHEBI:35143	hemoglobin
+> false_negative	16628246	3271	3282	haemoglobin	chebi	CHEBI:35143	hemoglobin
+5812,5813c5812,5813
+< true_positive	16670015	44505	44509	EtBr	chebi	CHEBI:4883	ethidium bromide
+< true_positive	16670015	44683	44688	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+---
+> false_negative	16670015	44505	44509	EtBr	chebi	CHEBI:4883	ethidium bromide
+> false_negative	16670015	44683	44688	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+5815,5816c5815,5816
+< true_positive	16670015	44941	44945	EtBr	chebi	CHEBI:4883	ethidium bromide
+< true_positive	16670015	45117	45121	EtBr	chebi	CHEBI:4883	ethidium bromide
+---
+> false_negative	16670015	44941	44945	EtBr	chebi	CHEBI:4883	ethidium bromide
+> false_negative	16670015	45117	45121	EtBr	chebi	CHEBI:4883	ethidium bromide
+5818c5818
+< true_positive	16670015	45451	45455	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	16670015	45451	45455	mRNA	chebi	CHEBI:33699	messenger RNA
+5843c5843
+< true_positive	16670015	31303	31310	insulin	chebi	CHEBI:5931	insulin
+---
+> false_negative	16670015	31303	31310	insulin	chebi	CHEBI:5931	insulin
+5848c5848
+< true_positive	16670015	44141	44146	MgSO4	chebi	CHEBI:32599	magnesium sulfate
+---
+> false_negative	16670015	44141	44146	MgSO4	chebi	CHEBI:32599	magnesium sulfate
+5851,5853c5851,5853
+< true_positive	16700629	5233	5240	insulin	chebi	CHEBI:5931	insulin
+< true_positive	16700629	5271	5278	insulin	chebi	CHEBI:5931	insulin
+< true_positive	16700629	5305	5312	insulin	chebi	CHEBI:5931	insulin
+---
+> false_negative	16700629	5233	5240	insulin	chebi	CHEBI:5931	insulin
+> false_negative	16700629	5271	5278	insulin	chebi	CHEBI:5931	insulin
+> false_negative	16700629	5305	5312	insulin	chebi	CHEBI:5931	insulin
+5867c5867
+< true_positive	16700629	15247	15251	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	16700629	15247	15251	mRNA	chebi	CHEBI:33699	messenger RNA
+5870c5870
+< true_positive	16700629	21482	21486	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	16700629	21482	21486	mRNA	chebi	CHEBI:33699	messenger RNA
+5876c5876
+< true_positive	16700629	37746	37750	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	16700629	37746	37750	mRNA	chebi	CHEBI:33699	messenger RNA
+5879c5879
+< true_positive	16870721	15750	15760	adriamycin	chebi	CHEBI:28748	doxorubicin
+---
+> false_negative	16870721	15750	15760	adriamycin	chebi	CHEBI:28748	doxorubicin
+5898,5899c5898,5899
+< true_positive	16870721	12859	12863	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+< true_positive	16870721	12872	12876	NaCl	chebi	CHEBI:26710	sodium chloride
+---
+> false_negative	16870721	12859	12863	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+> false_negative	16870721	12872	12876	NaCl	chebi	CHEBI:26710	sodium chloride
+5902c5902
+< true_positive	16870721	12936	12939	NaF	chebi	CHEBI:28741	sodium fluoride
+---
+> false_negative	16870721	12936	12939	NaF	chebi	CHEBI:28741	sodium fluoride
+5905c5905
+< true_positive	16870721	13407	13411	NaCl	chebi	CHEBI:26710	sodium chloride
+---
+> false_negative	16870721	13407	13411	NaCl	chebi	CHEBI:26710	sodium chloride
+5914c5914
+< true_positive	16870721	12772	12782	adriamycin	chebi	CHEBI:28748	doxorubicin
+---
+> false_negative	16870721	12772	12782	adriamycin	chebi	CHEBI:28748	doxorubicin
+5918c5918
+< true_positive	16870721	25461	25471	adriamycin	chebi	CHEBI:28748	doxorubicin
+---
+> false_negative	16870721	25461	25471	adriamycin	chebi	CHEBI:28748	doxorubicin
+5936c5936
+< true_positive	17002498	32332	32339	pigment	chebi	CHEBI:26130	pigment
+---
+> false_negative	17002498	32332	32339	pigment	chebi	CHEBI:26130	pigment
+5941,5942c5941,5942
+< true_positive	17002498	48587	48590	KCl	chebi	CHEBI:32588	potassium chloride
+< true_positive	17002498	48599	48604	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+---
+> false_negative	17002498	48587	48590	KCl	chebi	CHEBI:32588	potassium chloride
+> false_negative	17002498	48599	48604	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+5944c5944
+< true_positive	17002498	49100	49105	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+---
+> false_negative	17002498	49100	49105	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+5968c5968
+< false_positive	17020410	2182	2203	galactose-1-phosphate	chebi	CHEBI:37480	D-galactose 1-phosphate
+---
+> false_negative	17020410	2182	2203	galactose-1-phosphate	chebi	CHEBI:37480	D-galactose 1-phosphate
+5973c5973
+< true_positive	17020410	5764	5768	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	17020410	5764	5768	mRNA	chebi	CHEBI:33699	messenger RNA
+5983,5990c5983,5990
+< true_positive	17020410	7200	7204	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17020410	8836	8840	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17020410	10544	10548	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17020410	22095	22099	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17020410	22478	22482	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17020410	22855	22859	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17020410	23338	23342	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17020410	9306	9311	mRNAs	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	17020410	7200	7204	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17020410	8836	8840	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17020410	10544	10548	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17020410	22095	22099	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17020410	22478	22482	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17020410	22855	22859	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17020410	23338	23342	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17020410	9306	9311	mRNAs	chebi	CHEBI:33699	messenger RNA
+5994c5994
+< true_positive	17020410	9408	9412	EtBr	chebi	CHEBI:4883	ethidium bromide
+---
+> false_negative	17020410	9408	9412	EtBr	chebi	CHEBI:4883	ethidium bromide
+6042,6052c6042,6052
+< true_positive	17022820	8374	8379	FeCl3	chebi	CHEBI:30808	iron trichloride
+< true_positive	17022820	8766	8771	FeCl3	chebi	CHEBI:30808	iron trichloride
+< true_positive	17022820	8896	8901	FeCl3	chebi	CHEBI:30808	iron trichloride
+< true_positive	17022820	12291	12296	FeCl3	chebi	CHEBI:30808	iron trichloride
+< true_positive	17022820	12670	12675	FeCl3	chebi	CHEBI:30808	iron trichloride
+< true_positive	17022820	12995	13000	FeCl3	chebi	CHEBI:30808	iron trichloride
+< true_positive	17022820	26162	26167	FeCl3	chebi	CHEBI:30808	iron trichloride
+< true_positive	17022820	28735	28740	FeCl3	chebi	CHEBI:30808	iron trichloride
+< true_positive	17022820	28976	28981	FeCl3	chebi	CHEBI:30808	iron trichloride
+< true_positive	17022820	28996	29001	FeCl3	chebi	CHEBI:30808	iron trichloride
+< true_positive	17022820	35130	35135	FeCl3	chebi	CHEBI:30808	iron trichloride
+---
+> false_negative	17022820	8374	8379	FeCl3	chebi	CHEBI:30808	iron trichloride
+> false_negative	17022820	8766	8771	FeCl3	chebi	CHEBI:30808	iron trichloride
+> false_negative	17022820	8896	8901	FeCl3	chebi	CHEBI:30808	iron trichloride
+> false_negative	17022820	12291	12296	FeCl3	chebi	CHEBI:30808	iron trichloride
+> false_negative	17022820	12670	12675	FeCl3	chebi	CHEBI:30808	iron trichloride
+> false_negative	17022820	12995	13000	FeCl3	chebi	CHEBI:30808	iron trichloride
+> false_negative	17022820	26162	26167	FeCl3	chebi	CHEBI:30808	iron trichloride
+> false_negative	17022820	28735	28740	FeCl3	chebi	CHEBI:30808	iron trichloride
+> false_negative	17022820	28976	28981	FeCl3	chebi	CHEBI:30808	iron trichloride
+> false_negative	17022820	28996	29001	FeCl3	chebi	CHEBI:30808	iron trichloride
+> false_negative	17022820	35130	35135	FeCl3	chebi	CHEBI:30808	iron trichloride
+6213c6213
+< false_positive	17069463	8450	8451	S	chebi	CHEBI:26833	sulfur
+---
+> false_negative	17069463	8450	8451	S	chebi	CHEBI:26833	sulfur
+6219,6220c6219,6220
+< true_positive	17069463	9877	9882	CuSO4	chebi	CHEBI:23414	copper(2+) sulfate
+< true_positive	17069463	10025	10030	CuSO4	chebi	CHEBI:23414	copper(2+) sulfate
+---
+> false_negative	17069463	9877	9882	CuSO4	chebi	CHEBI:23414	copper(2+) sulfate
+> false_negative	17069463	10025	10030	CuSO4	chebi	CHEBI:23414	copper(2+) sulfate
+6244c6244
+< true_positive	17069463	26184	26191	insulin	chebi	CHEBI:5931	insulin
+---
+> false_negative	17069463	26184	26191	insulin	chebi	CHEBI:5931	insulin
+6247,6248c6247,6248
+< true_positive	17069463	27308	27315	insulin	chebi	CHEBI:5931	insulin
+< true_positive	17069463	27354	27361	insulin	chebi	CHEBI:5931	insulin
+---
+> false_negative	17069463	27308	27315	insulin	chebi	CHEBI:5931	insulin
+> false_negative	17069463	27354	27361	insulin	chebi	CHEBI:5931	insulin
+6250,6251c6250,6251
+< true_positive	17069463	29344	29355	Anesthetics	chebi	CHEBI:38867	anaesthetic
+< true_positive	17069463	36187	36190	Na+	chebi	CHEBI:29101	sodium(1+)
+---
+> false_negative	17069463	29344	29355	Anesthetics	chebi	CHEBI:38867	anaesthetic
+> false_negative	17069463	36187	36190	Na+	chebi	CHEBI:29101	sodium(1+)
+6256,6257c6256,6257
+< true_positive	17069463	36678	36681	Na+	chebi	CHEBI:29101	sodium(1+)
+< true_positive	17069463	37649	37675	glyceraldehyde-3-phosphate	chebi	CHEBI:17138	glyceraldehyde 3-phosphate
+---
+> false_negative	17069463	36678	36681	Na+	chebi	CHEBI:29101	sodium(1+)
+> false_negative	17069463	37649	37675	glyceraldehyde-3-phosphate	chebi	CHEBI:17138	glyceraldehyde 3-phosphate
+6259,6262c6259,6262
+< true_positive	17069463	38098	38105	insulin	chebi	CHEBI:5931	insulin
+< true_positive	17069463	38899	38902	Na+	chebi	CHEBI:29101	sodium(1+)
+< true_positive	17069463	39562	39565	Na+	chebi	CHEBI:29101	sodium(1+)
+< true_positive	17069463	40406	40410	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	17069463	38098	38105	insulin	chebi	CHEBI:5931	insulin
+> false_negative	17069463	38899	38902	Na+	chebi	CHEBI:29101	sodium(1+)
+> false_negative	17069463	39562	39565	Na+	chebi	CHEBI:29101	sodium(1+)
+> false_negative	17069463	40406	40410	mRNA	chebi	CHEBI:33699	messenger RNA
+6268c6268
+< false_positive	17069463	43870	43889	glucose-6-phosphate	chebi	CHEBI:15954	D-glucose 6-phosphate
+---
+> false_negative	17069463	43870	43889	glucose-6-phosphate	chebi	CHEBI:15954	D-glucose 6-phosphate
+6271c6271
+< false_positive	17069463	43905	43924	glucose-6-phosphate	chebi	CHEBI:15954	D-glucose 6-phosphate
+---
+> false_negative	17069463	43905	43924	glucose-6-phosphate	chebi	CHEBI:15954	D-glucose 6-phosphate
+6276c6276
+< true_positive	17069463	44196	44201	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+---
+> false_negative	17069463	44196	44201	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+6291,6292c6291,6292
+< true_positive	17069463	49099	49103	NaCl	chebi	CHEBI:26710	sodium chloride
+< true_positive	17069463	49110	49115	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+---
+> false_negative	17069463	49099	49103	NaCl	chebi	CHEBI:26710	sodium chloride
+> false_negative	17069463	49110	49115	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+6297,6298c6297,6298
+< true_positive	17069463	50793	50800	Insulin	chebi	CHEBI:5931	insulin
+< true_positive	17069463	50922	50929	insulin	chebi	CHEBI:5931	insulin
+---
+> false_negative	17069463	50793	50800	Insulin	chebi	CHEBI:5931	insulin
+> false_negative	17069463	50922	50929	insulin	chebi	CHEBI:5931	insulin
+6308c6308
+< false_positive	17069463	54402	54403	S	chebi	CHEBI:26833	sulfur
+---
+> false_negative	17069463	54402	54403	S	chebi	CHEBI:26833	sulfur
+6330,6331c6330,6331
+< true_positive	17083276	29515	29519	EGTA	chebi	CHEBI:30741	ethylene glycol bis(2-aminoethyl)tetraacetate
+< false_positive	17083276	30051	30055	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+---
+> false_negative	17083276	29515	29519	EGTA	chebi	CHEBI:30741	ethylene glycol bis(2-aminoethyl)tetraacetate
+> false_negative	17083276	30051	30055	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+6337,6340c6337,6340
+< true_positive	17083276	29479	29482	KCl	chebi	CHEBI:32588	potassium chloride
+< true_positive	17083276	29490	29494	NaCl	chebi	CHEBI:26710	sodium chloride
+< true_positive	17083276	29501	29506	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+< false_positive	17083276	29515	29519	EGTA	chebi	CHEBI:30740	ethylene glycol bis(2-aminoethyl)tetraacetic acid
+---
+> false_negative	17083276	29479	29482	KCl	chebi	CHEBI:32588	potassium chloride
+> false_negative	17083276	29490	29494	NaCl	chebi	CHEBI:26710	sodium chloride
+> false_negative	17083276	29501	29506	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+> false_negative	17083276	29515	29519	EGTA	chebi	CHEBI:30740	ethylene glycol bis(2-aminoethyl)tetraacetic acid
+6342c6342
+< true_positive	17083276	29773	29777	NaCl	chebi	CHEBI:26710	sodium chloride
+---
+> false_negative	17083276	29773	29777	NaCl	chebi	CHEBI:26710	sodium chloride
+6344,6346c6344,6346
+< true_positive	17083276	29800	29805	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+< true_positive	17083276	29812	29817	CaCl2	chebi	CHEBI:3312	calcium dichloride
+< true_positive	17083276	30051	30055	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+---
+> false_negative	17083276	29800	29805	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+> false_negative	17083276	29812	29817	CaCl2	chebi	CHEBI:3312	calcium dichloride
+> false_negative	17083276	30051	30055	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+6356c6356
+< true_positive	17083276	30156	30167	isopropanol	chebi	CHEBI:17824	propan-2-ol
+---
+> false_negative	17083276	30156	30167	isopropanol	chebi	CHEBI:17824	propan-2-ol
+6359,6360c6359,6360
+< true_positive	17083276	30374	30379	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+< true_positive	17083276	30480	30484	NaCl	chebi	CHEBI:26710	sodium chloride
+---
+> false_negative	17083276	30374	30379	MgCl2	chebi	CHEBI:6636	magnesium dichloride
+> false_negative	17083276	30480	30484	NaCl	chebi	CHEBI:26710	sodium chloride
+6404,6405c6404,6405
+< true_positive	17083276	15239	15243	NaCl	chebi	CHEBI:26710	sodium chloride
+< true_positive	17083276	15251	15255	NaCl	chebi	CHEBI:26710	sodium chloride
+---
+> false_negative	17083276	15239	15243	NaCl	chebi	CHEBI:26710	sodium chloride
+> false_negative	17083276	15251	15255	NaCl	chebi	CHEBI:26710	sodium chloride
+6419,6421c6419,6421
+< false_positive	17194222	51006	51010	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+< false_positive	17194222	52260	52264	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+< false_positive	17194222	52752	52756	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+---
+> false_negative	17194222	51006	51010	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+> false_negative	17194222	52260	52264	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+> false_negative	17194222	52752	52756	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+6448c6448
+< true_positive	17194222	29307	29311	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	17194222	29307	29311	mRNA	chebi	CHEBI:33699	messenger RNA
+6456,6457c6456,6457
+< true_positive	17194222	45905	45909	tRNA	chebi	CHEBI:17843	transfer RNA
+< true_positive	17194222	45915	45929	dithiothreitol	chebi	CHEBI:18320	1,4-dithiothreitol
+---
+> false_negative	17194222	45905	45909	tRNA	chebi	CHEBI:17843	transfer RNA
+> false_negative	17194222	45915	45929	dithiothreitol	chebi	CHEBI:18320	1,4-dithiothreitol
+6467c6467
+< true_positive	17194222	51006	51010	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+---
+> false_negative	17194222	51006	51010	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+6479,6482c6479,6482
+< true_positive	17194222	52260	52264	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+< true_positive	17194222	52273	52287	dithiothreitol	chebi	CHEBI:18320	1,4-dithiothreitol
+< true_positive	17194222	52307	52311	tRNA	chebi	CHEBI:17843	transfer RNA
+< true_positive	17194222	52490	52504	dithiothreitol	chebi	CHEBI:18320	1,4-dithiothreitol
+---
+> false_negative	17194222	52260	52264	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+> false_negative	17194222	52273	52287	dithiothreitol	chebi	CHEBI:18320	1,4-dithiothreitol
+> false_negative	17194222	52307	52311	tRNA	chebi	CHEBI:17843	transfer RNA
+> false_negative	17194222	52490	52504	dithiothreitol	chebi	CHEBI:18320	1,4-dithiothreitol
+6484c6484
+< true_positive	17194222	52594	52608	dithiothreitol	chebi	CHEBI:18320	1,4-dithiothreitol
+---
+> false_negative	17194222	52594	52608	dithiothreitol	chebi	CHEBI:18320	1,4-dithiothreitol
+6491c6491
+< true_positive	17194222	52752	52756	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+---
+> false_negative	17194222	52752	52756	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+6493,6503c6493,6503
+< true_positive	17194222	52832	52846	dithiothreitol	chebi	CHEBI:18320	1,4-dithiothreitol
+< true_positive	17194222	52922	52936	dithiothreitol	chebi	CHEBI:18320	1,4-dithiothreitol
+< true_positive	17194222	52977	52991	dithiothreitol	chebi	CHEBI:18320	1,4-dithiothreitol
+< true_positive	17194222	54333	54337	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17194222	54596	54600	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17194222	54710	54714	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17194222	55277	55281	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17194222	55505	55509	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17194222	57551	57555	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17194222	59551	59555	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17194222	59692	59696	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	17194222	52832	52846	dithiothreitol	chebi	CHEBI:18320	1,4-dithiothreitol
+> false_negative	17194222	52922	52936	dithiothreitol	chebi	CHEBI:18320	1,4-dithiothreitol
+> false_negative	17194222	52977	52991	dithiothreitol	chebi	CHEBI:18320	1,4-dithiothreitol
+> false_negative	17194222	54333	54337	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17194222	54596	54600	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17194222	54710	54714	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17194222	55277	55281	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17194222	55505	55509	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17194222	57551	57555	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17194222	59551	59555	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17194222	59692	59696	mRNA	chebi	CHEBI:33699	messenger RNA
+6505c6505
+< true_positive	17194222	61355	61359	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	17194222	61355	61359	mRNA	chebi	CHEBI:33699	messenger RNA
+6521c6521
+< true_positive	17425782	22922	22926	LiCl	chebi	CHEBI:48607	lithium chloride
+---
+> false_negative	17425782	22922	22926	LiCl	chebi	CHEBI:48607	lithium chloride
+6567c6567
+< true_positive	17425782	22750	22754	LiCl	chebi	CHEBI:48607	lithium chloride
+---
+> false_negative	17425782	22750	22754	LiCl	chebi	CHEBI:48607	lithium chloride
+6616,6625c6616,6625
+< true_positive	17447844	7630	7634	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17447844	9559	9563	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17447844	9666	9670	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17447844	9740	9744	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17447844	10077	10081	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17447844	10130	10134	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17447844	10276	10280	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17447844	10542	10546	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17447844	10589	10593	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17447844	10740	10744	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	17447844	7630	7634	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17447844	9559	9563	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17447844	9666	9670	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17447844	9740	9744	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17447844	10077	10081	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17447844	10130	10134	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17447844	10276	10280	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17447844	10542	10546	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17447844	10589	10593	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17447844	10740	10744	mRNA	chebi	CHEBI:33699	messenger RNA
+6640c6640
+< false_positive	17447844	48593	48594	S	chebi	CHEBI:26833	sulfur
+---
+> false_negative	17447844	48593	48594	S	chebi	CHEBI:26833	sulfur
+6645c6645
+< false_positive	17447844	55360	55361	S	chebi	CHEBI:26833	sulfur
+---
+> false_negative	17447844	55360	55361	S	chebi	CHEBI:26833	sulfur
+6652c6652
+< true_positive	17590087	12025	12029	Ca2+	chebi	CHEBI:29108	calcium(2+)
+---
+> false_negative	17590087	12025	12029	Ca2+	chebi	CHEBI:29108	calcium(2+)
+6661,6662c6661,6662
+< true_positive	17590087	12717	12721	Ca2+	chebi	CHEBI:29108	calcium(2+)
+< true_positive	17590087	12747	12751	Ca2+	chebi	CHEBI:29108	calcium(2+)
+---
+> false_negative	17590087	12717	12721	Ca2+	chebi	CHEBI:29108	calcium(2+)
+> false_negative	17590087	12747	12751	Ca2+	chebi	CHEBI:29108	calcium(2+)
+6672c6672
+< true_positive	17590087	15151	15155	Ca2+	chebi	CHEBI:29108	calcium(2+)
+---
+> false_negative	17590087	15151	15155	Ca2+	chebi	CHEBI:29108	calcium(2+)
+6677,6678c6677,6678
+< true_positive	17590087	17591	17595	NaCl	chebi	CHEBI:26710	sodium chloride
+< true_positive	17590087	17602	17606	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+---
+> false_negative	17590087	17591	17595	NaCl	chebi	CHEBI:26710	sodium chloride
+> false_negative	17590087	17602	17606	EDTA	chebi	CHEBI:42191	ethylenediaminetetraacetic acid
+6691c6691
+< false_positive	17590087	17602	17606	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+---
+> false_negative	17590087	17602	17606	EDTA	chebi	CHEBI:30378	ethylenediaminetetraacetate
+6729,6736c6729,6736
+< true_positive	17608565	39494	39498	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17608565	39689	39693	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17608565	39736	39740	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17608565	39767	39771	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17608565	39863	39867	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17608565	58955	58959	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17608565	8253	8257	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17608565	39822	39827	mRNAs	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	17608565	39494	39498	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17608565	39689	39693	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17608565	39736	39740	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17608565	39767	39771	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17608565	39863	39867	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17608565	58955	58959	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17608565	8253	8257	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17608565	39822	39827	mRNAs	chebi	CHEBI:33699	messenger RNA
+6752,6754c6752,6754
+< true_positive	17608565	59528	59535	Na2HPO4	chebi	CHEBI:34683	disodium hydrogenphosphate
+< true_positive	17608565	59544	59551	NaH2PO4	chebi	CHEBI:37585	sodium dihydrogenphosphate
+< true_positive	17608565	59559	59563	NaCl	chebi	CHEBI:26710	sodium chloride
+---
+> false_negative	17608565	59528	59535	Na2HPO4	chebi	CHEBI:34683	disodium hydrogenphosphate
+> false_negative	17608565	59544	59551	NaH2PO4	chebi	CHEBI:37585	sodium dihydrogenphosphate
+> false_negative	17608565	59559	59563	NaCl	chebi	CHEBI:26710	sodium chloride
+6791,6792c6791,6792
+< true_positive	17696610	7133	7137	mRNA	chebi	CHEBI:33699	messenger RNA
+< true_positive	17696610	11827	11831	mRNA	chebi	CHEBI:33699	messenger RNA
+---
+> false_negative	17696610	7133	7137	mRNA	chebi	CHEBI:33699	messenger RNA
+> false_negative	17696610	11827	11831	mRNA	chebi	CHEBI:33699	messenger RNA
+6824c6824
+< ### Strategy:all
+---
+> ### Strategy:exact
+6826,6831c6826,6831
+< ### TP: 1736
+< ### FP: 639
+< ### FN: 5762
+< ### Precision: 0.7309473684210527
+< ### Recall: 0.23152840757535342
+< ### F1: 0.3516661602349843
+---
+> ### TP: 1069
+> ### FP: 481
+> ### FN: 6587
+> ### Precision: 0.6896774193548387
+> ### Recall: 0.13962904911180773
+> ### F1: 0.23223984358027375

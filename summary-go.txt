@@ -1,0 +1,24 @@
+run-all-go.tsv:### Strategy:all
+run-all-go.tsv:### Onts:['go']
+run-all-go.tsv:### TP: 8178
+run-all-go.tsv:### FP: 1216
+run-all-go.tsv:### FN: 23022
+run-all-go.tsv:### Precision: 0.8705556738343624
+run-all-go.tsv:### Recall: 0.26211538461538464
+run-all-go.tsv:### F1: 0.402916687195152
+run-exact-go.tsv:### Strategy:exact
+run-exact-go.tsv:### Onts:['go']
+run-exact-go.tsv:### TP: 7807
+run-exact-go.tsv:### FP: 820
+run-exact-go.tsv:### FN: 23789
+run-exact-go.tsv:### Precision: 0.9049495769097021
+run-exact-go.tsv:### Recall: 0.24708823901759716
+run-exact-go.tsv:### F1: 0.38818586380926334
+run-exrel-go.tsv:### Strategy:exrel
+run-exrel-go.tsv:### Onts:['go']
+run-exrel-go.tsv:### TP: 7822
+run-exrel-go.tsv:### FP: 827
+run-exrel-go.tsv:### FN: 23767
+run-exrel-go.tsv:### Precision: 0.9043820094808649
+run-exrel-go.tsv:### Recall: 0.24761784165374023
+run-exrel-go.tsv:### F1: 0.38878671902182016

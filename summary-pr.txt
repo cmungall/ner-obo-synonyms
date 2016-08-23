@@ -1,0 +1,24 @@
+run-all-pr.tsv:### Strategy:all
+run-all-pr.tsv:### Onts:['pr']
+run-all-pr.tsv:### TP: 3360
+run-all-pr.tsv:### FP: 992
+run-all-pr.tsv:### FN: 11242
+run-all-pr.tsv:### Precision: 0.7720588235294118
+run-all-pr.tsv:### Recall: 0.23010546500479387
+run-all-pr.tsv:### F1: 0.354542576764799
+run-exact-pr.tsv:### Strategy:exact
+run-exact-pr.tsv:### Onts:['pr']
+run-exact-pr.tsv:### TP: 2952
+run-exact-pr.tsv:### FP: 369
+run-exact-pr.tsv:### FN: 12273
+run-exact-pr.tsv:### Precision: 0.8888888888888888
+run-exact-pr.tsv:### Recall: 0.19389162561576354
+run-exact-pr.tsv:### F1: 0.318343578130055
+run-exrel-pr.tsv:### Strategy:exrel
+run-exrel-pr.tsv:### Onts:['pr']
+run-exrel-pr.tsv:### TP: 3359
+run-exrel-pr.tsv:### FP: 990
+run-exrel-pr.tsv:### FN: 11245
+run-exrel-pr.tsv:### Precision: 0.7723614624051506
+run-exrel-pr.tsv:### Recall: 0.23000547795124623
+run-exrel-pr.tsv:### F1: 0.3544557589827468

@@ -1,0 +1,24 @@
+run-all-chebi.tsv:### Strategy:all
+run-all-chebi.tsv:### Onts:['chebi']
+run-all-chebi.tsv:### TP: 1736
+run-all-chebi.tsv:### FP: 639
+run-all-chebi.tsv:### FN: 5762
+run-all-chebi.tsv:### Precision: 0.7309473684210527
+run-all-chebi.tsv:### Recall: 0.23152840757535342
+run-all-chebi.tsv:### F1: 0.3516661602349843
+run-exact-chebi.tsv:### Strategy:exact
+run-exact-chebi.tsv:### Onts:['chebi']
+run-exact-chebi.tsv:### TP: 1069
+run-exact-chebi.tsv:### FP: 481
+run-exact-chebi.tsv:### FN: 6587
+run-exact-chebi.tsv:### Precision: 0.6896774193548387
+run-exact-chebi.tsv:### Recall: 0.13962904911180773
+run-exact-chebi.tsv:### F1: 0.23223984358027375
+run-exrel-chebi.tsv:### Strategy:exrel
+run-exrel-chebi.tsv:### Onts:['chebi']
+run-exrel-chebi.tsv:### TP: 1736
+run-exrel-chebi.tsv:### FP: 639
+run-exrel-chebi.tsv:### FN: 5762
+run-exrel-chebi.tsv:### Precision: 0.7309473684210527
+run-exrel-chebi.tsv:### Recall: 0.23152840757535342
+run-exrel-chebi.tsv:### F1: 0.3516661602349843

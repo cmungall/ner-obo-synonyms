@@ -1,0 +1,10 @@
+1,2c1,2
+< ## STRATEGY: all
+< ## SKIPPED: ['has_not_completed', 'has_high_plasma_membrane_amount', 'lacks_plasma_membrane_part', 'has_relational_adjective', 'seeAlso', 'immediate_transformation_of', 'lacks_part', 'has_low_plasma_membrane_amount', 'has_completed']
+---
+> ## STRATEGY: exact
+> ## SKIPPED: ['has_low_plasma_membrane_amount', 'has_relational_adjective', 'has_high_plasma_membrane_amount', 'has_completed', 'has_not_completed', 'seeAlso', 'lacks_part', 'lacks_plasma_membrane_part', 'immediate_transformation_of']
+4104c4104
+< ### Strategy:all
+---
+> ### Strategy:exact
